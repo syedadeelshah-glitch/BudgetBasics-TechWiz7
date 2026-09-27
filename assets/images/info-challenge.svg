@@ -8,57 +8,60 @@
   <!-- 4 Milestones Cards -->
   <g transform="translate(30, 95)">
     <!-- Week 1 -->
-    <rect x="0" y="0" width="125" height="170" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <rect x="0" y="0" width="126" height="170" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
     <rect x="10" y="10" width="34" height="20" rx="10" fill="#E2E8F0"/>
     <text x="27" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#475569" text-anchor="middle">WK 1</text>
-    <text x="12" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#0F172A">Subscription Audit</text>
-    <text x="12" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• Cancel unused app trials</text>
-    <text x="12" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• Switch to student tier</text>
-    <text x="12" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• Turn off auto-renewals</text>
-    <rect x="10" y="136" width="105" height="22" rx="6" fill="#DCFCE7"/>
-    <text x="62" y="151" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">Est: Saves $35</text>
+    <text x="10" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="800" fill="#0F172A">Subscription Audit</text>
+    <text x="10" y="72" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• Cancel trial apps</text>
+    <text x="10" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• Student pricing tier</text>
+    <text x="10" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• Stop auto-renewals</text>
+    <rect x="10" y="136" width="106" height="22" rx="6" fill="#DCFCE7"/>
+    <text x="63" y="151" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">Est: Saves $35</text>
 
     <!-- Week 2 -->
-    <rect x="138" y="0" width="125" height="170" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <rect x="138" y="0" width="126" height="170" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
     <rect x="148" y="10" width="34" height="20" rx="10" fill="#E2E8F0"/>
     <text x="165" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#475569" text-anchor="middle">WK 2</text>
-    <text x="150" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#0F172A">Pantry Cook Off</text>
-    <text x="150" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• Meal prep 4 dinners</text>
-    <text x="150" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• Pack campus lunch</text>
-    <text x="150" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• Use dorm staples</text>
-    <rect x="148" y="136" width="105" height="22" rx="6" fill="#DCFCE7"/>
-    <text x="200" y="151" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">Est: Saves $60</text>
+    <text x="148" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="800" fill="#0F172A">Pantry Cook-Off</text>
+    <text x="148" y="72" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• Meal prep 4 dinners</text>
+    <text x="148" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• Pack campus lunch</text>
+    <text x="148" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• Use dorm staples</text>
+    <rect x="148" y="136" width="106" height="22" rx="6" fill="#DCFCE7"/>
+    <text x="201" y="151" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">Est: Saves $60</text>
 
     <!-- Week 3 -->
-    <rect x="276" y="0" width="125" height="170" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <rect x="276" y="0" width="126" height="170" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
     <rect x="286" y="10" width="34" height="20" rx="10" fill="#E2E8F0"/>
     <text x="303" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#475569" text-anchor="middle">WK 3</text>
-    <text x="288" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#0F172A">Campus Resource</text>
-    <text x="288" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• Borrow course texts</text>
-    <text x="288" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• Free campus fitness</text>
-    <text x="288" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• Free student events</text>
-    <rect x="286" y="136" width="105" height="22" rx="6" fill="#DCFCE7"/>
-    <text x="338" y="151" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">Est: Saves $55</text>
+    <text x="286" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="800" fill="#0F172A">Campus Resources</text>
+    <text x="286" y="72" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• Borrow course books</text>
+    <text x="286" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• Free campus fitness</text>
+    <text x="286" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• Free student events</text>
+    <rect x="286" y="136" width="106" height="22" rx="6" fill="#DCFCE7"/>
+    <text x="339" y="151" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">Est: Saves $55</text>
 
     <!-- Week 4 -->
-    <rect x="415" y="0" width="125" height="170" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
-    <rect x="425" y="10" width="34" height="20" rx="10" fill="#E2E8F0"/>
-    <text x="442" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#475569" text-anchor="middle">WK 4</text>
-    <text x="427" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#0F172A">Zero-Spend Fri-Sat</text>
-    <text x="427" y="74" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• Host dorm game night</text>
-    <text x="427" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• Campus park walk</text>
-    <text x="427" y="114" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="500" fill="#64748B">• No online checkouts</text>
-    <rect x="425" y="136" width="105" height="22" rx="6" fill="#DCFCE7"/>
+    <rect x="414" y="0" width="126" height="170" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <rect x="424" y="10" width="34" height="20" rx="10" fill="#E2E8F0"/>
+    <text x="441" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#475569" text-anchor="middle">WK 4</text>
+    <text x="424" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="800" fill="#0F172A">Zero-Spend Days</text>
+    <text x="424" y="72" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• Host dorm game night</text>
+    <text x="424" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• Campus park walks</text>
+    <text x="424" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#64748B">• No online checkout</text>
+    <rect x="424" y="136" width="106" height="22" rx="6" fill="#DCFCE7"/>
     <text x="477" y="151" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">Est: Saves $50</text>
   </g>
 
   <!-- Total Savings Summary -->
   <g transform="translate(30, 290)">
     <rect width="540" height="96" rx="14" fill="#FFF7ED" stroke="#FFEDD5"/>
-    <circle cx="48" cy="48" r="24" fill="#FF5B22"/>
-    <text x="48" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="900" fill="#FFFFFF" text-anchor="middle">★</text>
-    <text x="90" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="800" fill="#9A3412">Total Estimated Month 1 Savings: $200.00+</text>
-    <text x="90" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#C2410C">Completing these 4 weeks deposits enough capital to immediately fund a reliable starter student emergency safety cushion.</text>
-    <text x="90" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#EA580C">🏆 Next Step: Use our Savings Goal Tracker to lock this achievement!</text>
+    <circle cx="44" cy="48" r="22" fill="#FF5B22"/>
+    <text x="44" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-size="19" font-weight="900" fill="#FFFFFF" text-anchor="middle">★</text>
+    <text x="80" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#9A3412">Total Estimated Month 1 Savings: $200.00+</text>
+    <text x="80" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="500" fill="#C2410C">
+      <tspan x="80" dy="0">Completing these 4 weeks deposits enough capital to immediately fund</tspan>
+      <tspan x="80" dy="15">a reliable starter student emergency safety cushion.</tspan>
+    </text>
+    <text x="80" y="81" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#EA580C">🏆 Next Step: Use our Savings Goal Tracker to lock this achievement!</text>
   </g>
 </svg>

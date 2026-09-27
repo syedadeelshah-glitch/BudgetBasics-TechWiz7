@@ -1,5 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%" fill="none">
   <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 1 2 L 7 5 L 1 8 z" fill="#94A3B8"/>
+    </marker>
     <style>
       .flowchart-canvas { fill: #FFFFFF; }
       .flowchart-rim { stroke: rgba(0, 0, 0, 0.08); }
@@ -20,72 +23,84 @@
   <text class="flowchart-subhead" x="30" y="64" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" fill="#64748B">A mental pause protocol before making non-essential student transactions</text>
 
   <!-- Flowchart nodes -->
-  <!-- Step 1 -->
-  <g transform="translate(30, 95)">
-    <rect width="115" height="110" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
-    <circle cx="20" cy="22" r="10" fill="#3B82F6"/>
-    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
-    <text x="14" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1E3A8A">Is it strictly</text>
-    <text x="14" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1E3A8A">vital for survival</text>
-    <text x="14" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1E3A8A">or exams?</text>
-  </g>
+  <g transform="translate(30, 90)">
+    <!-- Step 1 -->
+    <rect x="0" y="0" width="114" height="104" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+    <circle cx="20" cy="20" r="10" fill="#3B82F6"/>
+    <text x="20" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="12" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#1E3A8A">Is it vital for</text>
+    <text x="12" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#1E3A8A">survival, rent,</text>
+    <text x="12" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#1E3A8A">or exams?</text>
+    <text x="12" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#2563EB">(True Need)</text>
 
-  <!-- Arrow 1 to YES (down) / NO (right) -->
-  <path d="M145 150 L170 150" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
-  <text x="156" y="142" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#64748B">NO</text>
+    <!-- Arrow 1 -->
+    <path d="M 116 52 L 140 52" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="128" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#64748B" text-anchor="middle">NO</text>
 
-  <!-- Step 2 -->
-  <g transform="translate(175, 95)">
-    <rect width="115" height="110" rx="12" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
-    <circle cx="20" cy="22" r="10" fill="#F97316"/>
-    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
-    <text x="14" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#9A3412">Do I already</text>
-    <text x="14" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#9A3412">own a usable</text>
-    <text x="14" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#9A3412">alternative?</text>
-  </g>
+    <!-- Step 2 -->
+    <rect x="142" y="0" width="114" height="104" rx="12" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+    <circle cx="162" cy="20" r="10" fill="#F97316"/>
+    <text x="162" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="154" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#9A3412">Do I already</text>
+    <text x="154" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#9A3412">own a usable</text>
+    <text x="154" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#9A3412">substitute?</text>
+    <text x="154" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#EA580C">(Avoid Dupes)</text>
 
-  <!-- Arrow 2 -->
-  <path d="M290 150 L315 150" stroke="#94A3B8" stroke-width="2"/>
-  <text x="301" y="142" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#64748B">NO</text>
+    <!-- Arrow 2 -->
+    <path d="M 258 52 L 282 52" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="270" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#64748B" text-anchor="middle">NO</text>
 
-  <!-- Step 3 -->
-  <g transform="translate(320, 95)">
-    <rect width="115" height="110" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
-    <circle cx="20" cy="22" r="10" fill="#F59E0B"/>
-    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
-    <text x="14" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#92400E">Can I wait</text>
-    <text x="14" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#92400E">48 Hours</text>
-    <text x="14" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#92400E">before paying?</text>
-  </g>
+    <!-- Step 3 -->
+    <rect x="284" y="0" width="114" height="104" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+    <circle cx="304" cy="20" r="10" fill="#F59E0B"/>
+    <text x="304" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="296" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#92400E">Can I wait</text>
+    <text x="296" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#92400E">48 hours</text>
+    <text x="296" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#92400E">before buying?</text>
+    <text x="296" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#D97706">(Cooling Off)</text>
 
-  <!-- Arrow 3 -->
-  <path d="M435 150 L460 150" stroke="#94A3B8" stroke-width="2"/>
-  <text x="444" y="142" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#64748B">YES</text>
+    <!-- Arrow 3 -->
+    <path d="M 400 52 L 424 52" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="412" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#64748B" text-anchor="middle">YES</text>
 
-  <!-- Step 4 Result -->
-  <g transform="translate(465, 95)">
-    <rect width="105" height="110" rx="12" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5"/>
-    <circle cx="20" cy="22" r="10" fill="#22C55E"/>
-    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
-    <text x="12" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#15803D">If still loved</text>
-    <text x="12" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#15803D">after 48h,</text>
-    <text x="12" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#15803D">Buy guilt-free</text>
+    <!-- Step 4 Result -->
+    <rect x="426" y="0" width="114" height="104" rx="12" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5"/>
+    <circle cx="446" cy="20" r="10" fill="#22C55E"/>
+    <text x="446" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
+    <text x="438" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#15803D">Still wanted</text>
+    <text x="438" y="62" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#15803D">after 48 hours?</text>
+    <text x="438" y="78" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#15803D">Buy guilt-free!</text>
+    <text x="438" y="94" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#16A34A">(Funded 30%)</text>
   </g>
 
   <!-- Bottom Guidance Boxes -->
-  <g transform="translate(30, 240)">
+  <g transform="translate(30, 210)">
     <!-- Essential Box -->
-    <rect x="0" y="0" width="260" height="130" rx="14" fill="#F0FDF4" stroke="#BBF7D0"/>
-    <text x="20" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#166534">🟢 TRUE NEED (Prioritize)</text>
-    <text x="20" y="56" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#15803D">• Rent, utility internet, groceries, medicines</text>
-    <text x="20" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#15803D">• Bus commute card, semester lab books</text>
-    <text x="20" y="98" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#14532D">Action: Pay immediately upon allowance arrival.</text>
+    <rect x="0" y="0" width="262" height="188" rx="14" fill="#F0FDF4" stroke="#BBF7D0"/>
+    <text x="14" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#166534">🟢 TRUE NEED (Prioritize)</text>
+    <text x="14" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#15803D">Non-negotiable student essentials:</text>
+    <text x="14" y="64" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="500" fill="#166534">• Rent, utilities &amp; home internet</text>
+    <text x="14" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="500" fill="#166534">• Basic groceries &amp; prescriptions</text>
+    <text x="14" y="96" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="500" fill="#166534">• Transit pass &amp; required books</text>
+    <text x="14" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="500" fill="#166534">• Emergency medical copays</text>
+    <rect x="10" y="128" width="242" height="48" rx="8" fill="#DCFCE7"/>
+    <text x="18" y="146" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#14532D">
+      <tspan x="18" dy="0">Action: Pay immediately when</tspan>
+      <tspan x="18" dy="16">stipend or allowance arrives.</tspan>
+    </text>
 
     <!-- Discretionary Box -->
-    <rect x="280" y="0" width="260" height="130" rx="14" fill="#FEF2F2" stroke="#FECACA"/>
-    <text x="300" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#991B1B">🔴 DISCRETIONARY WANT (Pause)</text>
-    <text x="300" y="56" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#B91C1C">• Video game skins, second pair of sneakers</text>
-    <text x="300" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#B91C1C">• Gourmet takeaway drinks, unused gym passes</text>
-    <text x="300" y="98" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#7F1D1D">Action: Wait 48h and fund only from 30% bucket.</text>
+    <rect x="278" y="0" width="262" height="188" rx="14" fill="#FEF2F2" stroke="#FECACA"/>
+    <text x="292" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800" fill="#991B1B">🔴 DISCRETIONARY (Pause)</text>
+    <text x="292" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="600" fill="#B91C1C">Lifestyle choices &amp; upgrades:</text>
+    <text x="292" y="64" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="500" fill="#991B1B">• Takeaway dining &amp; daily coffee</text>
+    <text x="292" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="500" fill="#991B1B">• Video games &amp; cosmetics/skins</text>
+    <text x="292" y="96" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="500" fill="#991B1B">• Extra clothing &amp; impulse buys</text>
+    <text x="292" y="112" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="500" fill="#991B1B">• Unused gym &amp; streaming apps</text>
+    <rect x="288" y="128" width="242" height="48" rx="8" fill="#FEE2E2"/>
+    <text x="296" y="146" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#7F1D1D">
+      <tspan x="296" dy="0">Action: Wait 48 hours; fund</tspan>
+      <tspan x="296" dy="16">strictly from your 30% bucket.</tspan>
+    </text>
   </g>
 </svg>
