@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%" fill="none">
+  <defs>
+    <style>
+      .flowchart-canvas { fill: #FFFFFF; }
+      .flowchart-rim { stroke: rgba(0, 0, 0, 0.08); }
+      .flowchart-heading { fill: #0F172A; }
+      .flowchart-subhead { fill: #64748B; }
+      @media (prefers-color-scheme: dark) {
+        .flowchart-canvas { fill: #152030; }
+        .flowchart-rim { stroke: #24344B; }
+        .flowchart-heading { fill: #F8FAFC; }
+        .flowchart-subhead { fill: #94A3B8; }
+      }
+    </style>
+  </defs>
+  <rect class="flowchart-canvas" width="600" height="420" rx="20" fill="#FFFFFF"/>
+  <rect class="flowchart-rim" x="2" y="2" width="596" height="416" rx="18" stroke="rgba(0,0,0,0.08)" stroke-width="1.5"/>
+  
+  <text class="flowchart-heading" x="30" y="42" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#0F172A">Needs vs. Wants: The 4-Step Decision Filter</text>
+  <text class="flowchart-subhead" x="30" y="64" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500" fill="#64748B">A mental pause protocol before making non-essential student transactions</text>
+
+  <!-- Flowchart nodes -->
+  <!-- Step 1 -->
+  <g transform="translate(30, 95)">
+    <rect width="115" height="110" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5"/>
+    <circle cx="20" cy="22" r="10" fill="#3B82F6"/>
+    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="14" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1E3A8A">Is it strictly</text>
+    <text x="14" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1E3A8A">vital for survival</text>
+    <text x="14" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#1E3A8A">or exams?</text>
+  </g>
+
+  <!-- Arrow 1 to YES (down) / NO (right) -->
+  <path d="M145 150 L170 150" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="156" y="142" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#64748B">NO</text>
+
+  <!-- Step 2 -->
+  <g transform="translate(175, 95)">
+    <rect width="115" height="110" rx="12" fill="#FFF7ED" stroke="#F97316" stroke-width="1.5"/>
+    <circle cx="20" cy="22" r="10" fill="#F97316"/>
+    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="14" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#9A3412">Do I already</text>
+    <text x="14" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#9A3412">own a usable</text>
+    <text x="14" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#9A3412">alternative?</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M290 150 L315 150" stroke="#94A3B8" stroke-width="2"/>
+  <text x="301" y="142" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#64748B">NO</text>
+
+  <!-- Step 3 -->
+  <g transform="translate(320, 95)">
+    <rect width="115" height="110" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+    <circle cx="20" cy="22" r="10" fill="#F59E0B"/>
+    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="14" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#92400E">Can I wait</text>
+    <text x="14" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#92400E">48 Hours</text>
+    <text x="14" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#92400E">before paying?</text>
+  </g>
+
+  <!-- Arrow 3 -->
+  <path d="M435 150 L460 150" stroke="#94A3B8" stroke-width="2"/>
+  <text x="444" y="142" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#64748B">YES</text>
+
+  <!-- Step 4 Result -->
+  <g transform="translate(465, 95)">
+    <rect width="105" height="110" rx="12" fill="#F0FDF4" stroke="#22C55E" stroke-width="1.5"/>
+    <circle cx="20" cy="22" r="10" fill="#22C55E"/>
+    <text x="20" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">✓</text>
+    <text x="12" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#15803D">If still loved</text>
+    <text x="12" y="68" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#15803D">after 48h,</text>
+    <text x="12" y="84" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#15803D">Buy guilt-free</text>
+  </g>
+
+  <!-- Bottom Guidance Boxes -->
+  <g transform="translate(30, 240)">
+    <!-- Essential Box -->
+    <rect x="0" y="0" width="260" height="130" rx="14" fill="#F0FDF4" stroke="#BBF7D0"/>
+    <text x="20" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#166534">🟢 TRUE NEED (Prioritize)</text>
+    <text x="20" y="56" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#15803D">• Rent, utility internet, groceries, medicines</text>
+    <text x="20" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#15803D">• Bus commute card, semester lab books</text>
+    <text x="20" y="98" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#14532D">Action: Pay immediately upon allowance arrival.</text>
+
+    <!-- Discretionary Box -->
+    <rect x="280" y="0" width="260" height="130" rx="14" fill="#FEF2F2" stroke="#FECACA"/>
+    <text x="300" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#991B1B">🔴 DISCRETIONARY WANT (Pause)</text>
+    <text x="300" y="56" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#B91C1C">• Video game skins, second pair of sneakers</text>
+    <text x="300" y="76" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="500" fill="#B91C1C">• Gourmet takeaway drinks, unused gym passes</text>
+    <text x="300" y="98" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#7F1D1D">Action: Wait 48h and fund only from 30% bucket.</text>
+  </g>
+</svg>

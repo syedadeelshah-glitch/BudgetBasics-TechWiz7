@@ -1,0 +1,93 @@
+{
+  "tickerTips": [
+    "💡 Tip of the Day: Track small $3–$5 daily expenses—they easily sum up to $1,500+ every school year!",
+    "🐝 BudgetBee Rule: Allocate 50% for Needs, 30% for Wants, and 20% for Savings.",
+    "🚀 Emergency Fund Goal: Strive to keep $300 to $500 aside for surprise laptop or phone emergencies.",
+    "📱 Subscription Check: Cancel recurring streaming trials before the 30-day grace period lapses.",
+    "🎓 Student Advantage: Use your academic .edu email to unlock up to 60% discounts on software and tech.",
+    "🛡️ 24-Hour Cool-off: Wait a full day before purchasing anything outside your pre-planned budget."
+  ],
+  "quotes": [
+    {
+      "quote": "Do not save what is left after spending, but spend what is left after saving.",
+      "author": "Warren Buffett"
+    },
+    {
+      "quote": "Beware of little expenses; a small leak will sink a great ship.",
+      "author": "Benjamin Franklin"
+    },
+    {
+      "quote": "A budget is telling your money where to go instead of wondering where it went.",
+      "author": "Dave Ramsey"
+    },
+    {
+      "quote": "Financial peace isn’t the acquisition of stuff. It’s learning to live on less than you make.",
+      "author": "Morgan Housel"
+    }
+  ],
+  "quickFacts": [
+    {
+      "title": "College Dining Reality",
+      "fact": "Students who prepare food at home 4 days a week save an average of $160 per month compared to eating out."
+    },
+    {
+      "title": "Textbook Savings",
+      "fact": "Opting for rental or digital e-books saves students up to 70% compared to purchasing new hardcover editions."
+    },
+    {
+      "title": "Ghost Subscriptions",
+      "fact": "Over 42% of young adults pay for at least one streaming or app subscription they forgot existed."
+    },
+    {
+      "title": "The Power of Compounding",
+      "fact": "Saving just $50 a month starting at age 19 can grow to over $120,000 by retirement at average index returns."
+    }
+  ],
+  "moneyMistakes": [
+    {
+      "id": "impulse_buying",
+      "title": "Impulse Buying Under Peer Pressure",
+      "icon": "bi-bag-x",
+      "scenario": "Marcus goes to the mall with friends to study, but gets persuaded to purchase a $90 designer hoodie on sale that wasn't planned.",
+      "impact": "Leaves insufficient funds for the month's internet bill and meal plan.",
+      "action": "Adopt the **48-Hour Waiting Rule**: Leave items in your cart for 2 days. If the urge fades, you saved money.",
+      "badge": "Common Mistake #1"
+    },
+    {
+      "id": "ghost_subs",
+      "title": "Unmonitored 'Ghost' Subscriptions",
+      "icon": "bi-credit-card-2-front",
+      "scenario": "Sarah signed up for three 14-day free trials (cloud gaming, fitness app, 4K streaming) and forgot to cancel.",
+      "impact": "Silently drains $38 each month from her debit card without her noticing for 5 consecutive months.",
+      "action": "Set a calendar reminder for 2 days before any free trial ends, or use a pre-paid virtual card.",
+      "badge": "Silent Drainer #2"
+    },
+    {
+      "id": "ignoring_micro",
+      "title": "Ignoring Small Daily Micro-Expenses",
+      "icon": "bi-cup-hot",
+      "scenario": "Leo buys a $4.50 specialty boba tea and a $2.50 campus canteen pastry every single weekday.",
+      "impact": "$7 per school day totals $140 per month—enough to cover an entire semester’s textbook rental.",
+      "action": "Carry a refillable thermal mug and prepare snacks at dorm or home before heading to campus.",
+      "badge": "The Latte Factor #3"
+    },
+    {
+      "id": "no_plan",
+      "title": "Spending Without a Clear Spending Plan",
+      "icon": "bi-clipboard-x",
+      "scenario": "A student receives a $600 semester stipend and spends freely in the first 2 weeks, leaving only $80 for the remaining 6 weeks.",
+      "impact": "Stressful scrambles for money, relying on expensive emergency borrowing or credit cards.",
+      "action": "Divide stipends by the number of weeks in the term, and establish a weekly allowance ceiling.",
+      "badge": "Discipline Trap #4"
+    },
+    {
+      "id": "late_penalties",
+      "title": "Late Fees and Missed Payment Penalties",
+      "icon": "bi-alarm-fill",
+      "scenario": "Forgetting the due date on a phone bill or campus library loan causes late penalty surcharges of $25.",
+      "impact": "Wasted money that provides zero value, plus negative marks on initial credit profiles.",
+      "action": "Enable auto-pay for essential bills or configure recurring calendar notifications 3 days in advance.",
+      "badge": "Avoidable Fee #5"
+    }
+  ]
+}

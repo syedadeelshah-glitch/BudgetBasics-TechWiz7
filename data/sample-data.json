@@ -1,0 +1,192 @@
+{
+  "sampleStudentBudget": {
+    "studentProfile": "College Sophomore (Living on Campus/Dorm)",
+    "monthlyIncome": 1200.00,
+    "incomeSources": [
+      { "source": "Monthly Family Allowance", "amount": 750.00 },
+      { "source": "Part-time Campus Library Job", "amount": 350.00 },
+      { "source": "Merit Scholarship Stipend", "amount": 100.00 }
+    ],
+    "needs": [
+      { "item": "Hostel / Room Rent", "category": "Housing", "amount": 420.00, "fixed": true },
+      { "item": "Meal Plan & Essential Groceries", "category": "Food", "amount": 230.00, "fixed": false },
+      { "item": "Student Metro & Bus Pass", "category": "Transport", "amount": 65.00, "fixed": true },
+      { "item": "Mobile Data & Campus WiFi", "category": "Utilities", "amount": 35.00, "fixed": true },
+      { "item": "Course Lab Materials & Books", "category": "Education", "amount": 50.00, "fixed": false }
+    ],
+    "wants": [
+      { "item": "Weekend Dining Out & Boba Tea", "category": "Entertainment", "amount": 90.00 },
+      { "item": "Streaming & Gaming Subscription", "category": "Entertainment", "amount": 25.00 },
+      { "item": "Casual Apparel & Accessories", "category": "Shopping", "amount": 45.00 }
+    ],
+    "savings": [
+      { "item": "Emergency Rainy Day Buffer", "category": "Emergency Fund", "amount": 150.00 },
+      { "item": "Laptop Replacement Goal", "category": "Long Term", "amount": 90.00 }
+    ]
+  },
+  "needsVsWantsItems": [
+    {
+      "id": "item-1",
+      "title": "Monthly Dorm Rent / Shared Accommodation",
+      "cost": 400.00,
+      "category": "Housing",
+      "icon": "bi-house-heart",
+      "isNeed": true,
+      "explanation": "Shelter is an indisputable primary human need. Keeping a stable living environment ensures academic focus and safety.",
+      "tip": "Tip: Living with roommates helps divide utility and internet bills."
+    },
+    {
+      "id": "item-2",
+      "title": "Daily Specialty Café Caramel Macchiato",
+      "cost": 5.50,
+      "category": "Dining",
+      "icon": "bi-cup-straw",
+      "isNeed": false,
+      "explanation": "Caffeine is nice, but $5.50 espresso drinks are a luxury Want. You can brew coffee in a dorm mug for under $0.40.",
+      "tip": "Tip: Buying this every weekday costs nearly $110/month!"
+    },
+    {
+      "id": "item-3",
+      "title": "Semester Core Engineering / Math Textbook",
+      "cost": 85.00,
+      "category": "Education",
+      "icon": "bi-book-half",
+      "isNeed": true,
+      "explanation": "Required course learning material directly impacts your academic grades and degree completion.",
+      "tip": "Tip: Check if the university library has reserve copies or buy used from seniors."
+    },
+    {
+      "id": "item-4",
+      "title": "Premium Multi-Platform 4K Video Streaming Bundle",
+      "cost": 22.00,
+      "category": "Entertainment",
+      "icon": "bi-tv",
+      "isNeed": false,
+      "explanation": "Entertainment is good for mental breaks, but top-tier 4K streaming is a discretionary Want. Standard or student plans work just as well.",
+      "tip": "Tip: Take turns with campus housemates or look for university-sponsored entertainment perks."
+    },
+    {
+      "id": "item-5",
+      "title": "Monthly Public Bus / Subway Student Transit Card",
+      "cost": 45.00,
+      "category": "Transport",
+      "icon": "bi-bus-front",
+      "isNeed": true,
+      "explanation": "Commuting to classes, exam halls, and internship sites is an essential obligation.",
+      "tip": "Tip: Many universities offer subsidized transit passes through student union cards."
+    },
+    {
+      "id": "item-6",
+      "title": "Limited Edition Designer Sneakers",
+      "cost": 180.00,
+      "category": "Fashion",
+      "icon": "bi-tags",
+      "isNeed": false,
+      "explanation": "Footwear for protection is a need, but expensive collectors' sneakers are a luxury want.",
+      "tip": "Tip: Delay this purchase using a dedicated savings milestone rather than regular allowance."
+    },
+    {
+      "id": "item-7",
+      "title": "Essential Prescription Medication & Allergy Pills",
+      "cost": 30.00,
+      "category": "Healthcare",
+      "icon": "bi-capsule",
+      "isNeed": true,
+      "explanation": "Health and physical well-being always take top priority in your budget.",
+      "tip": "Tip: Check for generic medicine equivalents or student wellness center clinic dispensaries."
+    },
+    {
+      "id": "item-8",
+      "title": "Video Game Battle Pass & In-Game Weapon Skins",
+      "cost": 35.00,
+      "category": "Gaming",
+      "icon": "bi-controller",
+      "isNeed": false,
+      "explanation": "In-game cosmetics have no real-world utility and represent impulsive discretionary spending.",
+      "tip": "Tip: Never spend grocery or book money on virtual items."
+    }
+  ],
+  "initialExpenses": [
+    {
+      "id": "exp-101",
+      "date": "2026-09-01",
+      "category": "Education",
+      "description": "Semester Lab Manual & Stationery",
+      "amount": 42.50
+    },
+    {
+      "id": "exp-102",
+      "date": "2026-09-03",
+      "category": "Food",
+      "description": "Weekly Bulk Dorm Groceries & Fruit",
+      "amount": 68.00
+    },
+    {
+      "id": "exp-103",
+      "date": "2026-09-05",
+      "category": "Transport",
+      "description": "Monthly Student Metro Pass Recharge",
+      "amount": 45.00
+    },
+    {
+      "id": "exp-104",
+      "date": "2026-09-08",
+      "category": "Utilities",
+      "description": "Mobile Prepaid 5G Plan",
+      "amount": 25.00
+    },
+    {
+      "id": "exp-105",
+      "date": "2026-09-12",
+      "category": "Entertainment",
+      "description": "Campus Cinema Night with Study Group",
+      "amount": 16.00
+    },
+    {
+      "id": "exp-106",
+      "date": "2026-09-15",
+      "category": "Food",
+      "description": "Dorm Room Snack & Coffee Refill",
+      "amount": 22.00
+    }
+  ],
+  "initialInvoices": [
+    {
+      "invoiceNumber": "PLAN-BB-2026-001",
+      "invoiceDate": "2026-09-01",
+      "studentName": "Alex Carter",
+      "studentId": "AP-TECH-7890",
+      "academicTerm": "Fall Semester 2026",
+      "totalIncome": 1200.00,
+      "totalExpenses": 985.00,
+      "plannedSavings": 215.00,
+      "notes": "Fall semester allowance planning with focus on creating $500 laptop emergency fund.",
+      "items": [
+        { "category": "Needs", "description": "Campus Accommodation / Room Rent", "amount": 420.00 },
+        { "category": "Needs", "description": "Monthly Groceries & Meal Plan", "amount": 230.00 },
+        { "category": "Needs", "description": "Student Metro & Commute Transit", "amount": 65.00 },
+        { "category": "Wants", "description": "Weekend Social & Dining Out", "amount": 120.00 },
+        { "category": "Savings", "description": "Emergency Safety Net Allocation", "amount": 150.00 }
+      ]
+    },
+    {
+      "invoiceNumber": "PLAN-BB-2026-002",
+      "invoiceDate": "2026-09-10",
+      "studentName": "Sophia Chen",
+      "studentId": "AP-TECH-6521",
+      "academicTerm": "Fall Semester 2026",
+      "totalIncome": 950.00,
+      "totalExpenses": 760.00,
+      "plannedSavings": 190.00,
+      "notes": "Strict 50-30-20 adherence following Techwiz financial literacy workshop guidelines.",
+      "items": [
+        { "category": "Needs", "description": "Apartment Utilities & Rent Share", "amount": 380.00 },
+        { "category": "Needs", "description": "Meal Prep & Nutritious Staples", "amount": 180.00 },
+        { "category": "Needs", "description": "Bus Commute Tickets", "amount": 40.00 },
+        { "category": "Wants", "description": "Weekend Social Gatherings", "amount": 110.00 },
+        { "category": "Wants", "description": "Digital Subscriptions & Gaming", "amount": 50.00 },
+        { "category": "Savings", "description": "20% Automatic Savings Deposit", "amount": 190.00 }
+      ]
+    }
+  ]
+}

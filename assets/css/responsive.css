@@ -1,0 +1,346 @@
+/* ===================================================================
+   BudgetBasics - Responsive Adaptations & Accessibility Tweaks
+   Techwiz 7: Category 1 (Web Innovation Unleashed)
+   =================================================================== */
+
+/* Tablet & Collapsed Navbar View (< 1200px) */
+@media (max-width: 1199.98px) {
+  /* Responsive Navbar Menu: 100% Width Items */
+  .navbar-custom .navbar-collapse {
+    background: #FFFFFF;
+    border-radius: var(--radius-md);
+    padding: 18px 20px;
+    margin-top: 14px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+  }
+
+  [data-theme="dark"] .navbar-custom .navbar-collapse {
+    background: #111C2E;
+    border-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65);
+  }
+
+  .navbar-collapse .navbar-nav {
+    width: 100% !important;
+    align-items: stretch !important;
+    gap: 6px !important;
+    padding: 8px 0;
+  }
+
+  .navbar-collapse .nav-item {
+    width: 100% !important;
+  }
+
+  .navbar-collapse .nav-link {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 11px 16px !important;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .navbar-collapse .nav-link.dropdown-toggle::after {
+    margin-left: auto !important;
+  }
+
+  .navbar-collapse .dropdown-menu {
+    width: 100% !important;
+    position: static !important;
+    transform: none !important;
+    box-shadow: none !important;
+    background: var(--bg-alt) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 12px !important;
+    margin-top: 6px !important;
+    padding: 6px !important;
+  }
+
+  [data-theme="dark"] .navbar-collapse .dropdown-menu {
+    background: #182436 !important;
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .navbar-collapse .dropdown-item {
+    width: 100% !important;
+    padding: 9px 14px !important;
+  }
+
+  .navbar-actions-wrap {
+    width: 100% !important;
+    flex-wrap: wrap !important;
+    padding-top: 14px;
+    margin-top: 8px;
+    border-top: 1px solid var(--border-color);
+    gap: 10px;
+  }
+
+  [data-theme="dark"] .navbar-actions-wrap {
+    border-top-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-actions-wrap .nav-cta-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+  .hero-phone-img {
+    max-width: 90%;
+    margin-top: 30px;
+  }
+  .impact-stats-banner .stat-item {
+    margin-bottom: 20px;
+  }
+  .chatbot-wrapper {
+    height: 520px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-title {
+    font-size: 2.15rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 1.85rem;
+  }
+  .feature-card {
+    padding: 22px;
+  }
+  .calc-card {
+    padding: 24px;
+  }
+  .invoice-card {
+    padding: 24px;
+  }
+  .social-proof-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .trust-logos {
+    gap: 16px;
+  }
+  .hero-action-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-action-buttons .btn-primary-gradient,
+  .hero-action-buttons .btn-outline-soft {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  .chatbot-wrapper {
+    height: 480px;
+  }
+
+  /* Back to Top button centered in bottom screen area */
+  .btn-back-to-top {
+    left: 50% !important;
+    right: auto !important;
+    bottom: 22px !important;
+    transform: translateX(-50%) translateY(20px) !important;
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 1.15rem !important;
+    z-index: 1060 !important;
+  }
+
+  .btn-back-to-top.show {
+    transform: translateX(-50%) translateY(0) !important;
+  }
+
+  .floating-chatbot-launcher {
+    bottom: 20px !important;
+    right: 20px !important;
+    width: 54px !important;
+    height: 54px !important;
+    z-index: 1050 !important;
+  }
+
+  .floating-chatbot-window {
+    bottom: 84px !important;
+    right: 12px !important;
+    width: calc(100vw - 24px) !important;
+    max-height: calc(100vh - 100px) !important;
+  }
+
+  /* Mobile Search Modal & Input Group */
+  .search-input-group {
+    max-width: 100%;
+  }
+  #searchModal .modal-header {
+    padding: 12px 14px;
+  }
+  #searchModal .modal-body {
+    padding: 14px;
+  }
+  #btnGlobalSearch {
+    padding: 6px 14px !important;
+    font-size: 0.85rem;
+  }
+
+  /* Mobile Footer: Prevent any text or link overlapping */
+  .site-footer {
+    padding: 48px 0 28px !important;
+  }
+  .site-footer .row.g-4 {
+    row-gap: 28px !important;
+  }
+  .footer-bottom {
+    margin-top: 36px !important;
+    padding-top: 20px !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 14px !important;
+    align-items: center !important;
+  }
+  .footer-bottom > div {
+    width: 100% !important;
+    text-align: center !important;
+    line-height: 1.6 !important;
+  }
+  .footer-bottom .small.d-flex {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px 18px !important;
+  }
+  .footer-subscribe-box {
+    margin-bottom: 16px !important;
+  }
+
+  /* Floating Voice Widget on mobile */
+  .floating-voice-widget {
+    top: 76px !important;
+    right: 14px !important;
+    padding: 4px 10px 4px 6px !important;
+  }
+  .voice-widget-pill-hint {
+    display: none !important;
+  }
+
+  /* Expense Planner mobile header & button safeguards */
+  .expense-planner-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+  }
+  .expense-header-actions {
+    width: 100% !important;
+    display: flex !important;
+    gap: 8px !important;
+  }
+  .expense-header-actions .btn {
+    flex: 1 1 50% !important;
+    text-align: center !important;
+    justify-content: center !important;
+    border-radius: 8px !important;
+  }
+
+  /* Expense table action buttons container on mobile */
+  .expense-table th:last-child,
+  .expense-table td:last-child {
+    min-width: 86px !important;
+    white-space: nowrap !important;
+  }
+
+  /* Voice Studio Modal on mobile */
+  .voice-studio-header {
+    padding: 12px 14px !important;
+  }
+  .voice-studio-header .form-check-label {
+    display: none !important;
+  }
+  .voice-visualizer-orb {
+    width: 76px !important;
+    height: 76px !important;
+  }
+  .voice-transcript-card {
+    padding: 12px 14px !important;
+    font-size: 0.86rem !important;
+  }
+
+  /* Mobile View Header Alignment: Labels and Badges positioned ON TOP of headings */
+  .mobile-header-stack,
+  .calc-card > .d-flex.justify-content-between:first-child,
+  .calc-card > .d-flex.justify-content-between.align-items-center:first-child {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+
+  .mobile-header-stack > .badge,
+  .mobile-header-stack > span[class*="badge"],
+  .mobile-header-stack > .invoice-meta-badge,
+  .calc-card > .d-flex.justify-content-between:first-child > .badge,
+  .calc-card > .d-flex.justify-content-between.align-items-center:first-child > .badge,
+  .calc-card > .d-flex.justify-content-between:first-child > span[class*="badge"],
+  .calc-card > .d-flex.justify-content-between.align-items-center:first-child > span[class*="badge"] {
+    order: -1 !important;
+    margin-bottom: 4px !important;
+    margin-top: 0 !important;
+    align-self: flex-start !important;
+  }
+
+  .invoice-header-banner .mobile-header-stack {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .invoice-header-banner .invoice-meta-badge {
+    order: -1 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .section-tag {
+    display: inline-block !important;
+    margin-bottom: 8px !important;
+  }
+}
+
+/* Small mobile devices (< 576px) */
+@media (max-width: 575.98px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+  .top-notice-bar {
+    font-size: 0.72rem;
+  }
+  .brand-title {
+    font-size: 1.15rem;
+  }
+  .brand-tagline {
+    font-size: 0.58rem;
+  }
+  .site-footer .col-6 {
+    width: 100% !important;
+    margin-bottom: 14px;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Accessibility Focus Rings */
+:focus-visible {
+  outline: 3px solid #FF5B22 !important;
+  outline-offset: 2px !important;
+}

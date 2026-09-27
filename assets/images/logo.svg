@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none">
+  <defs>
+    <linearGradient id="beeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5B22" />
+      <stop offset="100%" stop-color="#FFA41B" />
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2022" />
+      <stop offset="100%" stop-color="#343A40" />
+    </linearGradient>
+  </defs>
+  <!-- Hexagonal Honeycomb Icon -->
+  <g transform="translate(10, 8)">
+    <polygon points="22,2 40,12 40,32 22,42 4,32 4,12" fill="url(#beeGrad)" rx="4"/>
+    <!-- Inner Bee/Dollar geometry -->
+    <path d="M22 14v16M17 18h10M17 26h10" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="22" cy="11" r="2" fill="#FFFFFF"/>
+    <!-- Cute bee wing accent -->
+    <ellipse cx="36" cy="12" rx="4" ry="2.5" transform="rotate(-30 36 12)" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+  <!-- Brand Name Typography -->
+  <text x="64" y="32" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="22" fill="#1E2022" class="brand-text-dark">
+    Budget<tspan fill="#FF5B22">Basics</tspan>
+  </text>
+  <!-- Sub-badge -->
+  <g transform="translate(64, 38)">
+    <rect width="105" height="15" rx="7.5" fill="#FFF3E0"/>
+    <text x="52" y="11" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="8.5" fill="#E65100" text-anchor="middle" letter-spacing="0.5">NEXTGEN BUDGETBEE</text>
+  </g>
+</svg>

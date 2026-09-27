@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44" height="44" fill="none">
+  <defs>
+    <linearGradient id="beeIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5B22" />
+      <stop offset="100%" stop-color="#FFA41B" />
+    </linearGradient>
+    <filter id="iconShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#FF5B22" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Hexagonal Honeycomb Icon -->
+  <polygon points="22,2 40,12 40,32 22,42 4,32 4,12" fill="url(#beeIconGrad)" filter="url(#iconShadow)"/>
+  <!-- Inner Bee/Dollar geometry -->
+  <path d="M22 14v16M17 18h10M17 26h10" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="22" cy="11" r="2.2" fill="#FFFFFF"/>
+  <!-- Cute bee wing accent -->
+  <ellipse cx="36" cy="12" rx="4.5" ry="2.8" transform="rotate(-30 36 12)" fill="#FFFFFF" opacity="0.85"/>
+</svg>

@@ -1,0 +1,164 @@
+{
+  "intents": [
+    {
+      "id": "welcome",
+      "keywords": ["hello", "hi", "hey", "greetings", "start", "help", "who are you"],
+      "response": "Hello! I am **BudgetBee AI**, your personal student finance assistant for **BudgetBasics**! 🐝\n\nI can help you understand budgeting rules (like the 50-30-20 split), differentiate needs from wants, plan savings goals, or share tips to avoid impulse spending. How can I assist your financial journey today?",
+      "suggestions": ["What is a need vs want?", "Explain the 50-30-20 rule", "How do I avoid overspending?", "How to start saving?"]
+    },
+    {
+      "id": "what_is_need",
+      "keywords": ["what is a need", "need vs want", "needs vs wants", "needs versus wants", "need versus want", "needs", "wants", "difference between need and want", "difference between needs and wants", "essential expense"],
+      "response": "A **Need** is an essential expense required for basic living, health, and academic continuity (e.g., rent, basic groceries, tuition fees, required textbooks, essential medicine, and public transit).\n\nA **Want** is something that enhances comfort or entertainment but is not critical to survival or studies (e.g., designer apparel, gaming subscriptions, café coffee, daily food deliveries).\n\n💡 *Pro-Tip*: Try the **24-Hour Rule** before buying any want to avoid impulse spending!",
+      "suggestions": ["Explain 24-Hour Rule", "50-30-20 rule", "Test my knowledge in quiz"]
+    },
+    {
+      "id": "fifty_thirty_twenty",
+      "keywords": ["50-30-20", "50 30 20", "rule", "split", "formula", "ratio", "budget method", "percentage"],
+      "response": "The **50-30-20 Rule** is a gold-standard budgeting framework popularised by financial experts:\n\n• **50% for Needs**: Groceries, hostel/rent, bills, tuition, transit.\n• **30% for Wants**: Dining out, streaming apps, hobbies, outings.\n• **20% for Savings & Debt**: Emergency fund, future gadgets, debt payoff.\n\n*Note for students*: If your income is tight, feel free to adapt this to **60-25-15** or **70-20-10** until your income increases!",
+      "suggestions": ["Try the 50-30-20 Calculator", "How much should I save?", "What if I have low income?"]
+    },
+    {
+      "id": "how_much_save",
+      "keywords": ["how much should i save", "saving amount", "savings percentage", "how much to save", "emergency fund"],
+      "response": "Aim to save at least **15% to 20%** of your monthly allowance or part-time income. Even saving **$5 or $10 a week** builds the habit of financial discipline.\n\nFirst, build a **Mini Emergency Fund** of around $250 - $500 to handle unexpected laptop repairs, doctor visits, or urgent travel without taking loans from friends.",
+      "suggestions": ["Set a Savings Goal", "Latte factor explained", "Avoid common money mistakes"]
+    },
+    {
+      "id": "avoid_overspending",
+      "keywords": ["avoid overspending", "how do i avoid overspending", "stop spending", "impulse buy", "impulse spending", "save money fast"],
+      "response": "Here are 5 proven strategies to conquer overspending in college:\n\n1. **Use the 48-Hour Waiting Rule** for any non-essential purchase over $25.\n2. **Audit Recurring Subscriptions**—cancel streaming or apps you haven't used in 14 days.\n3. **Cook in Batches**: Ordering takeout daily can easily consume 40% of your allowance.\n4. **Pay Yourself First**: Transfer 20% to savings immediately when receiving allowance.\n5. **Track Every Penny**: Use our on-page **Expense Planner** table to see leaks in real-time.",
+      "suggestions": ["Open Expense Planner", "Ghost subscriptions", "Print my Budget Invoice"]
+    },
+    {
+      "id": "ghost_subscriptions",
+      "keywords": ["subscription", "subscriptions", "ghost subscription", "unused subscription", "streaming"],
+      "response": "A **'Ghost Subscription'** is a service you signed up for (often during a free trial or promotion) that automatically deducts money each month even though you rarely or never use it (e.g., gym memberships, music apps, cloud storage, OTT platforms).\n\n💡 *Action*: Check your bank/card statement once a month and cancel anything you haven't used in the past 30 days!",
+      "suggestions": ["Avoid overspending", "What is the latte factor?", "50-30-20 rule"]
+    },
+    {
+      "id": "latte_factor",
+      "keywords": ["latte factor", "small expenses", "daily coffee", "micro expenses"],
+      "response": "The **'Latte Factor'** shows how tiny, seemingly harmless daily purchases (like a $4 specialty coffee, $2 vending machine snacks, or ride-share surge pricing) add up to huge sums over time.\n\n$4/day = **$120/month = $1,440/year**! Redirecting half of that into savings or an index fund can kickstart your early wealth.",
+      "suggestions": ["How much should I save?", "Go to Savings Goal", "50-30-20 rule"]
+    },
+    {
+      "id": "student_discount",
+      "keywords": ["student discount", "save money college", "discounts", "campus deals", "textbooks"],
+      "response": "Always ask for student discounts! You can save 10%–50% on software (GitHub Student Pack, Spotify, Notion, Adobe), transit passes, movie tickets, electronics, and museum admissions simply by showing your college ID.\n\nFor textbooks, always check campus libraries, rent digital copies, or buy second-hand from senior students.",
+      "suggestions": ["Textbook savings tips", "Avoid overspending", "What is an emergency fund?"]
+    },
+    {
+      "id": "invoice_help",
+      "keywords": ["invoice", "budget invoice", "print budget", "download invoice", "pdf", "recent invoices"],
+      "response": "Our **Budget Invoice Generator** allows you to create an official, printable budget statement or financial plan! You can enter your income sources, categorize expenses, preview it live, print it (or save as PDF), and access it anytime from the **Recent Invoices** tab.",
+      "suggestions": ["Go to Invoice Generator", "Try Expense Planner", "Explore Infographics"]
+    },
+    {
+      "id": "grocery_tips",
+      "keywords": ["grocery", "groceries", "meal prep", "save on food", "cheap food", "eating on a budget", "canteen"],
+      "response": "🥦 **Smart Student Grocery & Nutrition Hacks:**\n\n1. **Wholesale Staples**: Eggs, oats, brown lentils, and rice give high nutrition for under $2.50 a day.\n2. **The Full Stomach Rule**: Never grocery shop while hungry—it statistically spikes junk food cart size by 45%!\n3. **Batch Cook with Roommates**: Shared pasta bakes, lentil dahls, or chicken fajitas cut dorm grocery budgets in half.\n4. **Thermal Water & Tea Mug**: Bringing your own brew saves over $140 every school month!",
+      "suggestions": ["What is the latte factor?", "Roommate expense sharing", "Calculate budget of 1200"]
+    },
+    {
+      "id": "roommate_split",
+      "keywords": ["roommate", "roommates", "split rent", "hostel", "split bills", "shared expenses", "dorm split"],
+      "response": "🤝 **Roommate & Shared Hostel Protocol:**\n\n• **Fixed Costs First**: Pay shared rent, gas, and WiFi on Day 1 to avoid awkward reminders.\n• **Pooled Essentials Fund**: Each member chips in $10 for shared paper towels, dish soap, and spices.\n• **Transparent Log**: Use our on-page **Expense Planner** table to maintain transparent accounts.\n• **Print a Statement**: Print an official **Budget Blueprint** anytime to keep everyone aligned!",
+      "suggestions": ["Print budget blueprint", "Grocery hacks", "Emergency fund tips"]
+    },
+    {
+      "id": "emergency_fund",
+      "keywords": ["emergency fund", "safety cushion", "rainy day fund", "emergency buffer", "how much emergency fund"],
+      "response": "🛡️ **Student Emergency Fund Formula:**\n\n• **Starter Safety Target**: Strive to hold **$300 to $500** in a separate savings vault.\n• **Why You Need It**: Protects against unexpected phone screen cracks, emergency dorm travel, or lost transit passes without taking high-interest loans.\n• **Golden Rule**: Treat this money as invisible unless an actual health or safety emergency occurs!",
+      "suggestions": ["Set emergency fund 500", "50-30-20 rule", "How to avoid overspending"]
+    },
+    {
+      "id": "team_tech_hunters",
+      "keywords": ["who made this", "who created", "creators", "team", "tech hunters", "about team", "developer", "rahim yar khan"],
+      "response": "🏆 **Meet Team 'Tech Hunters' (Aptech Techwiz 7):**\n\n• **Muhammad Adeel Shah**: Lead Full-Stack Architect & AI Engineer\n• **Ghulam Mustafa**: Financial Logic & Calculator Specialist\n• **Mohsin Shah**: UI/UX & Interaction Designer\n• **Makhdoom Afzal Shahid**: Financial Research & QA Specialist\n\n📍 Learning Center: **Aptech Rahim Yar Khan Center, Punjab, Pakistan**.\nBuilt with passion for **Aptech Techwiz 7 — Category 1: Web Innovation Unleashed**!",
+      "suggestions": ["Go to About section", "Start guided tour", "Calculate budget of 1200"]
+    },
+    {
+      "id": "rule_48_hour",
+      "keywords": ["48-hour", "48 hour", "24-hour", "24 hour", "waiting rule", "impulse delay", "48-hour waiting rule", "explain 48-hour waiting rule", "48-hour protocol"],
+      "response": "⏳ **The 48-Hour Waiting Rule (Impulse Buster):**\n\nWhenever you feel an impulse urge to buy an unplanned 'want' (like shoes, gaming skins, or gadgets):\n\n1. **Pause & Log**: Add the item to a wishlist instead of immediate checkout.\n2. **Wait 48 Hours**: Sleep on it for two full days to clear dopamine.\n3. **Assess**: If the craving is still genuine after 48 hours and fits your 30% Wants bucket, proceed guilt-free!\n\n💡 *Fact*: Over 70% of impulse buying urges disappear completely within 48 hours!",
+      "suggestions": ["What is a need vs want?", "What is the Latte Factor?", "Calculate 50-30-20 rule", "Audit ghost subscriptions"]
+    },
+    {
+      "id": "how_to_start_saving",
+      "keywords": ["how to start saving", "start saving", "how to set savings goals", "saving tips", "start save", "savings beginner"],
+      "response": "🎯 **How to Start Saving as a Student:**\n\n1. **Pay Yourself First**: Transfer 10%–20% to a separate savings pocket immediately upon receiving allowance.\n2. **Build an Emergency Vault**: Target a beginner safety cushion of $300–$500 (or Rs. 25,000–Rs. 40,000) for surprise phone repairs or transit issues.\n3. **Use the Savings Simulator**: Use our on-page **Module 4: Savings Goals Simulator** to set milestones and generate a physical roadmap!\n4. **Automate**: Treat savings as an unbreakable recurring bill rather than leftovers.",
+      "suggestions": ["Set emergency fund 500", "Set laptop goal 80000", "50-30-20 rule", "Go to Savings Goals"]
+    },
+    {
+      "id": "low_income_budgeting",
+      "keywords": ["low income", "tight budget", "not enough money", "small allowance", "stipend tight", "what if i have low income"],
+      "response": "💡 **Budgeting with a Tight or Low Student Allowance:**\n\nIf the classic 50-30-20 ratio feels tight, customize the proportions to fit your reality:\n\n• **70-20-10 Split**: 70% Essentials (Rent/food/transit), 20% Wants, 10% Savings.\n• **Every Penny Counts**: Even saving $5 or Rs. 500 per week builds unbreakable lifelong money discipline.\n• **Use Campus Perks**: Tap university WiFi, subsidized dorm dining, second-hand books, and free student software licenses!",
+      "suggestions": ["Student discounts & tech perks", "Grocery hacks", "Calculate budget of 50000", "Explain 48-Hour Waiting Rule"]
+    },
+    {
+      "id": "textbook_savings",
+      "keywords": ["textbook", "textbooks", "textbook savings tips", "save on books", "academic books", "course texts"],
+      "response": "📚 **Proven Student Textbook Savings Hacks:**\n\n1. **Campus Library Reserves**: Most professors place required reading on 2-hour library reserve—scan chapters for free!\n2. **Buy Older Editions**: 95% of content in an 8th edition is identical to the 9th edition, at an 80% discount.\n3. **Digital Rentals**: Renting eBooks on Kindle or VitalSource is up to 65% cheaper than physical copies.\n4. **Peer Exchange**: Buy directly from seniors on campus forums or student groups!",
+      "suggestions": ["Student discounts & tech perks", "Avoid overspending", "Calculate budget of 1200"]
+    },
+    {
+      "id": "infographics_explore",
+      "keywords": ["infographic", "infographics", "explore infographics", "visual guide", "infographic gallery", "charts"],
+      "response": "📊 **Module 7: Infographics & Visual Financial Guides!**\n\nWe provide rich, interactive visual guides:\n• **Budgeting**: Cash flow & 50-30-20 visual breakdowns\n• **Saving**: The Latte Factor & 30-Day student challenges\n• **Spending**: Ghost subscription leak timelines & 48-hour protocol\n\nClick any infographic card to open the high-resolution study modal with key takeaways!",
+      "suggestions": ["Go to Savings Goals", "Calculate 50-30-20", "Print budget blueprint"]
+    },
+    {
+      "id": "disclaimer",
+      "keywords": ["advice", "invest", "crypto", "stocks", "loan", "borrow"],
+      "response": "⚠️ **Educational Disclaimer**: BudgetBasics is strictly an educational tool designed to foster financial literacy among students. We do not provide licensed banking, credit services, or official investment advice. Always consult a certified financial advisor for formal investment decisions.",
+      "suggestions": ["Explain 50-30-20 rule", "How to create a budget", "Needs vs Wants"]
+    },
+    {
+      "id": "manage_budgets",
+      "keywords": ["how can i manage my budgets", "how to manage budget", "how to manage my budget", "how can i manage budget", "manage my budgets", "manage budget", "budget management", "how to manage my budgets"],
+      "response": "📋 **Step-by-Step Student Budget Management Blueprint:**\n\n1. **Calculate Net Monthly Inflow**: Sum up allowances, scholarships, campus stipends, and gifts.\n2. **Apply the 50-30-20 Rule**: Cap Needs at 50%, Wants at 30%, and immediately lock in 20% to savings.\n3. **Weekly Bucketing**: Divide your 30% discretionary wants into 4 weekly envelopes (~$75–$90/week). When the week's cash is out, pause until next Monday!\n4. **Audit Weekly**: Spend 5 minutes every Sunday night checking your spending against your budget.\n5. **Generate a Blueprint**: Use our on-page **Printable Budget Blueprint** to create and print a certified monthly plan!",
+      "suggestions": ["Calculate budget of 1200", "How can I manage my expenses?", "How to cut down expenses?", "Print budget blueprint"]
+    },
+    {
+      "id": "manage_expenses",
+      "keywords": ["how can i manage my expenses", "how to manage expenses", "how to manage my expenses", "manage expenses", "expense control", "track expenses", "how to control expenses", "how can i manage expenses"],
+      "response": "📊 **How to Master & Manage Your Expenses:**\n\n1. **Categorize in Real-Time**: Group costs into Fixed (rent, tuition), Variable Essentials (groceries, transport), and Discretionary (cafés, outings).\n2. **Use the On-Page Expense Planner**: Log every purchase in our **Module 5: Expense Planner** table to see your exact remaining balance live.\n3. **Eliminate Micro-Leaks**: Target the **Latte Factor**—pack snacks and carry a refillable water flask.\n4. **Deploy the 48-Hour Waiting Rule**: Pause on all non-essential items over $25 for two full days.\n5. **Automate Fixed Payments**: Pay rent and utilities on day 1 so you only spend what is truly disposable.",
+      "suggestions": ["How to cut down expenses?", "What is the Latte Factor?", "Open Expense Planner", "Avoid overspending"]
+    },
+    {
+      "id": "cut_expenses",
+      "keywords": ["how to cut down expenses", "cut down expenses", "reduce expenses", "how to reduce expenses", "cut costs", "lower spending", "spend less", "reduce spending", "how to cut expenses"],
+      "response": "✂️ **Top 6 Ways Students Can Cut Down Expenses Fast:**\n\n1. **Kill Dormant Subscriptions**: Cancel streaming apps or gym tiers unused for 14 days (saves $25–$50/mo).\n2. **Campus Meal Prepping**: Cooking oatmeal, lentils, and batch pasta cuts food spending by 50% compared to campus canteen food.\n3. **Free Textbooks**: Borrow from library reserves or buy senior editions at 70% off.\n4. **Student IDs Everywhere**: Claim 10%–50% tech discounts on Spotify, GitHub, Apple, and city transit.\n5. **Second-Hand First**: Buy dorm furniture, winter coats, and calculators used rather than brand new.\n6. **Walk or Bike Short Campus Distances**: Eliminate ride-share surge charges.",
+      "suggestions": ["Running out of money before month end?", "Audit ghost subscriptions", "Grocery hacks", "Calculate budget of 1200"]
+    },
+    {
+      "id": "running_out_of_money",
+      "keywords": ["running out of money before month end", "broke before month end", "ran out of money", "no money left", "money runs out", "end of month broke", "broke student", "out of cash", "running out of money"],
+      "response": "🚨 **Emergency Survival Protocol When Running Out of Money Before Month-End:**\n\n1. **Emergency Freeze on Wants**: Put a 100% pause on eating out, takeaways, paid gaming, and paid rides immediately.\n2. **Campus Food Pantry & Meal Hacks**: Use university student pantry resources, dorm rice/lentils staples, and bulk eggs.\n3. **Switch to Weekly Allowance Envelopes**: If you get a lump sum, divide it by 4 weeks and only unlock one week's allowance at a time.\n4. **Run a Zero-Spend Weekend**: Challenge yourself to 48 hours of reading, campus gym, and free student club events.\n5. **Audit Bank Micro-Fees**: Ensure your student bank account has zero monthly maintenance fees and overdraft protection.",
+      "suggestions": ["How can I manage my budgets?", "How to cut down expenses?", "What is an emergency fund?", "Set emergency fund 500"]
+    },
+    {
+      "id": "peer_pressure_spending",
+      "keywords": ["peer pressure spending", "peer pressure", "friends spend too much", "fomo spending", "social pressure", "eating out with friends", "say no to friends", "peer pressure expense"],
+      "response": "👥 **How to Handle Peer Pressure & Social Spending in College:**\n\n1. **Suggest Free/Low-Cost Alternatives**: Instead of pricey bistros, suggest campus picnics, dorm cooking sessions, or movie nights.\n2. **The Honest Script**: Use the phrase: *'I am saving for a major milestone (like a laptop/trip), so I am staying within my weekly cap this week.'* Friends will respect your ambition!\n3. **Eat Before You Go**: Eat a light meal at the hostel before joining friends at a café, then just order tea or a small drink.\n4. **Never Split Evenly on Unequal Orders**: Politely ask for separate checks or only pay for what you ordered.\n5. **Remember Your Goals**: A 2-hour hangout isn't worth 2 weeks of financial stress before finals.",
+      "suggestions": ["Explain 48-Hour Waiting Rule", "What is a need vs want?", "Set a Savings Goal", "How can I manage my budgets?"]
+    },
+    {
+      "id": "faqs",
+      "keywords": ["faq", "faqs", "frequently asked questions", "common questions", "top faqs", "all faqs", "faq list", "help faq", "questions"],
+      "response": "📚 **Frequently Asked Questions (FAQs) — Student Finance Hub:**\n\nHere are the most common questions student learners ask BudgetBee:\n\n1. **Needs vs. Wants**: How to separate true essentials from comfort spending.\n2. **50-30-20 Rule**: How to allocate monthly allowances across categories.\n3. **Avoid Overspending**: Using the 48-Hour Waiting Rule & subscription audits.\n4. **The Latte Factor**: How micro daily purchases add up to thousands.\n5. **Start Saving**: Building a student emergency safety fund ($300–$500).\n6. **Tight Allowance**: Flexible 70-20-10 ratios & student discount perks.\n\n💡 *Select any question below or ask me directly:*",
+      "suggestions": ["What is a need vs want?", "Explain the 50-30-20 rule", "How do I avoid overspending?", "What is the Latte Factor?", "How to start saving?", "Audit ghost subscriptions"]
+    }
+  ],
+  "fallback": {
+    "response": "I'm ready to help with your student finances! You can ask me to calculate your 50-30-20 budget, set savings goals, navigate sections, audit ghost subscriptions, or generate a certified printable blueprint. Try one of the suggested topics below:",
+    "suggestions": [
+      "What is a need vs want?",
+      "Explain the 50-30-20 rule",
+      "How do I avoid overspending?",
+      "How to start saving?",
+      "Calculate budget of 1200"
+    ]
+  }
+}

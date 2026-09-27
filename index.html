@@ -1,0 +1,2582 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BudgetBasics - NextGen BudgetBee: Empowering students with modern personal budgeting, 50-30-20 calculators, voice AI assistant, and budget invoice generation.">
+  <meta name="keywords" content="BudgetBasics, student finance, 50-30-20 rule, personal budgeting, Aptech Techwiz 7, NextGen BudgetBee">
+  <meta name="author" content="Techwiz 7 Contender - Category 1: Web Innovation Unleashed">
+  <title>BudgetBasics | NextGen BudgetBee - Student Personal Finance & Budgeting</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Chart.js for 50-30-20 Visuals -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <!-- Favicon (Clean Logo Icon) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
+
+  <!-- Immediate Theme Check to Prevent Flash of Unstyled Theme -->
+  <script>
+    (function() {
+      var saved = localStorage.getItem('bb_theme');
+      if (saved === 'dark' || (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body id="page-top" class="preloader-active">
+
+  <!-- Interactive Bee Vector Cursor Follower (Smooth Flight Tracker - Enlarged) -->
+  <div id="cursorBeeFollower" class="cursor-bee-follower no-print" aria-hidden="true">
+    <svg viewBox="0 0 32 32" class="cursor-bee-svg" width="44" height="44">
+      <defs>
+        <linearGradient id="cursorBeeBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#FFA41B" />
+          <stop offset="100%" stop-color="#FF5B22" />
+        </linearGradient>
+      </defs>
+      <!-- Dotted Rotating Orbit Circle (Precision Target Tracker) -->
+      <circle class="cursor-bee-dotted-orbit" cx="16" cy="16" r="14.5" fill="none" stroke="#FF5B22" stroke-width="1.2" stroke-dasharray="2.5 3" opacity="0.85" />
+      <!-- Translucent Wings -->
+      <ellipse class="cursor-bee-wing-left" cx="10" cy="11" rx="5.5" ry="3.2" fill="#FFFFFF" opacity="0.88" />
+      <ellipse class="cursor-bee-wing-right" cx="22" cy="11" rx="5.5" ry="3.2" fill="#FFFFFF" opacity="0.88" />
+      <!-- Bee Body with Gradient -->
+      <ellipse cx="16" cy="17" rx="7.5" ry="9" fill="url(#cursorBeeBodyGrad)" />
+      <!-- Stripes -->
+      <path d="M9.5,15 h13 M9,18 h14 M10.5,21 h11" stroke="#1E293B" stroke-width="1.8" stroke-linecap="round" />
+      <!-- Head -->
+      <circle cx="16" cy="9.5" r="4.2" fill="#1E293B" />
+      <!-- Eyes -->
+      <circle cx="14.5" cy="9" r="0.9" fill="#FFFFFF" />
+      <circle cx="17.5" cy="9" r="0.9" fill="#FFFFFF" />
+      <!-- Antennae -->
+      <path d="M14.5,6.5 C13,4 10.5,4.5 9.5,5 M17.5,6.5 C19,4 21.5,4.5 22.5,5" stroke="#FFA41B" stroke-width="1.2" stroke-linecap="round" />
+    </svg>
+  </div>
+
+  <!-- =========================================================================
+       Cinematic Page Opening Animated Logo Loader (NextGen BudgetBee Preloader)
+       ========================================================================= -->
+  <div id="page-preloader" class="preloader-overlay" aria-label="Loading BudgetBasics" role="status">
+    <div class="preloader-ambient-glow" aria-hidden="true"></div>
+    <div class="preloader-content-wrap d-flex flex-column align-items-center">
+      <!-- 1. Floating Animated Honeycomb Bee Emblem (Unboxed, Free-Floating) -->
+      <div class="preloader-logo-wrap">
+        <div class="preloader-hex-glow"></div>
+        <div class="preloader-pulse-ring"></div>
+        <div class="preloader-pulse-ring ring-delayed"></div>
+        
+        <!-- High-Definition Animated Vector Logo -->
+        <svg class="preloader-logo-svg" viewBox="0 0 100 100" width="92" height="92" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="preloaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF5B22" />
+              <stop offset="50%" stop-color="#FFA41B" />
+              <stop offset="100%" stop-color="#FF5B22" />
+            </linearGradient>
+            <filter id="preloaderShadow" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#FF5B22" flood-opacity="0.4"/>
+            </filter>
+          </defs>
+          
+          <!-- Outer Rotating Dashed Orbit Hexagon -->
+          <polygon class="preloader-orbit-hex" points="50,4 90,26 90,74 50,96 10,74 10,26" stroke="url(#preloaderGrad)" stroke-width="2.5" stroke-dasharray="16 10" stroke-linecap="round"/>
+          
+          <!-- Solid Glossy Honeycomb Emblem -->
+          <polygon class="preloader-main-hex" points="50,12 82,30 82,70 50,88 18,70 18,30" fill="url(#preloaderGrad)" filter="url(#preloaderShadow)"/>
+          
+          <!-- Fluttering Bee Wings -->
+          <ellipse class="preloader-wing-left" cx="34" cy="32" rx="10" ry="6" fill="#FFFFFF" opacity="0.88"/>
+          <ellipse class="preloader-wing-right" cx="66" cy="32" rx="10" ry="6" fill="#FFFFFF" opacity="0.88"/>
+          
+          <!-- Bee Head & Antennae -->
+          <circle cx="50" cy="30" r="5" fill="#FFFFFF"/>
+          <path d="M48 26c-3-4-7-3-8-1M52 26c3-4 7-3 8-1" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+          
+          <!-- Dollar Stem & Honeycomb Stripes -->
+          <path class="preloader-stripe-path" d="M50 36v32M40 44h20M40 58h20" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+          
+          <!-- Golden Central Sparkle -->
+          <circle class="preloader-sparkle" cx="50" cy="51" r="2.5" fill="#FFE599"/>
+        </svg>
+      </div>
+
+      <!-- 2. Floating Animated Brand Typography (Unboxed) -->
+      <div class="preloader-text-wrap text-center mt-3 mb-4">
+        <h2 class="preloader-title mb-0">Budget<span class="brand-accent">Basics</span></h2>
+        <div class="preloader-tagline">NEXTGEN BUDGETBEE</div>
+      </div>
+
+      <!-- 3. Glassmorphic Card View ONLY for Progress Bar and Bottom Text Line -->
+      <div class="preloader-progress-card">
+        <!-- 1.5px Dashed Snake Scroll-Bar Style Progress Line -->
+        <div class="preloader-snake-wrap">
+          <svg class="preloader-snake-svg" viewBox="0 0 340 16" width="100%" height="16" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="preloaderSnakeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#FF5B22" />
+                <stop offset="50%" stop-color="#FFA41B" />
+                <stop offset="100%" stop-color="#10B981" />
+              </linearGradient>
+              <mask id="preloaderSnakeMask" maskUnits="userSpaceOnUse">
+                <rect id="preloaderMaskRect" x="0" y="0" width="0" height="16" fill="#FFFFFF" />
+              </mask>
+            </defs>
+            <!-- Faint guide track (1.5px thickness, dashed) -->
+            <path id="preloaderSnakeTrack" class="preloader-snake-track" d="M 8 8 C 26 2, 44 2, 62 8 C 80 14, 98 14, 116 8 C 134 2, 152 2, 170 8 C 188 14, 206 14, 224 8 C 242 2, 260 2, 278 8 C 296 14, 314 14, 332 8" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="round" />
+            <!-- Active traced dotted line (1.5px thickness, revealed with progress) -->
+            <path id="preloaderSnakeActive" class="preloader-snake-active" d="M 8 8 C 26 2, 44 2, 62 8 C 80 14, 98 14, 116 8 C 134 2, 152 2, 170 8 C 188 14, 206 14, 224 8 C 242 2, 260 2, 278 8 C 296 14, 314 14, 332 8" stroke="url(#preloaderSnakeGrad)" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="round" mask="url(#preloaderSnakeMask)" />
+            <!-- Tracing Snake Arrowhead marker (moves along wave) -->
+            <g id="preloaderSnakeHead" class="preloader-snake-arrow" transform="translate(8, 8) rotate(0)">
+              <circle cx="0" cy="0" r="7" class="preloader-head-pulse" />
+              <circle cx="0" cy="0" r="3" class="preloader-head-core" />
+              <polygon points="5,0 -2,-3 0,0 -2,3" class="preloader-head-poly" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Bottom text line (Step text & Percentage) -->
+        <div class="d-flex justify-content-between align-items-center mt-2 px-1">
+          <span class="preloader-step-text" id="preloaderStepText">Initializing financial workspace...</span>
+          <span class="preloader-percent" id="preloaderPercent">0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Ambient Canvas & Glassmorphic Shapes (Background) -->
+  <div class="bg-floating-canvas" aria-hidden="true">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+    <div class="ambient-orb orb-4"></div>
+    <!-- Floating Grid Line Wireframe Panels -->
+    <div class="floating-grid-panel grid-panel-1"></div>
+    <div class="floating-grid-panel grid-panel-2"></div>
+    <div class="floating-grid-panel grid-panel-3"></div>
+    <div class="floating-grid-panel grid-panel-4"></div>
+    <div class="floating-grid-panel grid-panel-5"></div>
+    <div class="floating-grid-panel grid-panel-6"></div>
+    <div class="floating-glass-shape shape-coin">$</div>
+    <div class="floating-glass-shape shape-hexagon"></div>
+    <div class="floating-glass-shape shape-star"><i class="bi bi-star-fill"></i></div>
+    <div class="floating-glass-shape shape-pill">50-30-20</div>
+
+    <!-- Document Ambient Snake Wave (Background) -->
+    <svg class="bg-doc-snake-svg" id="bgDocSnakeSvg" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="docSnakeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#FF5B22" />
+          <stop offset="50%" stop-color="#FFA41B" />
+          <stop offset="100%" stop-color="#10B981" />
+        </linearGradient>
+        <mask id="bgDocSnakeMask" maskUnits="userSpaceOnUse">
+          <path id="bgDocSnakeMaskPath" d="" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" />
+        </mask>
+      </defs>
+      <path id="bgDocSnakePath" class="bg-doc-snake-path" d="" />
+      <path id="bgDocSnakeActive" class="bg-doc-snake-active" d="" mask="url(#bgDocSnakeMask)" />
+    </svg>
+  </div>
+
+  <!-- =========================================================================
+       1. Top Notice Bar: Real-time Clock, Visitor Counter & Currency Switcher
+       ========================================================================= -->
+  <div class="top-notice-bar no-print">
+    <div class="container-xl d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-2">
+        <span class="badge-techwiz">TECHWIZ 7</span>
+        <span class="small text-light">Aptech Championship • <strong>Team: Tech Hunters</strong> • <em>NextGen BudgetBee</em></span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <!-- Live Real-Time Date & Clock -->
+        <span class="small d-none d-md-inline text-light">
+          <i class="bi bi-clock me-1 text-warning"></i>
+          <span id="liveDateDisplay"></span> • <strong id="liveClockDisplay"></strong>
+        </span>
+        <!-- Visitor Counter -->
+        <span class="visitor-badge">
+          <i class="bi bi-people-fill me-1 text-warning"></i> Visitors: <strong id="visitorCounter">14,892</strong>
+        </span>
+        <!-- Multi-Currency Selector -->
+        <select id="currencySelector" class="nav-currency-select" aria-label="Select Currency">
+          <option value="$" selected>USD ($)</option>
+          <option value="Rs.">PKR (Rs.)</option>
+          <option value="€">EUR (€)</option>
+          <option value="£">GBP (£)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       1.1 Live Financial Tips & Quotes Ticker Bar (Module 11 / SRS 1.6)
+       ========================================================================= -->
+  <div class="financial-ticker-bar no-print" id="financialTickerBar">
+    <div class="container-xl d-flex align-items-center gap-3">
+      <div class="ticker-badge d-flex align-items-center gap-1.5 flex-shrink-0">
+        <span class="ticker-live-dot"></span>
+        <i class="bi bi-megaphone-fill text-warning"></i>
+        <span class="ticker-badge-text fw-bold">SMART TIPS</span>
+      </div>
+      <div class="ticker-track flex-grow-1 overflow-hidden" id="tickerTrackContainer">
+        <div class="ticker-item active" id="tickerActiveText">
+          <span class="ticker-icon">💡</span>
+          <span class="ticker-content" id="tickerContentSpan">Loading daily student finance tips...</span>
+        </div>
+      </div>
+      <div class="ticker-controls d-flex align-items-center gap-1 flex-shrink-0">
+        <button class="btn btn-sm btn-ticker-ctrl" id="btnTickerPrev" title="Previous Tip" aria-label="Previous Tip"><i class="bi bi-chevron-left"></i></button>
+        <button class="btn btn-sm btn-ticker-ctrl" id="btnTickerToggle" title="Pause / Play Ticker" aria-label="Pause or Play Ticker"><i class="bi bi-pause-fill"></i></button>
+        <button class="btn btn-sm btn-ticker-ctrl" id="btnTickerNext" title="Next Tip" aria-label="Next Tip"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. Main Navigation Bar with Responsive Menu & Theme Toggle
+       ========================================================================= -->
+  <nav class="navbar navbar-expand-xl navbar-custom no-print" id="mainNavbar">
+    <div class="container-fluid px-3 px-md-4 px-xl-5">
+      <!-- Logo: Icon Mark + Text Name (Dark/Light Theme Managed) -->
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#page-top" aria-label="BudgetBasics Home">
+        <img src="assets/images/logo-icon.svg" alt="BudgetBasics Logo" class="brand-logo-icon">
+        <div class="brand-text-wrap d-flex flex-column">
+          <span class="brand-title">Budget<span class="brand-accent">Basics</span></span>
+          <span class="brand-tagline">NEXTGEN BUDGETBEE</span>
+        </div>
+      </a>
+
+      <!-- Mobile Header Quick Actions (Theme Toggle & Search accessible on mobile) -->
+      <div class="d-flex align-items-center gap-2 d-xl-none ms-auto me-2">
+        <button class="btn-theme-toggle btn-mobile-header" title="Toggle Light / Dark Theme" aria-label="Toggle Dark Mode">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <button class="btn btn-outline-soft btn-mobile-header" type="button" onclick="openChatbotWithVoice()" title="Voice AI Assistant">
+          <i class="bi bi-mic-fill text-primary"></i>
+        </button>
+        <button class="btn btn-outline-soft btn-mobile-header" type="button" data-bs-toggle="modal" data-bs-target="#searchModal" title="Search guides, calculators & topics">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+
+      <!-- Navbar Toggler for Mobile -->
+      <button class="navbar-toggler border-0 shadow-none p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-2 text-primary"></i>
+      </button>
+
+      <!-- Streamlined, Clean Navbar Structure -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0 align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link active" href="#page-top">Home</a></li>
+          
+          <!-- Learn Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-between justify-content-xl-start" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Learn</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-custom shadow-lg border-0">
+              <li><a class="dropdown-item py-2" href="#budgeting-basics"><i class="bi bi-book-half text-primary me-2"></i>Budgeting Basics</a></li>
+              <li><a class="dropdown-item py-2" href="#needs-vs-wants"><i class="bi bi-shuffle text-warning me-2"></i>Needs vs. Wants</a></li>
+              <li><a class="dropdown-item py-2" href="#money-mistakes"><i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>Money Mistakes</a></li>
+              <li><a class="dropdown-item py-2" href="#infographics-gallery"><i class="bi bi-images text-success me-2"></i>Infographics Gallery</a></li>
+            </ul>
+          </li>
+
+          <!-- Calculators Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-between justify-content-xl-start" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span>Calculators</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-custom shadow-lg border-0">
+              <li><a class="dropdown-item py-2" href="#calculator-50-30-20"><i class="bi bi-pie-chart-fill text-primary me-2"></i>50-30-20 Calculator</a></li>
+              <li><a class="dropdown-item py-2" href="#savings-goals"><i class="bi bi-bullseye text-success me-2"></i>Savings Simulator</a></li>
+              <li><a class="dropdown-item py-2" href="#expense-planner"><i class="bi bi-table text-info me-2"></i>Expense Planner</a></li>
+              <li><a class="dropdown-item py-2" href="#budget-invoice"><i class="bi bi-printer-fill text-danger me-2"></i>Budget Blueprint (PDF)</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#about-and-contact">Team &amp; About</a></li>
+        </ul>
+
+        <!-- Right Side Nav Actions -->
+        <div class="navbar-actions-wrap d-flex align-items-center gap-2">
+          <!-- Desktop Guided Tour Button -->
+          <button class="btn btn-outline-soft btn-sm rounded-pill d-none d-lg-inline-flex align-items-center gap-1.5 px-3 py-1.5" id="btnStartTourNav" title="Interactive Guided Tour">
+            <i class="bi bi-compass-fill text-warning"></i>
+            <span>Tour</span>
+          </button>
+          <!-- Desktop Voice AI Button (opens and speaks with upgraded assistant) -->
+          <button class="btn btn-outline-soft btn-sm rounded-pill d-none d-lg-inline-flex align-items-center gap-1.5 px-3 py-1.5" id="btnOpenVoiceStudioNav" onclick="openChatbotWithVoice()" title="Voice AI Assistant">
+            <i class="bi bi-mic-fill text-primary"></i>
+            <span>Voice AI</span>
+          </button>
+          <!-- Desktop Theme Toggle -->
+          <button class="btn-theme-toggle d-none d-xl-flex" title="Toggle Light / Dark Theme" aria-label="Toggle Dark Mode" style="width: 36px; height: 36px;">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+          <!-- Desktop Quick Search Button -->
+          <button class="btn btn-outline-soft btn-sm rounded-circle d-none d-xl-inline-flex align-items-center justify-content-center p-0" style="width: 36px; height: 36px;" type="button" data-bs-toggle="modal" data-bs-target="#searchModal" title="Search guides, calculators & topics">
+            <i class="bi bi-search"></i>
+          </button>
+          <!-- CTA Button -->
+          <a href="#calculator-50-30-20" class="btn-primary-gradient btn-sm rounded-pill nav-cta-btn px-3 py-1.5">
+            <span>Calculate</span>
+            <i class="bi bi-arrow-right-short fs-6"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- =========================================================================
+       4. Hero Section (Reproducing UI Reference Image aesthetics)
+       ========================================================================= -->
+  <header class="hero-section no-print">
+    <div class="container-xl">
+      <div class="row align-items-center g-5">
+        <!-- Left Hero Copy -->
+        <div class="col-lg-6">
+          <div class="pill-badge">
+            <i class="bi bi-stars text-warning"></i>
+            <span>Smart Budgeting, Better Life</span>
+          </div>
+          <h1 class="hero-title">
+            Take Control of Your Money, Build a <span class="gradient-text">Better Future</span>
+          </h1>
+          <p class="hero-subtitle">
+            BudgetBasics helps students manage allowances, track campus expenses, master the 50-30-20 rule, avoid money traps, and achieve financial freedom with smart insights and beautiful simplicity.
+          </p>
+
+          <div class="d-flex align-items-center gap-3 hero-action-buttons flex-wrap">
+            <a href="#calculator-50-30-20" class="btn-primary-gradient">
+              <span>Get Started Free</span>
+              <i class="bi bi-arrow-right-short fs-5"></i>
+            </a>
+            <a href="#expense-planner" class="btn-outline-soft">
+              <i class="bi bi-play-circle-fill text-primary fs-5"></i>
+              <span>Live Planner Demo</span>
+            </a>
+          </div>
+
+          <!-- Social Proof Avatars & Rating -->
+          <div class="social-proof-wrap">
+            <div class="avatar-stack">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Student user">
+              <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&auto=format&fit=crop&q=80" alt="Student user">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Student user">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&auto=format&fit=crop&q=80" alt="Student user">
+            </div>
+            <div class="social-proof-text">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span><strong>4.9/5</strong> from 2,500+ students &amp; learners</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Mockup (Floating Smartphone SVG) -->
+        <div class="col-lg-6">
+          <div class="hero-mockup-wrapper">
+            <img src="assets/images/hero-phone-mockup.svg" alt="BudgetBasics Mobile App Interface Mockup" class="hero-phone-img img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       5. Trust Partner Marquee (Universities & Student Clubs)
+       ========================================================================= -->
+  <section class="trust-strip no-print">
+    <div class="container-xl">
+      <div class="trust-title">Recognized by Leading Academic &amp; Tech Institutions</div>
+      <div class="trust-logos">
+        <div class="trust-logo-item"><i class="bi bi-award-fill text-warning fs-4"></i> Techwiz 7 Aptech</div>
+        <div class="trust-logo-item"><i class="bi bi-mortarboard-fill text-primary fs-4"></i> Apex Institute</div>
+        <div class="trust-logo-item"><i class="bi bi-layers-fill text-secondary fs-4"></i> ScholarSync</div>
+        <div class="trust-logo-item"><i class="bi bi-buildings-fill text-info fs-4"></i> Metro University</div>
+        <div class="trust-logo-item"><i class="bi bi-shield-check text-success fs-4"></i> FuturePath</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. Feature Grid Cards (Everything you need to manage finances)
+       ========================================================================= -->
+  <section class="section-wrapper no-print" id="core-features">
+    <!-- Ambient Canvas & Floating Details -->
+    <div class="section-ambient-canvas" aria-hidden="true">
+      <div class="section-orb section-orb-1"></div>
+      <div class="section-orb section-orb-2"></div>
+      <div class="section-grid-wireframe section-grid-left"></div>
+      <div class="section-grid-wireframe section-grid-right"></div>
+      <div class="section-floating-shape shape-coin-soft">$</div>
+      <div class="section-floating-shape shape-hex-soft"></div>
+      <div class="section-floating-shape shape-star-soft"><i class="bi bi-star-fill"></i></div>
+    </div>
+    <div class="container-xl position-relative" style="z-index: 2;">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-lightning-charge-fill me-1"></i> Powerful Features</span>
+        <h2 class="section-title">Everything you need to manage your finances</h2>
+        <p class="section-desc">Powerful tools and visual insights that make student budgeting simple, transparent, and effortlessly achievable.</p>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box icon-orange"><i class="bi bi-wallet2"></i></div>
+            <h3>Smart Budgeting</h3>
+            <p>Create realistic budgets adapting to allowances, internships, and stipends with zero complex accounting jargon.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box icon-amber"><i class="bi bi-receipt-cutoff"></i></div>
+            <h3>Expense Tracking</h3>
+            <p>Log and categorize campus spending across food, transit, and course materials with real-time balance calculations.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box icon-green"><i class="bi bi-bullseye"></i></div>
+            <h3>Savings Goals</h3>
+            <p>Define targets for laptops, semester trips, or rainy days with visual milestones and target date estimators.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box icon-orange"><i class="bi bi-bell-fill"></i></div>
+            <h3>Bills &amp; Subscription Alerts</h3>
+            <p>Identify ghost subscriptions, eliminate late fee penalties, and protect your cash flow from silent leaks.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box icon-purple"><i class="bi bi-pie-chart-fill"></i></div>
+            <h3>Insightful Reports &amp; Invoices</h3>
+            <p>Generate certified student budget invoices and download printable financial statements for grants or dorms.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon-box icon-green"><i class="bi bi-shield-lock-fill"></i></div>
+            <h3>100% Private &amp; Client-Side</h3>
+            <p>Operates entirely in your browser. No sensitive banking details required, ensuring complete student privacy.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Impact Stats Banner -->
+      <div class="impact-stats-banner">
+        <div class="row text-center text-md-start g-4">
+          <div class="col-6 col-md-3">
+            <div class="stat-item justify-content-center justify-content-md-start">
+              <div class="stat-icon"><i class="bi bi-mortarboard"></i></div>
+              <div>
+                <div class="stat-num">25,000+</div>
+                <div class="stat-label">Students Guided</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item justify-content-center justify-content-md-start">
+              <div class="stat-icon"><i class="bi bi-piggy-bank"></i></div>
+              <div>
+                <div class="stat-num">$1.2M+</div>
+                <div class="stat-label">Savings Planned</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item justify-content-center justify-content-md-start">
+              <div class="stat-icon"><i class="bi bi-patch-check"></i></div>
+              <div>
+                <div class="stat-num">99.9%</div>
+                <div class="stat-label">Lighthouse Score</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item justify-content-center justify-content-md-start">
+              <div class="stat-icon"><i class="bi bi-mic"></i></div>
+              <div>
+                <div class="stat-num">24/7</div>
+                <div class="stat-label">Voice AI Assistant</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Simple Steps -->
+      <div class="mt-5 text-center">
+        <h3 class="fw-bold mb-4">Get started in 3 simple steps</h3>
+        <div class="row g-4 pt-3">
+          <div class="col-md-4">
+            <div class="step-card">
+              <div class="step-number-badge">1</div>
+              <div class="feature-icon-box mx-auto icon-orange mb-3"><i class="bi bi-person-plus"></i></div>
+              <h5 class="fw-bold">Input Allowance</h5>
+              <p class="small text-secondary mb-0">Enter your monthly stipend, family allowance, or part-time campus earnings.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="step-card">
+              <div class="step-number-badge">2</div>
+              <div class="feature-icon-box mx-auto icon-amber mb-3"><i class="bi bi-sliders"></i></div>
+              <h5 class="fw-bold">Apply 50-30-20 Split</h5>
+              <p class="small text-secondary mb-0">Separate vital Needs from discretionary Wants and automate your 20% savings cushion.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="step-card">
+              <div class="step-number-badge">3</div>
+              <div class="feature-icon-box mx-auto icon-green mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+              <h5 class="fw-bold">Track &amp; Print Statement</h5>
+              <p class="small text-secondary mb-0">Log transactions, consult BudgetBee AI, and print official budget invoices anytime.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. Module 1: Budgeting Basics & Knowledge Check (SRS Module 1)
+       ========================================================================= -->
+  <section class="section-wrapper bg-alt no-print" id="budgeting-basics">
+    <!-- Ambient Canvas & Floating Details -->
+    <div class="section-ambient-canvas" aria-hidden="true">
+      <div class="section-orb section-orb-1"></div>
+      <div class="section-orb section-orb-2"></div>
+      <div class="section-grid-wireframe section-grid-left"></div>
+      <div class="section-grid-wireframe section-grid-right"></div>
+      <div class="section-floating-shape shape-coin-soft">$</div>
+      <div class="section-floating-shape shape-hex-soft"></div>
+      <div class="section-floating-shape shape-star-soft"><i class="bi bi-star-fill"></i></div>
+    </div>
+    <div class="container-xl position-relative" style="z-index: 2;">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-book-half me-1"></i> Module 1</span>
+        <h2 class="section-title">Budgeting Basics &amp; Fundamentals</h2>
+        <p class="section-desc">Master the core concepts of personal cashflow: Income, Fixed Expenses, Variable Expenses, and Savings.</p>
+      </div>
+
+      <!-- Core Concepts Cards (Crisp & Scannable) -->
+      <div class="row g-4 mb-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card h-100">
+            <span class="badge bg-primary-subtle text-primary mb-2"><i class="bi bi-arrow-down-left me-1"></i> Inflow</span>
+            <h4 class="fs-5 fw-bold">Total Income</h4>
+            <p class="small text-muted mb-2">Allowances, scholarships, campus tutoring &amp; paid internships.</p>
+            <div class="p-2 bg-light rounded-2 small text-primary fw-semibold"><i class="bi bi-check2-circle me-1"></i> Rule: Foundation of your budget</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card h-100">
+            <span class="badge bg-secondary-subtle text-secondary mb-2"><i class="bi bi-lock-fill me-1"></i> Mandatory</span>
+            <h4 class="fs-5 fw-bold">Fixed Expenses</h4>
+            <p class="small text-muted mb-2">Predictable monthly obligations: hostel rent, transit pass &amp; phone.</p>
+            <div class="p-2 bg-light rounded-2 small text-secondary fw-semibold"><i class="bi bi-shield-check me-1"></i> Rule: Must pay on Day 1</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card h-100">
+            <span class="badge bg-warning-subtle text-warning-emphasis mb-2"><i class="bi bi-sliders me-1"></i> Flexible</span>
+            <h4 class="fs-5 fw-bold">Variable Expenses</h4>
+            <p class="small text-muted mb-2">Costs that fluctuate weekly: grocery staples, laundry &amp; campus meals.</p>
+            <div class="p-2 bg-light rounded-2 small text-warning-emphasis fw-semibold"><i class="bi bi-speedometer2 me-1"></i> Rule: Cap with weekly limits</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card h-100">
+            <span class="badge bg-success-subtle text-success mb-2"><i class="bi bi-piggy-bank-fill me-1"></i> Wealth Cushion</span>
+            <h4 class="fs-5 fw-bold">Emergency Savings</h4>
+            <p class="small text-muted mb-2">Money set aside first to insulate against laptop or health surprises.</p>
+            <div class="p-2 bg-light rounded-2 small text-success fw-semibold"><i class="bi bi-graph-up-arrow me-1"></i> Rule: Save min 15–20%</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Facts Container (SRS 1.6: Featured budgeting tips & quick facts) -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <span class="badge bg-warning-subtle text-dark border px-2.5 py-1.5"><i class="bi bi-lightbulb-fill text-warning me-1"></i> Quick Facts</span>
+          <span class="small text-muted fw-semibold">Proven Campus Financial Discipline Statistics</span>
+        </div>
+        <div class="row g-3" id="quickFactsContainer">
+          <!-- Dynamically populated from data/budget-tips.json -->
+        </div>
+      </div>
+
+      <!-- Sample Student Monthly Budget Breakdown Table -->
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-lg-7">
+          <div class="calc-card">
+            <div class="d-flex justify-content-between align-items-center mb-3 mobile-header-stack">
+              <h4 class="fw-bold mb-0"><i class="bi bi-table text-primary me-2"></i>Sample Student Monthly Budget</h4>
+              <span class="badge bg-dark">Allowance: <span data-currency-symbol>$</span>1,200.00</span>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th>Category</th>
+                    <th>Sub-Item</th>
+                    <th>Type</th>
+                    <th class="text-end">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="badge bg-primary-subtle text-primary">Housing</span></td>
+                    <td class="fw-semibold">Shared Dormitory Rent</td>
+                    <td><span class="badge bg-light text-dark border">Fixed</span></td>
+                    <td class="text-end fw-bold"><span data-currency-symbol>$</span>420.00</td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge bg-primary-subtle text-primary">Food</span></td>
+                    <td class="fw-semibold">Campus Pantry &amp; Groceries</td>
+                    <td><span class="badge bg-light text-dark border">Variable</span></td>
+                    <td class="text-end fw-bold"><span data-currency-symbol>$</span>230.00</td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge bg-primary-subtle text-primary">Transport</span></td>
+                    <td class="fw-semibold">Subway &amp; Bus Transit Pass</td>
+                    <td><span class="badge bg-light text-dark border">Fixed</span></td>
+                    <td class="text-end fw-bold"><span data-currency-symbol>$</span>65.00</td>
+                  </tr>
+                  <tr>
+                    <td><span class="badge bg-warning-subtle text-warning-emphasis">Wants</span></td>
+                    <td class="fw-semibold">Weekend Dining &amp; Streaming</td>
+                    <td><span class="badge bg-light text-dark border">Discretionary</span></td>
+                    <td class="text-end fw-bold"><span data-currency-symbol>$</span>160.00</td>
+                  </tr>
+                  <tr class="table-success">
+                    <td><span class="badge bg-success">Savings</span></td>
+                    <td class="fw-semibold">Emergency Buffer &amp; Goals</td>
+                    <td><span class="badge bg-light text-dark border">20% Target</span></td>
+                    <td class="text-end fw-bold text-success"><span data-currency-symbol>$</span>240.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Knowledge Check Quiz -->
+        <div class="col-lg-5">
+          <div class="calc-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3 mobile-header-stack">
+              <h4 class="fw-bold mb-0"><i class="bi bi-patch-question-fill text-warning me-2"></i>Knowledge Check</h4>
+              <span class="badge bg-primary-subtle text-primary" id="quizQuestionCounter">Question 1 of 3</span>
+            </div>
+
+            <!-- Active Question Body -->
+            <div id="quizActiveCard">
+              <p class="fw-semibold fs-6 mb-3" id="quizQuestionTitle">Loading question...</p>
+              <div id="quizOptionsContainer" class="d-flex flex-column"></div>
+              <div id="quizExplanationBox" class="d-none"></div>
+              <div class="text-end mt-3">
+                <button class="btn-primary-gradient rounded-pill px-4" id="btnNextQuizQuestion" disabled>
+                  <span>Next</span> <i class="bi bi-arrow-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quiz Result Card -->
+            <div id="quizResultCard" class="text-center py-4 d-none">
+              <div class="display-3 text-warning mb-2">🎉</div>
+              <h5 class="fw-bold mb-1">Knowledge Check Complete!</h5>
+              <p class="text-muted mb-3">Your Final Score: <strong id="quizFinalScore" class="text-dark fs-4"></strong></p>
+              <div id="quizBadgeResult" class="mb-4"></div>
+              <button class="btn btn-outline-primary rounded-pill px-4" id="btnRestartQuiz">
+                <i class="bi bi-arrow-counterclockwise me-1"></i> Retake Quiz
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. Module 2: Needs vs. Wants Interactive Classification (SRS Module 2)
+       ========================================================================= -->
+  <section class="section-wrapper no-print" id="needs-vs-wants">
+    <!-- Ambient Canvas & Floating Money / Vector Details -->
+    <div class="section-ambient-canvas" aria-hidden="true">
+      <div class="section-orb section-orb-1"></div>
+      <div class="section-orb section-orb-2"></div>
+      <div class="section-grid-wireframe section-grid-left"></div>
+      <div class="section-grid-wireframe section-grid-right"></div>
+      <div class="section-floating-shape shape-coin-soft">$</div>
+      <div class="section-floating-shape shape-cash-soft"><i class="bi bi-cash-stack"></i></div>
+      <div class="section-floating-shape shape-wallet-soft"><i class="bi bi-wallet2"></i></div>
+      <div class="section-floating-shape shape-shield-soft"><i class="bi bi-shield-check"></i></div>
+    </div>
+    <div class="container-xl position-relative" style="z-index: 2;">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-shield-check me-1"></i> Module 2</span>
+        <h2 class="section-title">Needs vs. Wants: Interactive Sorter</h2>
+        <p class="section-desc">Test your spending instincts! Classify each student expense as an essential <strong>Need</strong> or an optional <strong>Want</strong> and learn the rationale.</p>
+        <div class="d-inline-block p-2 px-3 bg-body border rounded-pill shadow-sm mb-4">
+          <strong id="nvwScoreTally" class="text-primary"><i class="bi bi-trophy-fill text-warning me-1"></i> Score: 0 / 0 Completed (8 Total)</strong>
+        </div>
+      </div>
+
+      <!-- Needs vs Wants Dynamic Grid Loaded from JSON -->
+      <div class="row g-4" id="needsVsWantsGrid">
+        <!-- Rendered via assets/js/quiz.js -->
+      </div>
+
+      <!-- Visual Decision Guide (SRS 1.6: 4-Step Delay Protocol) -->
+      <div class="mt-5">
+        <div class="calc-card bg-light">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <span class="badge bg-warning text-dark mb-2"><i class="bi bi-hourglass-split me-1"></i> Impulse Spending Barrier</span>
+              <h4 class="fw-bold">The 48-Hour Decision Protocol</h4>
+              <p class="text-secondary">Before spending allowance on any non-essential item over <span data-currency-symbol>$</span>25, execute this simple cognitive filter:</p>
+              <ul class="list-unstyled d-flex flex-column gap-2 small">
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> <strong>Step 1:</strong> Ask: <em>"Can I complete my degree and stay healthy without this?"</em></li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> <strong>Step 2:</strong> Add the item to an offline wishlist and set a 48-hour timer.</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> <strong>Step 3:</strong> If the emotional urge disappears after 2 days, you just protected your savings.</li>
+                <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> <strong>Step 4:</strong> If you still genuinely desire it, purchase it guilt-free exclusively from the 30% Wants bucket.</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img src="assets/images/info-needs-wants.svg" alt="Needs vs Wants Decision Flowchart" class="img-fluid rounded-4 border shadow-sm flowchart-graphic" style="max-height: 280px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. Module 3: 50-30-20 Rule Interactive Calculator (SRS Module 3)
+       ========================================================================= -->
+  <section class="section-wrapper bg-alt no-print" id="calculator-50-30-20">
+    <!-- Ambient Canvas & Floating Money / Vector Details -->
+    <div class="section-ambient-canvas" aria-hidden="true">
+      <div class="section-orb section-orb-1"></div>
+      <div class="section-orb section-orb-2"></div>
+      <div class="section-grid-wireframe section-grid-left"></div>
+      <div class="section-grid-wireframe section-grid-right"></div>
+      <div class="section-floating-shape shape-coin-soft">$</div>
+      <div class="section-floating-shape shape-cash-soft"><i class="bi bi-cash-stack"></i></div>
+      <div class="section-floating-shape shape-piggy-soft"><i class="bi bi-piggy-bank"></i></div>
+      <div class="section-floating-shape shape-wallet-soft"><i class="bi bi-wallet2"></i></div>
+    </div>
+    <div class="container-xl position-relative" style="z-index: 2;">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-pie-chart me-1"></i> Module 3</span>
+        <h2 class="section-title">The 50-30-20 Rule Calculator</h2>
+        <p class="section-desc">Input your monthly allowance or part-time earnings. The calculator divides it into Needs, Wants, and Savings with real-time visual charts.</p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <!-- Input Form and Sliders -->
+        <div class="col-lg-6">
+          <div class="calc-card">
+            <h4 class="fw-bold mb-3"><i class="bi bi-calculator text-primary me-2"></i>Calculate Your Split</h4>
+            
+            <div class="mb-4">
+              <label for="calcIncomeInput" class="form-label-custom">Monthly Allowance / Net Income (<span data-currency-symbol>$</span>)</label>
+              <div class="input-group">
+                <span class="input-group-text fw-bold" data-currency-symbol>$</span>
+                <input type="number" id="calcIncomeInput" class="form-control form-control-custom" value="1200" min="1" step="10" placeholder="e.g. 1200" required>
+              </div>
+              <div class="small text-muted mt-1">Enter your monthly student stipend, allowance, or campus wage.</div>
+            </div>
+
+            <!-- Framework Ratio Select -->
+            <div class="mb-4">
+              <label for="budgetSplitRatioSelect" class="form-label-custom">Budgeting Framework Ratio</label>
+              <select id="budgetSplitRatioSelect" class="form-select form-control-custom">
+                <option value="50-30-20" selected>Standard 50-30-20 (50% Needs, 30% Wants, 20% Savings)</option>
+                <option value="60-25-15">High-Rent Student Split (60% Needs, 25% Wants, 15% Savings)</option>
+                <option value="70-20-10">Tight Budget Survival (70% Needs, 20% Wants, 10% Savings)</option>
+              </select>
+              <div class="small text-muted mt-1">Adaptive guideline: select a ratio that matches your city's living cost.</div>
+            </div>
+
+            <!-- Validation Error Alert -->
+            <div class="alert alert-danger d-none py-2 px-3 small" id="calcErrorAlert"></div>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <button class="btn btn-primary-gradient flex-grow-1" id="btnCalculate503020">
+                <i class="bi bi-arrow-repeat me-1"></i> Recalculate
+              </button>
+              <button class="btn btn-outline-soft" id="btnPrintBudget503020" title="Print Certified 50-30-20 Budget Statement">
+                <i class="bi bi-printer-fill me-1 text-primary"></i> Print Statement
+              </button>
+            </div>
+
+            <!-- Educational Footnote -->
+            <div class="p-3 bg-light rounded-3 mt-4 border">
+              <div class="d-flex align-items-start gap-2">
+                <i class="bi bi-info-circle-fill text-primary fs-5 mt-1"></i>
+                <div class="small text-secondary">
+                  <strong>Educational Note:</strong> This calculation is an educational guideline intended to build disciplined money habits. It does not constitute licensed banking or credit services. Adjust percentages to fit your individual living circumstances.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Output & Donut Chart -->
+        <div class="col-lg-6">
+          <div class="calc-card text-center">
+            <h5 class="fw-bold mb-3 text-start">Visual Allocation Breakdown</h5>
+            
+            <!-- Chart Container -->
+            <div style="position: relative; height: 260px;" class="mb-4">
+              <canvas id="budgetDonutChart"></canvas>
+            </div>
+
+            <!-- Results Metrics Grid -->
+            <div class="row g-3 text-start">
+              <!-- Needs Metric -->
+              <div class="col-md-4">
+                <div class="p-3 border rounded-3 bg-light">
+                  <span class="badge bg-primary mb-1">50% Needs</span>
+                  <div class="fw-bold fs-5 text-primary" id="resultNeedsAmount">$600.00</div>
+                  <div class="small text-muted" id="weeklyNeedsAmount">~ $138 / week</div>
+                  <div class="progress mt-2" style="height: 6px;">
+                    <div class="progress-bar bg-primary" id="calcBarNeeds" style="width: 50%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Wants Metric -->
+              <div class="col-md-4">
+                <div class="p-3 border rounded-3 bg-light">
+                  <span class="badge bg-danger mb-1" style="background-color: #FF5B22 !important;">30% Wants</span>
+                  <div class="fw-bold fs-5 text-danger" id="resultWantsAmount">$360.00</div>
+                  <div class="small text-muted" id="weeklyWantsAmount">~ $83 / week</div>
+                  <div class="progress mt-2" style="height: 6px;">
+                    <div class="progress-bar" id="calcBarWants" style="width: 30%; background-color: #FF5B22;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Savings Metric -->
+              <div class="col-md-4">
+                <div class="p-3 border rounded-3 bg-light">
+                  <span class="badge bg-success mb-1">20% Savings</span>
+                  <div class="fw-bold fs-5 text-success" id="resultSavingsAmount">$240.00</div>
+                  <div class="small text-muted" id="weeklySavingsAmount">~ $55 / week</div>
+                  <div class="progress mt-2" style="height: 6px;">
+                    <div class="progress-bar bg-success" id="calcBarSavings" style="width: 20%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. Module 4: Savings Goals Simulator (SRS Module 4)
+       ========================================================================= -->
+  <section class="section-wrapper no-print" id="savings-goals">
+    <!-- Ambient Canvas & Floating Money / Vector Details -->
+    <div class="section-ambient-canvas" aria-hidden="true">
+      <div class="section-orb section-orb-1"></div>
+      <div class="section-orb section-orb-2"></div>
+      <div class="section-grid-wireframe section-grid-left"></div>
+      <div class="section-grid-wireframe section-grid-right"></div>
+      <div class="section-floating-shape shape-coin-soft">$</div>
+      <div class="section-floating-shape shape-piggy-soft"><i class="bi bi-piggy-bank"></i></div>
+      <div class="section-floating-shape shape-cash-soft"><i class="bi bi-cash-stack"></i></div>
+      <div class="section-floating-shape shape-shield-soft"><i class="bi bi-shield-check"></i></div>
+    </div>
+    <div class="container-xl position-relative" style="z-index: 2;">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-bullseye me-1"></i> Module 4</span>
+        <h2 class="section-title">Savings Goals &amp; Timeline Simulator</h2>
+        <p class="section-desc">Set tangible goals—such as emergency cushions or replacement tech—and calculate how many months it will take to cross the finish line.</p>
+      </div>
+
+      <!-- Quick Preset Buttons -->
+      <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+        <span class="small fw-bold text-muted align-self-center me-1">Quick Presets:</span>
+        <button class="btn btn-sm btn-outline-secondary rounded-pill btn-goal-preset" data-goal-name="Emergency Safety Fund" data-goal-target="500" data-goal-current="150" data-goal-monthly="70">
+          🛡️ Emergency Fund ($500)
+        </button>
+        <button class="btn btn-sm btn-outline-secondary rounded-pill btn-goal-preset" data-goal-name="Campus Laptop Upgrade" data-goal-target="900" data-goal-current="250" data-goal-monthly="100">
+          💻 Laptop Upgrade ($900)
+        </button>
+        <button class="btn btn-sm btn-outline-secondary rounded-pill btn-goal-preset" data-goal-name="Semester Break Trip" data-goal-target="350" data-goal-current="80" data-goal-monthly="50">
+          ✈️ Semester Trip ($350)
+        </button>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <!-- Goal Form -->
+        <div class="col-lg-6">
+          <div class="calc-card">
+            <h4 class="fw-bold mb-3"><i class="bi bi-flag-fill text-warning me-2"></i>Configure Your Target</h4>
+
+            <div class="mb-3">
+              <label for="goalNameInput" class="form-label-custom">Goal Name</label>
+              <input type="text" id="goalNameInput" class="form-control form-control-custom" value="Emergency Safety Fund" placeholder="e.g. Laptop Replacement" required>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="goalTargetInput" class="form-label-custom">Target Amount (<span data-currency-symbol>$</span>)</label>
+                <input type="number" id="goalTargetInput" class="form-control form-control-custom" value="500" min="1" required>
+              </div>
+              <div class="col-md-6">
+                <label for="goalCurrentInput" class="form-label-custom">Current Savings (<span data-currency-symbol>$</span>)</label>
+                <input type="number" id="goalCurrentInput" class="form-control form-control-custom" value="150" min="0" required>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label for="goalMonthlyInput" class="form-label-custom">Expected Monthly Contribution (<span data-currency-symbol>$</span>)</label>
+              <input type="number" id="goalMonthlyInput" class="form-control form-control-custom" value="70" min="1" required>
+              <div class="small text-muted mt-1">Amount you can deposit every month from your 20% savings bucket.</div>
+            </div>
+
+            <div class="alert alert-danger d-none py-2 px-3 small" id="goalErrorAlert"></div>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <button class="btn btn-primary-gradient flex-grow-1" id="btnCalculateGoal">
+                <i class="bi bi-calculator me-1"></i> Calculate Timeline
+              </button>
+              <button class="btn btn-outline-soft" id="btnSaveGoal" title="Save this goal into your dashboard">
+                <i class="bi bi-bookmark-plus me-1"></i> Save Goal
+              </button>
+              <button class="btn btn-outline-soft" id="btnPrintSavingsGoal" title="Print Savings Goal Roadmap Certificate">
+                <i class="bi bi-printer-fill me-1 text-success"></i> Print Roadmap
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Goal Results & Visual Progress -->
+        <div class="col-lg-6">
+          <div class="calc-card">
+            <div class="d-flex justify-content-between align-items-center mb-3 mobile-header-stack">
+              <h5 class="fw-bold mb-0">Timeline &amp; Progress</h5>
+              <span class="badge bg-success-subtle text-success fs-6" id="goalPercentText">30%</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress mb-4" style="height: 14px; border-radius: 8px;">
+              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" id="goalProgressBar" style="width: 30%;"></div>
+            </div>
+
+            <!-- Summary Cards -->
+            <div class="row g-3 mb-4">
+              <div class="col-6">
+                <div class="p-3 bg-light rounded-3 border">
+                  <span class="small text-muted d-block">Remaining Needed</span>
+                  <strong class="fs-4 text-primary" id="goalRemainingDisplay">$350.00</strong>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 bg-light rounded-3 border">
+                  <span class="small text-muted d-block timeline-duration-label">Estimated Timeline</span>
+                  <strong class="fs-4 fw-bold goal-duration-highlight" id="goalMonthsDisplay">5 Months</strong>
+                  <div class="small text-muted mt-1 goal-breakdown-text" id="goalTimelineBreakdown" style="font-size: 0.78rem;">~ 22 Weeks • 152 Days</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-2 px-3 bg-light rounded-2 small text-secondary mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-calendar-event text-primary fs-5"></i>
+              <span class="goal-target-date" id="goalDateEstimate">Estimated Target: February 2027</span>
+            </div>
+
+            <!-- Encouraging Financial Tip -->
+            <div class="p-3 bg-warning-subtle text-dark rounded-3 border border-warning-subtle">
+              <div class="d-flex align-items-start gap-2">
+                <i class="bi bi-lightbulb-fill text-warning fs-5"></i>
+                <span class="small fw-semibold" id="goalTipText">Automate deposits directly on allowance day to reach goals faster.</span>
+              </div>
+            </div>
+
+            <!-- Saved Goals History List -->
+            <div class="mt-4">
+              <h6 class="fw-bold mb-2 small text-uppercase text-muted">Active Saved Goals</h6>
+              <div id="savedGoalsContainer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. Module 5: Student Expense Planner Demonstration (SRS Module 5)
+       ========================================================================= -->
+  <section class="section-wrapper bg-alt no-print" id="expense-planner">
+    <!-- Ambient Canvas & Floating Money / Vector Details -->
+    <div class="section-ambient-canvas" aria-hidden="true">
+      <div class="section-orb section-orb-1"></div>
+      <div class="section-orb section-orb-2"></div>
+      <div class="section-grid-wireframe section-grid-left"></div>
+      <div class="section-grid-wireframe section-grid-right"></div>
+      <div class="section-floating-shape shape-coin-soft">$</div>
+      <div class="section-floating-shape shape-cash-soft"><i class="bi bi-receipt-cutoff"></i></div>
+      <div class="section-floating-shape shape-wallet-soft"><i class="bi bi-wallet2"></i></div>
+      <div class="section-floating-shape shape-bank-soft"><i class="bi bi-bank"></i></div>
+    </div>
+    <div class="container-xl position-relative" style="z-index: 2;">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-receipt me-1"></i> Module 5</span>
+        <h2 class="section-title">Expense Planner Demonstration</h2>
+        <p class="section-desc">Log your campus spending into a temporary interactive table. Check total planned expenses and monitor remaining balance in real time.</p>
+      </div>
+
+      <!-- Overview Balance Bar -->
+      <div class="calc-card mb-4">
+        <div class="row align-items-center g-3">
+          <div class="col-md-4">
+            <label for="plannerAllowanceInput" class="form-label-custom small mb-1">Monthly Allowance Budget (<span data-currency-symbol>$</span>)</label>
+            <div class="input-group input-group-sm">
+              <span class="input-group-text" data-currency-symbol>$</span>
+              <input type="number" id="plannerAllowanceInput" class="form-control" value="1200" min="100">
+            </div>
+          </div>
+          <div class="col-md-3 text-center text-md-start">
+            <span class="small text-muted d-block">Total Spent</span>
+            <strong class="fs-5 text-danger" id="plannerTotalSpentDisplay">-$218.50</strong>
+          </div>
+          <div class="col-md-3 text-center text-md-start">
+            <span class="small text-muted d-block">Remaining Balance</span>
+            <strong class="fs-5 text-success" id="plannerRemainingDisplay">$981.50</strong>
+          </div>
+          <div class="col-md-2 text-center text-md-end">
+            <span id="plannerHealthBadge" class="badge bg-success p-2"><i class="bi bi-shield-check me-1"></i> Healthy Budget</span>
+          </div>
+        </div>
+
+        <div class="progress mt-3" style="height: 8px;">
+          <div class="progress-bar bg-success" id="plannerProgressBar" style="width: 18%;"></div>
+        </div>
+      </div>
+
+      <!-- Add Expense Form -->
+      <div class="calc-card mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-3 expense-planner-header">
+          <h5 class="fw-bold mb-0"><i class="bi bi-plus-circle text-primary me-2"></i>Add / Edit Expense Entry</h5>
+          <div class="d-flex align-items-center gap-2 expense-header-actions">
+            <button class="btn btn-sm btn-outline-soft" id="btnPrintExpenseLog" title="Print Expense Session Statement">
+              <i class="bi bi-printer-fill me-1 text-primary"></i> Print Log
+            </button>
+            <button class="btn btn-sm btn-outline-secondary" id="btnResetSampleExpenses">
+              <i class="bi bi-arrow-clockwise me-1"></i> Reset Data
+            </button>
+          </div>
+        </div>
+
+        <form id="expenseEntryForm" class="row g-2 g-md-3 align-items-end">
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <label for="expenseDateInput" class="form-label-custom small mb-1">Date</label>
+            <input type="date" id="expenseDateInput" class="form-control form-control-sm" required>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6">
+            <label for="expenseCategoryInput" class="form-label-custom small mb-1">Category</label>
+            <select id="expenseCategoryInput" class="form-select form-select-sm" required>
+              <option value="Food">Food &amp; Dining</option>
+              <option value="Transport">Transport</option>
+              <option value="Education">Education</option>
+              <option value="Entertainment">Entertainment</option>
+              <option value="Shopping">Shopping</option>
+              <option value="Utilities">Utilities</option>
+              <option value="Miscellaneous">Miscellaneous</option>
+            </select>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <label for="expenseDescInput" class="form-label-custom small mb-1">Description</label>
+            <input type="text" id="expenseDescInput" class="form-control form-control-sm" placeholder="e.g. Grocery staples & fruit" required>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <label for="expenseAmountInput" class="form-label-custom small mb-1">Amount (<span data-currency-symbol>$</span>)</label>
+            <input type="number" step="0.01" id="expenseAmountInput" class="form-control form-control-sm" placeholder="0.00" min="0.01" required>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <label class="form-label-custom small mb-1 d-none d-lg-block">&nbsp;</label>
+            <button type="submit" class="btn btn-primary-gradient btn-sm w-100 text-nowrap d-flex align-items-center justify-content-center py-2" id="btnSaveExpense" style="min-height: 38px;">
+              <i class="bi bi-plus-circle me-1.5"></i> <span>Add Expense</span>
+            </button>
+          </div>
+          <div class="col-12 alert alert-danger d-none py-1 px-2 small mb-0" id="expenseFormError"></div>
+        </form>
+      </div>
+
+      <!-- Expense Table -->
+      <div class="expense-table-card">
+        <div class="p-3 border-bottom d-flex justify-content-between align-items-center bg-body mobile-header-stack">
+          <h6 class="fw-bold mb-0">Temporary Session Expense Log</h6>
+          <span class="badge bg-secondary" id="expenseTotalEntriesCount">6 entries</span>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-hover expense-table mb-0">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th class="text-end">Amount</th>
+                <th class="text-end">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="expenseTableBody">
+              <!-- Rendered via assets/js/expense-planner.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. Module 6: Common Money Mistakes & Subscription Audit (SRS Module 6)
+       ========================================================================= -->
+  <section class="section-wrapper no-print" id="money-mistakes">
+    <!-- Ambient Canvas & Floating Money / Vector Details -->
+    <div class="section-ambient-canvas" aria-hidden="true">
+      <div class="section-orb section-orb-1"></div>
+      <div class="section-orb section-orb-2"></div>
+      <div class="section-grid-wireframe section-grid-left"></div>
+      <div class="section-grid-wireframe section-grid-right"></div>
+      <div class="section-floating-shape shape-coin-soft">$</div>
+      <div class="section-floating-shape shape-shield-soft"><i class="bi bi-shield-x"></i></div>
+      <div class="section-floating-shape shape-cash-soft"><i class="bi bi-cash-stack"></i></div>
+      <div class="section-floating-shape shape-wallet-soft"><i class="bi bi-wallet2"></i></div>
+    </div>
+    <div class="container-xl position-relative" style="z-index: 2;">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-exclamation-triangle-fill me-1"></i> Module 6</span>
+        <h2 class="section-title">Common Student Money Mistakes</h2>
+        <p class="section-desc">Learn how to spot and eliminate impulse buying, ghost subscriptions, latte factor leaks, and unbudgeted stipends.</p>
+      </div>
+
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-7">
+          <!-- Accordion of Mistakes rendered from data/budget-tips.json -->
+          <div class="accordion" id="mistakesAccordion">
+            <!-- Dynamic items from app.js -->
+          </div>
+        </div>
+
+        <!-- Ghost Subscription Interactive Audit Mini-Tool -->
+        <div class="col-lg-5">
+          <div class="calc-card bg-light">
+            <span class="badge bg-danger-subtle text-danger mb-2"><i class="bi bi-shield-slash-fill me-1"></i> Interactive Audit</span>
+            <h4 class="fw-bold mb-2">Ghost Subscription Auditor</h4>
+            <p class="small text-muted mb-3">Check each recurring service you currently pay for. See your annual cost:</p>
+
+            <div class="d-flex flex-column gap-2 mb-3">
+              <label class="form-check p-2 border rounded-3 bg-body d-flex justify-content-between align-items-center">
+                <span><input class="form-check-input sub-audit-check me-2" type="checkbox" value="15" checked> Streaming Video App</span>
+                <strong class="text-primary"><span data-currency-symbol>$</span>15/mo</strong>
+              </label>
+              <label class="form-check p-2 border rounded-3 bg-body d-flex justify-content-between align-items-center">
+                <span><input class="form-check-input sub-audit-check me-2" type="checkbox" value="10" checked> Premium Music Streaming</span>
+                <strong class="text-primary"><span data-currency-symbol>$</span>10/mo</strong>
+              </label>
+              <label class="form-check p-2 border rounded-3 bg-body d-flex justify-content-between align-items-center">
+                <span><input class="form-check-input sub-audit-check me-2" type="checkbox" value="12"> Cloud Gaming Subscription</span>
+                <strong class="text-primary"><span data-currency-symbol>$</span>12/mo</strong>
+              </label>
+              <label class="form-check p-2 border rounded-3 bg-body d-flex justify-content-between align-items-center">
+                <span><input class="form-check-input sub-audit-check me-2" type="checkbox" value="25"> Unused Commercial Gym Membership</span>
+                <strong class="text-primary"><span data-currency-symbol>$</span>25/mo</strong>
+              </label>
+            </div>
+
+            <div class="p-3 bg-warning-subtle text-dark rounded-3 border border-warning-subtle">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="small fw-bold">Annual Drained Capital:</span>
+                <strong class="fs-5 text-danger" id="subAuditAnnualCost"><span data-currency-symbol>$</span>300.00 / yr</strong>
+              </div>
+              <div class="small text-muted mt-1">Cancelling just 1 or 2 unused services pays for an entire semester's course materials!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       13. Module 7: Infographics & Learning Gallery (SRS Module 7)
+       ========================================================================= -->
+  <section class="section-wrapper no-print" id="infographics-gallery">
+    <!-- Ambient Canvas & Floating Money / Vector Details -->
+    <div class="section-ambient-canvas" aria-hidden="true">
+      <div class="section-orb section-orb-1"></div>
+      <div class="section-orb section-orb-2"></div>
+      <div class="section-grid-wireframe section-grid-left"></div>
+      <div class="section-grid-wireframe section-grid-right"></div>
+      <div class="section-floating-shape shape-coin-soft"><i class="bi bi-images"></i></div>
+      <div class="section-floating-shape shape-cash-soft"><i class="bi bi-graph-up-arrow"></i></div>
+      <div class="section-floating-shape shape-piggy-soft"><i class="bi bi-piggy-bank"></i></div>
+      <div class="section-floating-shape shape-shield-soft"><i class="bi bi-shield-check"></i></div>
+    </div>
+    <div class="container-xl position-relative" style="z-index: 2;">
+      <div class="text-center">
+        <span class="section-tag"><i class="bi bi-images me-1"></i> Module 7</span>
+        <h2 class="section-title">Infographics &amp; Visual Learning Gallery</h2>
+        <p class="section-desc">Explore visual breakdowns of student spending: the 50-30-20 split, needs vs wants, monthly cashflow, and the 30-day savings challenge.</p>
+        
+        <!-- Topic Filter Tabs (SRS Module 7: Filter the gallery by topic) -->
+        <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap" id="infographicFilterTabs">
+          <button class="btn btn-sm rounded-pill filter-btn active" data-filter="all">All Topics</button>
+          <button class="btn btn-sm rounded-pill filter-btn" data-filter="budgeting">50-30-20 &amp; Budgeting</button>
+          <button class="btn btn-sm rounded-pill filter-btn" data-filter="habits">Spending Habits</button>
+          <button class="btn btn-sm rounded-pill filter-btn" data-filter="saving">Saving Challenges</button>
+        </div>
+      </div>
+
+      <!-- Infographics Grid Container (Loaded from data/infographics.json) -->
+      <div class="row g-4" id="infographicsGrid">
+        <!-- Rendered dynamically by assets/js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       15. Module 9: Student Monthly Budget Plan & Printable PDF Generator
+       ========================================================================= -->
+  <section class="section-wrapper bg-alt" id="budget-invoice">
+    <!-- Ambient Canvas & Floating Money / Vector Details -->
+    <div class="section-ambient-canvas no-print" aria-hidden="true">
+      <div class="section-orb section-orb-1"></div>
+      <div class="section-orb section-orb-2"></div>
+      <div class="section-grid-wireframe section-grid-left"></div>
+      <div class="section-grid-wireframe section-grid-right"></div>
+      <div class="section-floating-shape shape-coin-soft">$</div>
+      <div class="section-floating-shape shape-cash-soft"><i class="bi bi-file-earmark-pdf"></i></div>
+      <div class="section-floating-shape shape-wallet-soft"><i class="bi bi-wallet2"></i></div>
+      <div class="section-floating-shape shape-bank-soft"><i class="bi bi-bank"></i></div>
+    </div>
+    <div class="container-xl position-relative" style="z-index: 2;">
+      <div class="text-center no-print">
+        <span class="section-tag"><i class="bi bi-file-earmark-pdf me-1"></i> Budget Planning &amp; Printable PDF</span>
+        <h2 class="section-title">Student Monthly Budget Plan &amp; Printable PDF</h2>
+        <p class="section-desc">Generate a clean, structured monthly budget blueprint for your personal planning, scholarship submission, or dorm roommate cost sharing. Click <strong>Print Budget Plan / Save PDF</strong> to instantly export a printer-friendly sheet.</p>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <!-- Left: Budget Plan Setup & Saved Plans (Hidden in Print) -->
+        <div class="col-lg-5 no-print">
+          <!-- Saved Plans Drawer Card -->
+          <div class="calc-card mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-2 mobile-header-stack">
+              <h5 class="fw-bold mb-0"><i class="bi bi-folder-check text-primary me-2"></i>Saved Budget Plans</h5>
+              <span class="badge bg-primary rounded-pill" id="recentInvoicesCountBadge">2 Plans</span>
+            </div>
+            <p class="small text-muted mb-3">Quickly reload or print previously saved student monthly budget plans.</p>
+            <div id="recentInvoicesContainer" class="saved-plans-list">
+              <!-- Dynamic saved plan cards rendered cleanly without scrollbars -->
+            </div>
+          </div>
+
+          <!-- Minimal Budget Setup Form Card -->
+          <div class="calc-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="fw-bold mb-0"><i class="bi bi-sliders text-primary me-2"></i>Budget Plan Setup</h5>
+              <button class="btn btn-sm btn-outline-secondary rounded-pill" id="btnCreateNewInvoice">
+                <i class="bi bi-plus-circle me-1"></i> New Plan
+              </button>
+            </div>
+
+            <!-- Minimized clean fields -->
+            <div class="row g-2 mb-2 align-items-end">
+              <div class="col-sm-6 col-6">
+                <label for="invStudentName" class="form-label-custom small mb-1 text-nowrap d-block">Student Name</label>
+                <input type="text" id="invStudentName" class="form-control form-control-sm" placeholder="e.g. Alex Carter" value="Alex Carter">
+              </div>
+              <div class="col-sm-6 col-6">
+                <label for="invTerm" class="form-label-custom small mb-1 text-nowrap d-block" title="Month / Academic Term">Month / Academic Term</label>
+                <input type="text" id="invTerm" class="form-control form-control-sm" placeholder="e.g. Fall 2026" value="Fall Semester 2026">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="invTotalIncome" class="form-label-custom small mb-1">Monthly Allowance / Inflow (<span data-currency-symbol>$</span>)</label>
+              <div class="input-group input-group-sm">
+                <span class="input-group-text"><strong data-currency-symbol>$</strong></span>
+                <input type="number" id="invTotalIncome" class="form-control" value="1200">
+              </div>
+              <input type="hidden" id="invStudentId" value="AP-TECH-7890">
+            </div>
+
+            <!-- Planned Budget Line Items -->
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h6 class="fw-bold small mb-0">Allocations &amp; Expenses</h6>
+              <button class="btn btn-sm btn-outline-primary rounded-pill" id="btnAddInvoiceItem">
+                <i class="bi bi-plus-circle me-1"></i> Add Item
+              </button>
+            </div>
+
+            <div id="invoiceItemsFormList" class="mb-3">
+              <!-- Inputs rendered cleanly by assets/js/invoice.js -->
+            </div>
+
+            <div class="mb-3">
+              <label for="invNotes" class="form-label-custom small mb-1">Monthly Goal / Notes</label>
+              <textarea id="invNotes" class="form-control form-control-sm" rows="2" placeholder="e.g. Save $200 for emergency buffer">Fall semester allowance planning with focus on creating $500 laptop emergency fund.</textarea>
+            </div>
+
+            <div class="d-flex gap-2">
+              <button class="btn btn-primary-gradient flex-grow-1" id="btnSaveCurrentInvoice">
+                <i class="bi bi-bookmark-check me-1"></i> Save to Saved Plans
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Official Printable Budget Plan Summary Preview Card -->
+        <div class="col-lg-7">
+          <div class="invoice-card" id="printableInvoice">
+            <!-- Header Banner -->
+            <div class="invoice-header-banner d-flex justify-content-between align-items-start flex-wrap gap-3">
+              <div>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <img src="assets/images/logo-icon.svg" alt="BudgetBasics Logo" class="brand-logo-icon" style="height: 38px; width: 38px;">
+                  <div class="d-flex flex-column mobile-header-stack">
+                    <span class="fs-4 fw-bold brand-title lh-1" style="font-family: var(--font-family); letter-spacing: -0.025em;"><span class="invoice-brand-budget">Budget</span><span style="color: #FF5B22;">Basics</span></span>
+                    <span class="invoice-meta-badge mt-1">OFFICIAL STUDENT MONTHLY BUDGET PLAN &amp; FINANCIAL BLUEPRINT</span>
+                  </div>
+                </div>
+                <div class="small invoice-subtitle-text">Aptech Techwiz 7 • Category 1: Web Innovation Unleashed</div>
+              </div>
+              <div class="text-md-end mobile-header-stack">
+                <span class="badge bg-success-subtle text-success border border-success-subtle mt-1 mb-1">STATUS: CERTIFIED PLAN</span>
+                <h4 class="fw-bold invoice-num-text mb-0" id="prevInvoiceNumber">PLAN-BB-2026-001</h4>
+                <div class="small invoice-subtitle-text">Issue Date: <strong id="prevInvoiceDate">Sep 25, 2026</strong></div>
+              </div>
+            </div>
+
+            <!-- Student Profile Information -->
+            <div class="row g-3 mb-4 p-3 invoice-sub-box rounded-3">
+              <div class="col-md-6">
+                <span class="invoice-meta-badge d-block mb-1">STUDENT PROFILE</span>
+                <strong class="fs-6 d-block invoice-profile-name" id="prevStudentName">Alex Carter</strong>
+                <span class="small invoice-subtitle-text" id="prevStudentId" style="display: none;">AP-TECH-7890</span>
+                <span class="small invoice-subtitle-text">Student Monthly Budget Record</span>
+              </div>
+              <div class="col-md-6 text-md-end">
+                <span class="invoice-meta-badge d-block mb-1">ACADEMIC PERIOD / TARGET MONTH</span>
+                <strong class="fs-6 d-block invoice-profile-name" id="prevAcademicTerm">Fall Semester 2026</strong>
+                <span class="small invoice-subtitle-text">Currency: <strong data-currency-symbol>$</strong></span>
+              </div>
+            </div>
+
+            <!-- Line Items Table -->
+            <div class="table-responsive mb-4">
+              <table class="table table-bordered table-sm align-middle mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th style="width: 40px;">#</th>
+                    <th>Budget Allocation / Item</th>
+                    <th>Category</th>
+                    <th class="text-end">Planned Amount</th>
+                  </tr>
+                </thead>
+                <tbody id="prevInvoiceTableBody">
+                  <!-- Rendered via assets/js/invoice.js -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Totals & Ratios -->
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <div class="p-3 border rounded-3 bg-light h-100">
+                  <span class="invoice-meta-badge d-block mb-1">50/30/20 FRAMEWORK ADHERENCE</span>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span>Needs Ratio:</span>
+                    <strong class="text-primary" id="prevNeedsPct">50%</strong>
+                  </div>
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span>Wants Ratio:</span>
+                    <strong class="text-danger" id="prevWantsPct">30%</strong>
+                  </div>
+                  <div class="d-flex justify-content-between small">
+                    <span>Target Savings:</span>
+                    <strong class="text-success">20%</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 border rounded-3 invoice-sub-box h-100">
+                  <div class="d-flex justify-content-between small mb-1">
+                    <span>Total Allowance Inflow:</span>
+                    <strong class="invoice-text-contrast" id="prevTotalIncome">$1,200.00</strong>
+                  </div>
+                  <div class="d-flex justify-content-between small mb-2">
+                    <span>Total Planned Spending:</span>
+                    <strong class="text-danger" id="prevTotalExpenses">-$985.00</strong>
+                  </div>
+                  <div class="d-flex justify-content-between pt-2 border-top">
+                    <span class="fw-bold">Net Monthly Savings Buffer:</span>
+                    <strong class="fs-5 text-success" id="prevPlannedSavings">$215.00</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Statement Notes -->
+            <div class="p-3 invoice-sub-box rounded-3 mb-4 border">
+              <span class="invoice-meta-badge d-block mb-1">GOALS &amp; REMARKS</span>
+              <p class="small text-secondary mb-0" id="prevInvoiceNotes">Fall semester allowance planning with focus on creating $500 laptop emergency fund.</p>
+            </div>
+
+            <!-- Digital Seal & Signatures -->
+            <div class="d-flex justify-content-between align-items-end pt-3 border-top">
+              <div>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="badge bg-warning-subtle text-dark border p-2">
+                    <i class="bi bi-shield-check text-warning fs-5 me-1"></i>
+                    <span>BUDGETBEE CERTIFIED BUDGET PLAN</span>
+                  </div>
+                </div>
+                <div class="small text-muted mt-1">Generated electronically via BudgetBasics Client Portal</div>
+              </div>
+              <div class="text-end">
+                <div style="font-family: 'Courier New', monospace; font-weight: 700; color: #4B5563;">[ DIGITAL SIGNATURE ]</div>
+                <div class="small text-muted">Alex Carter (Student Signature)</div>
+              </div>
+            </div>
+
+            <!-- Action Controls (Hidden when printed) -->
+            <div class="mt-4 pt-3 border-top d-flex gap-2 justify-content-end no-print">
+              <button class="btn btn-outline-secondary rounded-pill" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <i class="bi bi-arrow-up me-1"></i> Top
+              </button>
+              <button class="btn btn-primary-gradient px-4" id="btnPrintInvoice">
+                <i class="bi bi-printer-fill me-1"></i> Print Budget Plan / Save PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       16. Module 10: About Us, Feedback & Contact Us (SRS Module 10)
+       ========================================================================= -->
+  <section class="section-wrapper no-print" id="about-and-contact">
+    <!-- Ambient Canvas & Floating Money / Vector Details -->
+    <div class="section-ambient-canvas" aria-hidden="true">
+      <div class="section-orb section-orb-1"></div>
+      <div class="section-orb section-orb-2"></div>
+      <div class="section-grid-wireframe section-grid-left"></div>
+      <div class="section-grid-wireframe section-grid-right"></div>
+      <div class="section-floating-shape shape-coin-soft">$</div>
+      <div class="section-floating-shape shape-shield-soft"><i class="bi bi-shield-check"></i></div>
+      <div class="section-floating-shape shape-cash-soft"><i class="bi bi-cash-stack"></i></div>
+      <div class="section-floating-shape shape-piggy-soft"><i class="bi bi-piggy-bank"></i></div>
+    </div>
+    <div class="container-xl position-relative" style="z-index: 2;">
+      <div class="row g-5">
+        <!-- About Us Column -->
+        <div class="col-lg-6">
+          <span class="section-tag"><i class="bi bi-info-circle me-1"></i> About BudgetBasics</span>
+          <h2 class="section-title">Empowering the Next Generation of Financially Disciplined Students</h2>
+          <p class="text-secondary">
+            BudgetBasics was engineered for <strong>Aptech Techwiz 7</strong> under the theme <em>NextGen BudgetBee</em>. Our mission is to transform abstract personal finance into actionable, visual, and rewarding habits for college learners worldwide.
+          </p>
+
+          <div class="row g-3 my-3">
+            <div class="col-6">
+              <div class="p-3 border rounded-3 bg-body shadow-sm">
+                <h6 class="fw-bold mb-1 text-primary"><i class="bi bi-eye-fill me-1"></i> Vision</h6>
+                <p class="small text-muted mb-0">Empowering every undergraduate to graduate without unnecessary debt or spending stress.</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="p-3 border rounded-3 bg-body shadow-sm">
+                <h6 class="fw-bold mb-1 text-primary"><i class="bi bi-cpu-fill me-1"></i> Technology</h6>
+                <p class="small text-muted mb-0">Single Page Application (SPA) built with HTML5, CSS3, Bootstrap 5, Chart.js, and Web Speech AI.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-3 bg-light rounded-4 border mt-4">
+            <h6 class="fw-bold mb-2"><i class="bi bi-telephone-inbound-fill text-primary me-2"></i>Official Support &amp; Contact</h6>
+            <div class="small text-secondary mb-1">
+              <i class="bi bi-envelope-fill me-2 text-primary"></i> Direct Inquiries: <strong><a href="mailto:info@aglsm.com" class="text-decoration-none">info@aglsm.com</a></strong>
+            </div>
+            <div class="small text-secondary mb-1">
+              <i class="bi bi-telephone-fill me-2 text-primary"></i> Official Helpline / Phone: <strong>+92 (21) 111-278-324 / +92 300 8274190</strong>
+            </div>
+            <div class="small text-secondary mb-1">
+              <i class="bi bi-geo-alt-fill me-2 text-primary"></i> Learning Center: <strong>Aptech Rahim Yar Khan Center, Punjab, Pakistan</strong>
+            </div>
+            <div class="small text-secondary mb-1">
+              <i class="bi bi-award-fill me-2 text-primary"></i> Championship: <strong>Aptech World Tech Championship (Techwiz 7)</strong>
+            </div>
+            <div class="small text-secondary">
+              <i class="bi bi-share-fill me-2 text-primary"></i> Connect: 
+              <a href="https://www.facebook.com/aptechstudentconnect" target="_blank" rel="noopener" class="me-2 text-decoration-none">Facebook</a> |
+              <a href="https://www.instagram.com/aptechstudentconnect/" target="_blank" rel="noopener" class="ms-1 me-2 text-decoration-none">Instagram</a> |
+              <a href="https://aptech-studentconnect.com/" target="_blank" rel="noopener" class="ms-1 text-decoration-none">Student Connect Portal</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact & Feedback Column -->
+        <div class="col-lg-6">
+          <div class="calc-card">
+            <!-- Nav tabs for Contact vs Feedback -->
+            <ul class="nav nav-pills mb-3" id="contactFeedbackTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active rounded-pill" id="tab-contact-btn" data-bs-toggle="pill" data-bs-target="#tab-contact" type="button" role="tab">
+                  <i class="bi bi-envelope me-1"></i> Contact Us
+                </button>
+              </li>
+              <li class="nav-item ms-2" role="presentation">
+                <button class="nav-link rounded-pill" id="tab-feedback-btn" data-bs-toggle="pill" data-bs-target="#tab-feedback" type="button" role="tab">
+                  <i class="bi bi-chat-square-heart me-1"></i> Student Feedback
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="contactFeedbackTabContent">
+              <!-- Contact Us Tab -->
+              <div class="tab-pane fade show active" id="tab-contact" role="tabpanel">
+                <h5 class="fw-bold mb-3">Send Us a Question</h5>
+                <form id="contactUsForm" novalidate>
+                  <div class="mb-3">
+                    <label for="contactName" class="form-label-custom small mb-1">Your Full Name</label>
+                    <input type="text" class="form-control" id="contactName" required placeholder="Alex Carter">
+                    <div class="invalid-feedback">Please provide your name.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactEmail" class="form-label-custom small mb-1">Email Address</label>
+                    <input type="email" class="form-control" id="contactEmail" required placeholder="student@university.edu">
+                    <div class="invalid-feedback">Please provide a valid email.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactSubject" class="form-label-custom small mb-1">Subject</label>
+                    <input type="text" class="form-control" id="contactSubject" required placeholder="Inquiry about student budgeting tool">
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactMessage" class="form-label-custom small mb-1">Message</label>
+                    <textarea class="form-control" id="contactMessage" rows="3" required placeholder="Write your question here..."></textarea>
+                    <div class="invalid-feedback">Please enter a message.</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary-gradient w-100">
+                    <i class="bi bi-send-fill me-1"></i> Submit Message
+                  </button>
+                </form>
+              </div>
+
+              <!-- Student Feedback Tab -->
+              <div class="tab-pane fade" id="tab-feedback" role="tabpanel">
+                <h5 class="fw-bold mb-3">Share Your Experience</h5>
+                <form id="feedbackForm" novalidate>
+                  <div class="mb-3">
+                    <label for="fbName" class="form-label-custom small mb-1">Student Name</label>
+                    <input type="text" class="form-control" id="fbName" required placeholder="Maya Patel">
+                  </div>
+                  <div class="mb-3">
+                    <label for="fbEmail" class="form-label-custom small mb-1">Email</label>
+                    <input type="email" class="form-control" id="fbEmail" required placeholder="maya@campus.edu">
+                  </div>
+                  <!-- Star Rating Input -->
+                  <div class="mb-3">
+                    <label class="form-label-custom small mb-1 d-block">Overall Rating</label>
+                    <div class="star-rating-select fs-4 text-warning" style="cursor: pointer;">
+                      <i class="bi bi-star-fill" data-value="1"></i>
+                      <i class="bi bi-star-fill" data-value="2"></i>
+                      <i class="bi bi-star-fill" data-value="3"></i>
+                      <i class="bi bi-star-fill" data-value="4"></i>
+                      <i class="bi bi-star-fill" data-value="5"></i>
+                    </div>
+                    <input type="hidden" id="feedbackRatingValue" value="5">
+                  </div>
+                  <div class="mb-3">
+                    <label for="fbComments" class="form-label-custom small mb-1">Suggestions &amp; Comments</label>
+                    <textarea class="form-control" id="fbComments" rows="3" required placeholder="How has BudgetBasics helped your personal spending discipline?"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary-gradient w-100">
+                    <i class="bi bi-check2-circle me-1"></i> Submit Feedback
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================================================================
+           Project Creators & Engineering Team Section (SRS Module 10)
+           ========================================================================= -->
+      <div class="team-section mt-5 pt-5 border-top">
+        <div class="text-center mb-4">
+          <span class="section-tag"><i class="bi bi-people-fill me-1"></i> Team Tech Hunters</span>
+          <h3 class="fw-bold mb-2">Meet Team "Tech Hunters"</h3>
+          <p class="small text-muted mb-0">Creators of BudgetBasics • Aptech Rahim Yar Khan Center, Punjab, Pakistan • Techwiz 7 Global IT Championship • Category 1: Web Innovation Unleashed</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Member 1: Muhammad Adeel Shah -->
+          <div class="col-md-6 col-lg-3">
+            <div class="team-card text-center h-100 p-4 rounded-4">
+              <div class="team-avatar-wrap mb-3 mx-auto">
+                <div class="team-avatar-dp team-avatar-lead text-white">
+                  <i class="bi bi-cpu-fill"></i>
+                </div>
+                <span class="team-role-badge">Team Lead</span>
+              </div>
+              <h5 class="fw-bold mb-1 fs-6">Muhammad Adeel Shah</h5>
+              <div class="team-role text-primary small fw-semibold mb-2">Lead Full-Stack Architect &amp; AI Engineer</div>
+              <p class="small text-muted mb-3">Project vision, speech AI engine, multi-currency state orchestrator &amp; core architecture.</p>
+              <div class="team-social-links d-flex justify-content-center gap-2">
+                <span class="badge bg-body-secondary text-secondary small py-1 px-2"><i class="bi bi-award-fill text-warning me-1"></i> Aptech ACCP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 2: Ghulam Mustafa -->
+          <div class="col-md-6 col-lg-3">
+            <div class="team-card text-center h-100 p-4 rounded-4">
+              <div class="team-avatar-wrap mb-3 mx-auto">
+                <div class="team-avatar-dp team-avatar-calc text-white">
+                  <i class="bi bi-calculator-fill"></i>
+                </div>
+                <span class="team-role-badge badge-green">Frontend</span>
+              </div>
+              <h5 class="fw-bold mb-1 fs-6">Ghulam Mustafa</h5>
+              <div class="team-role text-success small fw-semibold mb-2">Financial Logic &amp; Calculator Specialist</div>
+              <p class="small text-muted mb-3">50-30-20 mathematical models, savings timeline algorithm &amp; expense planner session store.</p>
+              <div class="team-social-links d-flex justify-content-center gap-2">
+                <span class="badge bg-body-secondary text-secondary small py-1 px-2"><i class="bi bi-calculator-fill text-success me-1"></i> Logic Lead</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 3: Mohsin Shah -->
+          <div class="col-md-6 col-lg-3">
+            <div class="team-card text-center h-100 p-4 rounded-4">
+              <div class="team-avatar-wrap mb-3 mx-auto">
+                <div class="team-avatar-dp team-avatar-design text-white">
+                  <i class="bi bi-palette-fill"></i>
+                </div>
+                <span class="team-role-badge badge-amber">UI/UX</span>
+              </div>
+              <h5 class="fw-bold mb-1 fs-6">Mohsin Shah</h5>
+              <div class="team-role text-warning-emphasis small fw-semibold mb-2">UI/UX &amp; Interaction Designer</div>
+              <p class="small text-muted mb-3">Neo-fintech aesthetics, sinuous snake mascot tracer, dark/light theme systems &amp; responsive layouts.</p>
+              <div class="team-social-links d-flex justify-content-center gap-2">
+                <span class="badge bg-body-secondary text-secondary small py-1 px-2"><i class="bi bi-palette-fill text-warning me-1"></i> UI Designer</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Member 4: Makhdoom Afzal Shahid -->
+          <div class="col-md-6 col-lg-3">
+            <div class="team-card text-center h-100 p-4 rounded-4">
+              <div class="team-avatar-wrap mb-3 mx-auto">
+                <div class="team-avatar-dp team-avatar-audit text-white">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <span class="team-role-badge badge-blue">QA &amp; Research</span>
+              </div>
+              <h5 class="fw-bold mb-1 fs-6">Makhdoom Afzal Shahid</h5>
+              <div class="team-role text-info small fw-semibold mb-2">Financial Research &amp; QA Specialist</div>
+              <p class="small text-muted mb-3">Curriculum research, student money mistakes taxonomy, cross-browser compliance &amp; test data.</p>
+              <div class="team-social-links d-flex justify-content-center gap-2">
+                <span class="badge bg-body-secondary text-secondary small py-1 px-2"><i class="bi bi-shield-check text-info me-1"></i> QA &amp; Audit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       17. Footer & Back-to-Top (Upgraded Visuals, Floating Shapes & Detailed Nav)
+       ========================================================================= -->
+  <footer class="site-footer no-print">
+    <!-- Footer Ambient Canvas & Floating Objects (Matching Hero Visual Impact) -->
+    <div class="footer-bg-canvas" aria-hidden="true">
+      <div class="footer-orb footer-orb-1"></div>
+      <div class="footer-orb footer-orb-2"></div>
+      <div class="footer-glass-shape footer-shape-coin">$</div>
+      <div class="footer-glass-shape footer-shape-hex"></div>
+      <div class="footer-glass-shape footer-shape-star"><i class="bi bi-star-fill"></i></div>
+      <div class="footer-glass-shape footer-shape-shield"><i class="bi bi-shield-check"></i></div>
+    </div>
+
+    <div class="container-xl position-relative" style="z-index: 2;">
+      <div class="row g-4 g-lg-5">
+        <!-- Col 1: Brand & Mission -->
+        <div class="col-lg-4">
+          <div class="footer-brand-wrap d-flex align-items-center gap-2 mb-3">
+            <img src="assets/images/logo-icon.svg" alt="BudgetBasics Icon Mark" class="brand-logo-icon">
+            <div class="brand-text-wrap d-flex flex-column">
+              <span class="brand-title footer-brand-title">Budget<span class="brand-accent">Basics</span></span>
+              <span class="brand-tagline footer-brand-tagline">NEXTGEN BUDGETBEE</span>
+            </div>
+          </div>
+          <p class="small footer-mission-desc mb-3">
+            BudgetBasics (NextGen BudgetBee) is an educational Single Page Application created for Techwiz 7. Committed to fostering smart money habits, financial literacy, and disciplined savings for students.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="https://www.facebook.com/aptechstudentconnect" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/aptechstudentconnect/" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="mailto:info@aglsm.com" class="footer-social-btn" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://aptech-studentconnect.com/" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Student Connect Portal"><i class="bi bi-mortarboard-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Modules Nav with Hover Chevron -->
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading"><span class="footer-heading-dot"></span> Modules</h4>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="#budgeting-basics" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>Budgeting Basics</span></a></li>
+            <li><a href="#needs-vs-wants" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>Needs vs Wants</span></a></li>
+            <li><a href="#calculator-50-30-20" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>50-30-20 Rule</span></a></li>
+            <li><a href="#savings-goals" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>Savings Goals</span></a></li>
+            <li><a href="#expense-planner" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>Expense Planner</span></a></li>
+            <li><a href="#money-mistakes" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>Money Mistakes</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Tools & Interactive -->
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading"><span class="footer-heading-dot"></span> Tools &amp; PDF</h4>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="javascript:void(0)" onclick="toggleFloatingChatbot(true);" class="footer-nav-link"><i class="bi bi-robot footer-link-arrow text-warning"></i> <span>BudgetBee AI Chat</span></a></li>
+            <li><a href="#budget-invoice" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>Budget Plan Maker</span></a></li>
+            <li><a href="#budget-invoice" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>Printable Blueprint</span></a></li>
+            <li><a href="#money-mistakes" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>Subscription Audit</span></a></li>
+            <li><a href="#needs-vs-wants" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>48-Hour Protocol</span></a></li>
+            <li><a href="#about-and-contact" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>Student Feedback</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Techwiz 7 Showcase & Interactive Subscribe -->
+        <div class="col-lg-4">
+          <h4 class="footer-heading"><span class="footer-heading-dot"></span> Techwiz 7 Showcase</h4>
+          <p class="small text-muted mb-2">Category 1: Web Innovation Unleashed • Duration: 72 Hours • Single Page Application Architecture.</p>
+          
+          <!-- Student Budget Tips Subscribe Box -->
+          <div class="footer-subscribe-box p-3 rounded-3 mb-3">
+            <span class="small text-light d-block mb-2 fw-semibold"><i class="bi bi-bell-fill text-warning me-1"></i> Weekly Student Budget Hacks</span>
+            <div class="input-group input-group-sm">
+              <input type="email" id="footerSubscribeEmail" class="form-control form-control-sm border-0" placeholder="student@campus.edu" aria-label="Campus Email">
+              <button class="btn btn-primary-gradient btn-sm px-3" onclick="handleFooterSubscribe()">Join</button>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center gap-2 flex-wrap">
+            <button class="btn btn-sm btn-footer-sitemap rounded-pill" data-bs-toggle="modal" data-bs-target="#sitemapModal">
+              <i class="bi bi-diagram-3-fill me-1 text-warning"></i> View Site Map Flow
+            </button>
+            <span class="badge footer-team-badge small py-1.5 px-2.5">Team: Tech Hunters • NextGen BudgetBee</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <div class="small">
+          Copyright &copy; 2026 Aptech. All Rights Reserved. • Team: <strong>Tech Hunters (Aptech Rahim Yar Khan Center, Punjab, Pakistan)</strong> • Project: <strong>BudgetBasics (NextGen BudgetBee)</strong>
+        </div>
+        <div class="small d-flex gap-3 footer-legal-links">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms &amp; Conditions</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#disclaimerModal">Educational Disclaimer</a>
+          <a href="#page-top"><i class="bi bi-arrow-up-circle me-1"></i> Back to Top</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODALS: Search, Sitemap, Disclaimer, Privacy (Fully Responsive)
+       ========================================================================= -->
+
+  <!-- 1. Global Search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content rounded-4 border-0 shadow-lg">
+        <div class="modal-header border-bottom p-3 p-sm-4">
+          <div class="d-flex align-items-center gap-2 w-100">
+            <div class="input-group search-input-group flex-grow-1 align-items-center">
+              <span class="input-group-text search-icon-addon bg-transparent border-0 text-primary fs-5"><i class="bi bi-search"></i></span>
+              <input type="text" class="form-control search-modal-input border-0 shadow-none fs-6" id="globalSearchInput" placeholder="Search guides, calculators, 50-30-20, goals..." aria-label="Search">
+            </div>
+            <button class="btn btn-primary-gradient px-3 px-sm-4 text-nowrap flex-shrink-0" id="btnGlobalSearch">Search</button>
+            <button type="button" class="btn-close ms-1 flex-shrink-0" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="modal-body p-3 p-sm-4">
+          <div class="d-flex align-items-center gap-2 mb-3 flex-wrap">
+            <span class="small fw-bold text-muted">Popular:</span>
+            <button class="btn btn-sm btn-light border rounded-pill search-tag-chip" data-tag="50-30-20">50-30-20 Rule</button>
+            <button class="btn btn-sm btn-light border rounded-pill search-tag-chip" data-tag="needs">Needs vs Wants</button>
+            <button class="btn btn-sm btn-light border rounded-pill search-tag-chip" data-tag="savings">Savings Goals</button>
+            <button class="btn btn-sm btn-light border rounded-pill search-tag-chip" data-tag="invoice">Budget Plan &amp; PDF</button>
+            <button class="btn btn-sm btn-light border rounded-pill search-tag-chip" data-tag="mistake">Money Mistakes</button>
+          </div>
+          <div id="searchResultsCount" class="small text-muted mb-2"></div>
+          <div id="searchResultsContent">
+            <div class="text-center py-3 text-muted">
+              <i class="bi bi-lightbulb fs-3 text-warning"></i>
+              <p class="mt-2 mb-0 small">Type a keyword or click one of the suggested tags above.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Site Map Modal (SRS 1.6: Visible link to sitemap) -->
+  <div class="modal fade" id="sitemapModal" tabindex="-1" aria-labelledby="sitemapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow-lg">
+        <div class="modal-header border-bottom p-4">
+          <h5 class="modal-title fw-bold" id="sitemapModalLabel"><i class="bi bi-diagram-3-fill text-primary me-2"></i>BudgetBasics Site Map Flow</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="p-3 border rounded-3 bg-light h-100">
+                <h6 class="fw-bold text-primary"><i class="bi bi-book me-1"></i> 1. Learn Budgeting</h6>
+                <ul class="small text-secondary mb-0">
+                  <li><a href="#budgeting-basics">Budgeting Basics &amp; Terminology</a></li>
+                  <li><a href="#needs-vs-wants">Needs vs. Wants Decision Tree</a></li>
+                  <li><a href="#calculator-50-30-20">The 50-30-20 Rule Framework</a></li>
+                  <li><a href="#money-mistakes">Common Student Money Mistakes</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 border rounded-3 bg-light h-100">
+                <h6 class="fw-bold text-primary"><i class="bi bi-tools me-1"></i> 2. Practice &amp; Planning</h6>
+                <ul class="small text-secondary mb-0">
+                  <li><a href="#savings-goals">Savings Goals Simulator</a></li>
+                  <li><a href="#expense-planner">Session Expense Planner Table</a></li>
+                  <li><a href="#budget-invoice">Student Monthly Budget Plan Generator</a></li>
+                  <li><a href="#budget-invoice">Saved Plans &amp; Printable PDF Sheet</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 border rounded-3 bg-light h-100">
+                <h6 class="fw-bold text-primary"><i class="bi bi-shield-check me-1"></i> 3. Smart Financial Habits</h6>
+                <ul class="small text-secondary mb-0">
+                  <li><a href="#money-mistakes">Subscription Audit &amp; Leakage</a></li>
+                  <li><a href="#money-mistakes">Impulse Buying 24-Hour Rule</a></li>
+                  <li><a href="#money-mistakes">Hidden Fees &amp; Campus Money Tips</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 border rounded-3 bg-light h-100">
+                <h6 class="fw-bold text-primary"><i class="bi bi-robot me-1"></i> 4. Connect &amp; Support</h6>
+                <ul class="small text-secondary mb-0">
+                  <li><a href="javascript:void(0)" onclick="const m = bootstrap.Modal.getInstance(document.getElementById('sitemapModal')); if(m) m.hide(); toggleFloatingChatbot(true);"><i class="bi bi-robot me-1 text-primary"></i> BudgetBee Voice AI Chatbot</a></li>
+                  <li><a href="#about-and-contact">About Us &amp; Techwiz Vision</a></li>
+                  <li><a href="#about-and-contact">Validated Feedback &amp; Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 4. Educational Disclaimer Modal -->
+  <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0 shadow-lg">
+        <div class="modal-header border-bottom p-4">
+          <h5 class="modal-title fw-bold"><i class="bi bi-shield-exclamation text-warning me-2"></i>Educational Disclaimer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p>BudgetBasics is an educational website built for students, college learners, and beginners in personal finance under the <strong>Aptech Techwiz 7</strong> competition guidelines.</p>
+          <p class="mb-0 text-secondary small">It provides educational estimates, visual frameworks, and budget simulations. It does not provide licensed banking, credit processing, or certified investment advice.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Privacy Policy Modal -->
+  <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content rounded-4 border-0 shadow-lg">
+        <div class="modal-header border-bottom p-4">
+          <div class="d-flex align-items-center gap-2">
+            <span class="badge bg-success-subtle text-success border border-success-subtle px-2.5 py-1.5"><i class="bi bi-shield-lock-fill me-1"></i> Student Data Protection</span>
+            <h5 class="modal-title fw-bold mb-0" id="privacyModalLabel">Privacy Policy</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="p-3 bg-light rounded-3 mb-4 border">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+              <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Effective Date: <strong>September 2026</strong></span>
+              <span class="badge bg-primary-subtle text-primary border border-primary-subtle">100% Client-Side Sandbox</span>
+            </div>
+            <p class="small text-secondary mb-0 mt-2">
+              BudgetBasics ("NextGen BudgetBee") is committed to protecting student privacy. This privacy policy outlines how our single-page application handles your budgeting inputs, device speech interactions, and local preferences.
+            </p>
+          </div>
+
+          <div class="d-flex flex-column gap-3 small text-secondary">
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-cpu text-primary me-2"></i>1. Client-Side Data Architecture</h6>
+              <p class="mb-0">
+                BudgetBasics operates strictly as a client-side Single Page Application (SPA). All mathematical calculations (50-30-20 splits, expense logs, savings milestone forecasts, and custom budget blueprints) are executed locally inside your web browser engine. Your budget entries are never transmitted across the network to external backend databases or commercial servers.
+              </p>
+            </div>
+
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-eye-slash-fill text-danger me-2"></i>2. Zero Financial Credential Collection</h6>
+              <p class="mb-0">
+                We never prompt for, store, or process sensitive Personally Identifiable Information (PII) or financial credentials. This includes bank logins, credit card numbers, PINs, social security numbers, or real banking tokens. Any financial figures you enter are purely hypothetical student simulations.
+              </p>
+            </div>
+
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-mic-fill text-warning me-2"></i>3. Voice AI &amp; Speech Recognition Privacy</h6>
+              <p class="mb-0">
+                The integrated BudgetBee Voice Assistant utilizes standard W3C Web Speech APIs (<code>webkitSpeechRecognition</code> and <code>speechSynthesis</code>). Microphone access is activated solely when you tap the microphone button or enable voice listening mode. Audio feeds are converted to text locally or per your browser vendor's secure speech subsystem. We do not record, transmit, or retain raw audio recordings.
+              </p>
+            </div>
+
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-hdd-network-fill text-info me-2"></i>4. Local Storage &amp; Cookie Usage</h6>
+              <p class="mb-0">
+                BudgetBasics does not use tracking cookies. We utilize browser <code>localStorage</code> solely for convenience: preserving your Dark/Light theme mode, preferred currency symbol ($, Rs., €, £), and your saved student budget blueprints. You may wipe all local storage data at any time via your browser's "Clear Site Data" utility or by clearing the stored budget plans in Module 9.
+              </p>
+            </div>
+
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-shield-check text-success me-2"></i>5. Third-Party CDNs &amp; Assets</h6>
+              <p class="mb-0">
+                To guarantee high performance and accessibility, static styling resources and vector icons are served via trusted open-source CDNs (Bootstrap and Chart.js). These CDNs serve static code libraries and do not track individual learner profiles or display behavioral advertisements.
+              </p>
+            </div>
+
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-envelope-check-fill text-primary me-2"></i>6. Contact &amp; Privacy Queries</h6>
+              <p class="mb-0">
+                For questions regarding student data protection or technical architecture under Aptech Techwiz 7, contact Team Tech Hunters via the official Contact Us module or at <strong>info@aglsm.com</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top p-3 bg-light">
+          <button type="button" class="btn btn-primary-gradient px-4 rounded-pill" data-bs-dismiss="modal">I Understand</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5.1 Terms and Conditions Modal -->
+  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content rounded-4 border-0 shadow-lg">
+        <div class="modal-header border-bottom p-4">
+          <div class="d-flex align-items-center gap-2">
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2.5 py-1.5"><i class="bi bi-file-earmark-ruled-fill me-1"></i> Educational Terms</span>
+            <h5 class="modal-title fw-bold mb-0" id="termsModalLabel">Terms and Conditions</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="p-3 bg-light rounded-3 mb-4 border">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+              <span class="small text-muted"><i class="bi bi-award-fill text-warning me-1"></i> Aptech Techwiz 7 • Category 1</span>
+              <span class="badge bg-secondary">Last Modified: September 2026</span>
+            </div>
+            <p class="small text-secondary mb-0 mt-2">
+              Welcome to BudgetBasics ("NextGen BudgetBee"). By accessing or utilizing this website, calculators, infographics, or voice AI assistant, you acknowledge and agree to abide by the terms outlined below.
+            </p>
+          </div>
+
+          <div class="d-flex flex-column gap-3 small text-secondary">
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-mortarboard-fill text-primary me-2"></i>1. Educational &amp; Academic Scope</h6>
+              <p class="mb-0">
+                BudgetBasics is an interactive digital literacy platform engineered under the <strong>Aptech Techwiz 7 Global IT Competition</strong> (Web Innovation Unleashed). It is designed to teach high school and undergraduate students foundational budgeting concepts, including the 50-30-20 framework, the 48-hour impulse delay protocol, and recurring subscription management.
+              </p>
+            </div>
+
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-exclamation-octagon-fill text-warning me-2"></i>2. Simulation Only — Not Financial or Tax Advice</h6>
+              <p class="mb-0">
+                All numerical calculations, timeline projections, donut graphs, and printable PDF statements generated by BudgetBasics are hypothetical simulations intended solely for educational practice. They do NOT constitute certified financial planning, accredited wealth management, tax consultancy, or banking services. Users must consult licensed financial advisors before making substantial real-world financial or contractual decisions.
+              </p>
+            </div>
+
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-person-check-fill text-success me-2"></i>3. Acceptable Use &amp; Learner Conduct</h6>
+              <p class="mb-0">
+                You agree to use this platform in good faith for personal learning, classroom demonstration, or student budget preparation. You agree not to execute automated scraping scripts, inject malicious code into forms, or attempt unauthorized tampering with application assets.
+              </p>
+            </div>
+
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-file-earmark-pdf-fill text-danger me-2"></i>4. User-Generated Budget Plans &amp; PDF Exports</h6>
+              <p class="mb-0">
+                Users are solely responsible for the authenticity and accuracy of any student names, academic terms, and expense entries inputted into Module 9 ("Student Monthly Budget Plan"). Generated PDF blueprints are uncertified student planning worksheets and carry no legal liability for loan or scholarship approval.
+              </p>
+            </div>
+
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-c-circle-fill text-info me-2"></i>5. Intellectual Property &amp; Attribution</h6>
+              <p class="mb-0">
+                The BudgetBasics brand, NextGen BudgetBee character illustrations, sinuous tracer navigation, and UI blueprints were conceptualized and developed by <strong>Team Tech Hunters (Aptech Rahim Yar Khan Center, Punjab, Pakistan)</strong>. Open-source libraries (Bootstrap 5, Chart.js, Bootstrap Icons) are acknowledged under their respective open-source licenses.
+              </p>
+            </div>
+
+            <div>
+              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-shield-x text-secondary me-2"></i>6. Limitation of Liability</h6>
+              <p class="mb-0">
+                Under no circumstances shall Team Tech Hunters, Aptech Computer Education, or competition evaluators be held liable for any direct, indirect, incidental, or consequential damages resulting from user reliance on calculator estimates, speech assistant recommendations, or simulated figures.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top p-3 bg-light">
+          <button type="button" class="btn btn-primary-gradient px-4 rounded-pill" data-bs-dismiss="modal">Accept &amp; Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Infographic Detail Lightbox Modal (Module 7) -->
+  <div class="modal fade" id="infographicModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4 border-0 shadow-lg">
+        <div class="modal-header border-bottom p-4">
+          <div class="d-flex align-items-center gap-2 mobile-header-stack">
+            <span class="badge bg-warning text-dark me-1" id="infoModalBadge">Core Framework</span>
+            <h5 class="modal-title fw-bold mb-0" id="infoModalTitle">Infographic Title</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <div class="p-3 bg-light rounded-4 mb-3 border text-center">
+            <img src="" alt="" id="infoModalImg" class="img-fluid rounded-3" style="max-height: 380px;">
+          </div>
+          <p class="text-secondary mb-3 text-start" id="infoModalCaption"></p>
+          <div class="p-3 bg-warning-subtle text-dark rounded-3 border border-warning-subtle text-start">
+            <h6 class="fw-bold mb-2"><i class="bi bi-check2-circle text-warning me-1"></i> Key Takeaways &amp; Student Rules:</h6>
+            <ul class="small mb-0 list-unstyled d-flex flex-column gap-1.5" id="infoModalTakeaways"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- 8. Interactive Guided Tour Spotlight Overlay -->
+  <div id="guidedTourOverlay" class="tour-backdrop no-print"></div>
+
+  <!-- Tour Popover Card (Elevated to top-level stacking context so never hidden) -->
+  <div id="tourPopoverCard" class="tour-popover-card no-print">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <span class="badge bg-primary-subtle text-primary fw-bold" id="tourStepBadge">Step 1 of 5</span>
+      <button class="btn btn-sm btn-link text-muted p-0 text-decoration-none" id="btnTourSkip" title="Skip Tour"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <h6 class="fw-bold mb-1 fs-6" id="tourStepTitle">Welcome to BudgetBasics</h6>
+    <p class="small text-muted mb-3" id="tourStepContent">Tour description goes here.</p>
+    <div class="d-flex justify-content-between align-items-center">
+      <button class="btn btn-sm btn-outline-secondary rounded-pill px-3" id="btnTourPrev"><i class="bi bi-chevron-left me-1"></i> Back</button>
+      <button class="btn btn-sm btn-primary-gradient rounded-pill px-3" id="btnTourNext">Next <i class="bi bi-chevron-right ms-1"></i></button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       HIDDEN PRINTABLE DOCUMENT TEMPLATES (Certified Physical Output)
+       ========================================================================= -->
+  <!-- A. Printable 50-30-20 Budget Statement Sheet -->
+  <div id="printableBudgetSheet" class="printable-document d-none">
+    <div class="print-cert-card p-3 border border-2 border-primary rounded-3 shadow-none">
+      <div class="d-flex justify-content-between align-items-start border-bottom pb-2 mb-2">
+        <div class="d-flex align-items-center gap-2.5">
+          <img src="assets/images/logo-icon.svg" alt="BudgetBasics Logo" class="brand-logo-icon" style="height: 38px; width: 38px;">
+          <div>
+            <h2 class="fw-bold mb-0 brand-title" style="letter-spacing: -0.5px; font-size: 1.35rem;"><span class="invoice-brand-budget">Budget</span><span style="color: #FF5B22;">Basics</span></h2>
+            <div class="small fw-bold print-subtitle-text text-uppercase tracking-wider" style="font-size: 0.75rem;">Official 50-30-20 Student Budget Allocation Statement</div>
+            <div class="small text-muted" style="font-size: 0.7rem;">Aptech Techwiz 7 • Category 1: Web Innovation Unleashed • Team Tech Hunters (Rahim Yar Khan)</div>
+          </div>
+        </div>
+        <div class="text-end">
+          <div class="badge bg-success-subtle text-success border border-success-subtle px-2.5 py-1.5 fw-bold" style="font-size: 0.75rem;">STATUS: CERTIFIED ALLOCATION</div>
+          <div class="small text-muted mt-0.5" style="font-size: 0.72rem;">Date: <strong id="printBudgetDate">September 27, 2026</strong></div>
+          <div class="small text-muted" style="font-size: 0.72rem;">Doc ID: <strong id="printBudgetDocId">BB-STMT-503020-0927</strong></div>
+        </div>
+      </div>
+
+      <!-- Inflow & Ratio Banner -->
+      <div class="row g-2 mb-2 p-2 print-sub-box rounded-3 border align-items-center">
+        <div class="col-6">
+          <span class="small text-muted text-uppercase fw-bold d-block" style="font-size: 0.7rem;">Monthly Allowance / Student Inflow</span>
+          <strong class="fs-4 print-income-text" id="printBudgetIncome">$1,200.00</strong>
+        </div>
+        <div class="col-6 text-end">
+          <span class="small text-muted text-uppercase fw-bold d-block" style="font-size: 0.7rem;">Applied Framework Ratio</span>
+          <strong class="fs-5 text-primary" id="printBudgetRatio">50% Needs / 30% Wants / 20% Savings</strong>
+        </div>
+      </div>
+
+      <!-- 3 Key Bucket Cards -->
+      <div class="row g-2 mb-2">
+        <div class="col-4">
+          <div class="p-2 border border-primary-subtle rounded-3 bg-primary-subtle text-center">
+            <span class="small fw-bold text-primary text-uppercase d-block mb-0.5" style="font-size: 0.72rem;">Needs (Essentials 50%)</span>
+            <strong class="fs-5 text-primary d-block" id="printNeedsVal">$600.00</strong>
+            <span class="small text-secondary d-block" style="font-size: 0.7rem;" id="printNeedsWeekly">~$138.00 / week</span>
+            <span class="small text-muted" style="font-size: 0.68rem;" id="printNeedsDaily">~$19.70 / day</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="p-2 border border-danger-subtle rounded-3 bg-danger-subtle text-center">
+            <span class="small fw-bold text-danger text-uppercase d-block mb-0.5" style="font-size: 0.72rem;">Wants (Lifestyle 30%)</span>
+            <strong class="fs-5 text-danger d-block" id="printWantsVal">$360.00</strong>
+            <span class="small text-secondary d-block" style="font-size: 0.7rem;" id="printWantsWeekly">~$83.00 / week</span>
+            <span class="small text-muted" style="font-size: 0.68rem;" id="printWantsDaily">~$11.80 / day</span>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="p-2 border border-success-subtle rounded-3 bg-success-subtle text-center">
+            <span class="small fw-bold text-success text-uppercase d-block mb-0.5" style="font-size: 0.72rem;">Savings (Buffer 20%)</span>
+            <strong class="fs-5 text-success d-block" id="printSavingsVal">$240.00</strong>
+            <span class="small text-secondary d-block" style="font-size: 0.7rem;" id="printSavingsWeekly">~$55.00 / week</span>
+            <span class="small text-muted" style="font-size: 0.68rem;" id="printSavingsDaily">~$7.90 / day</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Allocation Table -->
+      <table class="table table-bordered table-sm mb-2" style="font-size: 8pt;">
+        <thead class="table-light">
+          <tr>
+            <th>Bucket Category</th>
+            <th>Guideline Allocation</th>
+            <th class="text-end">Monthly Allowance</th>
+            <th class="text-end">Weekly Spending Cap</th>
+            <th>Primary Student Essentials &amp; Rules</th>
+          </tr>
+        </thead>
+        <tbody id="printBudgetTableBody">
+          <tr>
+            <td><strong>Needs (Essentials)</strong></td>
+            <td><span class="badge bg-primary-subtle text-primary border">50% Target</span></td>
+            <td class="text-end fw-bold text-primary" id="printNeedsValTable">$600.00</td>
+            <td class="text-end fw-bold" id="printNeedsWeeklyTable">~$138.00 / wk</td>
+            <td class="small text-muted">Hostel rent, dorm utilities, campus meal groceries, metro card, course textbooks.</td>
+          </tr>
+          <tr>
+            <td><strong>Wants (Discretionary)</strong></td>
+            <td><span class="badge bg-danger-subtle text-danger border">30% Target</span></td>
+            <td class="text-end fw-bold text-danger" id="printWantsValTable">$360.00</td>
+            <td class="text-end fw-bold" id="printWantsWeeklyTable">~$83.00 / wk</td>
+            <td class="small text-muted">Weekend socializing, dining out, streaming apps, games. Follow 48-hour cool-off rule.</td>
+          </tr>
+          <tr>
+            <td><strong>Savings (Emergency Vault)</strong></td>
+            <td><span class="badge bg-success-subtle text-success border">20% Target</span></td>
+            <td class="text-end fw-bold text-success" id="printSavingsValTable">$240.00</td>
+            <td class="text-end fw-bold" id="printSavingsWeeklyTable">~$55.00 / wk</td>
+            <td class="small text-muted">Automate transfer on day 1 to separate student high-yield vault. Do not touch for leisure.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Educational Guidance Note -->
+      <div class="p-2 print-sub-box rounded-3 mb-2 border" style="font-size: 7.8pt;">
+        <strong class="print-directive-title"><i class="bi bi-info-circle-fill text-primary me-1"></i> Student Action Directives:</strong>
+        <ul class="list-unstyled mb-0 mt-1 text-muted d-flex flex-column gap-0.5">
+          <li>• <strong>Pay Yourself First:</strong> Transfer the 20% savings allocation immediately when monthly allowance is deposited.</li>
+          <li>• <strong>Cap Lifestyle Urges:</strong> Never exceed the weekly discretionary cap to avoid running out of funds before semester month-end.</li>
+          <li>• <strong>Audit Fixed Commitments:</strong> Review campus student discounts on transit and digital tools to reduce fixed overhead.</li>
+        </ul>
+      </div>
+
+      <!-- Signatures Footer -->
+      <div class="d-flex justify-content-between align-items-center pt-2 border-top small text-muted" style="font-size: 7.5pt;">
+        <div>
+          <div>Alex Carter (Student Signature): _______________________________</div>
+          <div class="text-muted mt-0.5" style="font-size: 0.7rem;">Generated electronically via BudgetBasics Client Portal • NextGen BudgetBee</div>
+        </div>
+        <div class="text-end">
+          <div class="fw-bold print-auth-text">[ DIGITAL VERIFICATION: BB-503020-AUTH ]</div>
+          <div class="text-muted" style="font-size: 0.7rem;">Aptech Techwiz 7 • Team Tech Hunters (Rahim Yar Khan)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- B. Printable Savings Goal Milestone Roadmap Certificate -->
+  <div id="printableGoalRoadmap" class="printable-document d-none">
+    <div class="print-cert-card p-3 border border-2 border-warning rounded-3 shadow-none">
+      <div class="d-flex justify-content-between align-items-start border-bottom pb-2 mb-2">
+        <div class="d-flex align-items-center gap-2.5">
+          <img src="assets/images/logo-icon.svg" alt="BudgetBasics Logo" class="brand-logo-icon" style="height: 38px; width: 38px;">
+          <div>
+            <h2 class="fw-bold mb-0 brand-title" style="letter-spacing: -0.5px; font-size: 1.35rem;"><span class="invoice-brand-budget">Budget</span><span style="color: #FF5B22;">Basics</span></h2>
+            <div class="small fw-bold print-subtitle-text text-uppercase tracking-wider" style="font-size: 0.75rem;">Student Savings Goal &amp; Milestone Roadmap Certificate</div>
+            <div class="small text-muted" style="font-size: 0.7rem;">Theme: NextGen BudgetBee • Techwiz 7 Championship • Team: Tech Hunters (Rahim Yar Khan)</div>
+          </div>
+        </div>
+        <div class="text-end">
+          <span class="badge bg-warning text-dark fw-bold px-2.5 py-1.5" style="font-size: 0.75rem;">MILESTONE ROADMAP</span>
+          <div class="small text-muted mt-0.5" style="font-size: 0.72rem;">Issue Date: <strong id="printCertDate">September 27, 2026</strong></div>
+          <div class="small text-muted" style="font-size: 0.72rem;">Cert ID: <strong id="printCertSerial">CERT-BB-GOAL-2026-089</strong></div>
+        </div>
+      </div>
+
+      <!-- Target Goal Showcase Hero Box -->
+      <div class="p-2 print-sub-box rounded-3 mb-2 border text-center print-goal-showcase">
+        <span class="small text-muted text-uppercase fw-bold d-block mb-0.5" style="font-size: 0.7rem;">Target Milestone Fund</span>
+        <h4 class="fw-bold text-primary mb-1" id="printGoalName">Emergency Safety Fund</h4>
+        <div class="row g-2 justify-content-center mt-1">
+          <div class="col-3 border-end">
+            <span class="small text-muted d-block" style="font-size: 0.7rem;">Target Amount</span>
+            <strong class="fs-6 print-target-val" id="printGoalTarget">$500.00</strong>
+          </div>
+          <div class="col-3 border-end">
+            <span class="small text-muted d-block" style="font-size: 0.7rem;">Current Saved</span>
+            <strong class="fs-6 text-success" id="printGoalCurrent">$150.00</strong>
+          </div>
+          <div class="col-3 border-end">
+            <span class="small text-muted d-block" style="font-size: 0.7rem;">Remaining Needed</span>
+            <strong class="fs-6 text-danger" id="printGoalRemaining">$350.00</strong>
+          </div>
+          <div class="col-3">
+            <span class="small text-muted d-block" style="font-size: 0.7rem;">Monthly Deposit</span>
+            <strong class="fs-6 text-primary" id="printGoalMonthly">$70.00</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeline & Progress Bar -->
+      <div class="p-2 border rounded-3 mb-2 print-sub-box">
+        <div class="d-flex justify-content-between align-items-center mb-1">
+          <span class="small fw-bold print-subtitle-text text-uppercase" style="font-size: 0.72rem;">Roadmap Velocity &amp; Target Forecast</span>
+          <span class="badge bg-success-subtle text-success border border-success-subtle fw-bold" style="font-size: 0.72rem;" id="printGoalPercent">30% Complete</span>
+        </div>
+        <div class="progress mb-1.5" style="height: 10px; background-color: #E2E8F0;">
+          <div class="progress-bar bg-success" id="printGoalBar" style="width: 30%;"></div>
+        </div>
+        <div class="d-flex justify-content-between text-muted" style="font-size: 7.5pt;">
+          <span>Est. Timeline: <strong class="print-timeline-text" id="printGoalTimeline">5 Months</strong> (<span id="printGoalBreakdown">~22 Weeks • ~152 Days</span>)</span>
+          <span>Target Date: <strong class="text-primary" id="printGoalDate">Ready in March 2027</strong></span>
+        </div>
+      </div>
+
+      <!-- 4-Phase Milestone Path Table -->
+      <table class="table table-bordered table-sm mb-2" style="font-size: 8pt;">
+        <thead class="table-light">
+          <tr>
+            <th style="width: 25%;">Milestone Phase</th>
+            <th style="width: 20%;">Target Threshold</th>
+            <th>Discipline Action Protocol</th>
+            <th style="width: 15%;" class="text-center">Verification</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fw-bold">Phase 1: Seed Stage (25%)</td>
+            <td><span class="badge bg-light text-dark border">First Quarter</span></td>
+            <td class="small">Automate first allowance transfers; cancel ghost subscriptions to accelerate momentum.</td>
+            <td class="text-center text-success"><i class="bi bi-check-circle-fill"></i> In Progress</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Phase 2: Halfway Checkpoint (50%)</td>
+            <td><span class="badge bg-light text-dark border">Halfway Funded</span></td>
+            <td class="small">Celebrate milestone with a low-cost treat; lock in secondary emergency cushion.</td>
+            <td class="text-center text-muted">○ Pending</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Phase 3: Home Stretch (75%)</td>
+            <td><span class="badge bg-light text-dark border">Three Quarters</span></td>
+            <td class="small">Maintain 48-hour cool-off rule; avoid lifestyle creep as target approaches.</td>
+            <td class="text-center text-muted">○ Pending</td>
+          </tr>
+          <tr>
+            <td class="fw-bold">Phase 4: Goal Conquered (100%)</td>
+            <td><span class="badge bg-success text-white">Full Target</span></td>
+            <td class="small">Deploy fund for designated milestone with zero student debt!</td>
+            <td class="text-center text-muted">○ Final Aim</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Discipline Commitment -->
+      <div class="p-2 border rounded-3 mb-2 print-sub-box">
+        <h6 class="fw-bold print-directive-title mb-0.5" style="font-size: 8pt;"><i class="bi bi-shield-check text-warning me-1"></i> Student Financial Discipline Pledge:</h6>
+        <p class="text-muted mb-0" style="font-size: 7.5pt;">"I commit to depositing my planned monthly contribution immediately upon allowance arrival. Consistent small drops build the honey hive of financial independence."</p>
+      </div>
+
+      <!-- Official Signatures Block -->
+      <div class="row pt-2 border-top small text-muted align-items-end" style="font-size: 7.5pt;">
+        <div class="col-6">
+          <div class="fw-bold print-auth-text">Alex Carter (Student Planner)</div>
+          <div>Signature: _________________________________</div>
+          <div class="text-muted mt-0.5" style="font-size: 0.7rem;">BudgetBasics Student Development Platform • NextGen BudgetBee</div>
+        </div>
+        <div class="col-6 text-end">
+          <div class="fw-bold print-auth-text">Team Tech Hunters (Techwiz 7)</div>
+          <div>Faculty / Peer Verification: _______________________</div>
+          <div class="text-muted mt-0.5" style="font-size: 0.7rem;">Aptech Rahim Yar Khan Center • Certified Digital Ledger: BB-GOAL-VERIFIED</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C. Printable Expense Planner Session Statement -->
+  <div id="printableExpenseStatement" class="d-none">
+    <div class="p-3 print-cert-card border border-2 border-primary rounded-3">
+      <div class="d-flex justify-content-between align-items-start border-bottom pb-2 mb-2">
+        <div class="d-flex align-items-center gap-2.5">
+          <img src="assets/images/logo-icon.svg" alt="BudgetBasics Logo" class="brand-logo-icon" style="height: 38px; width: 38px;">
+          <div>
+            <h2 class="fw-bold mb-0 brand-title" style="letter-spacing: -0.5px; font-size: 1.35rem;"><span class="invoice-brand-budget">Budget</span><span style="color: #FF5B22;">Basics</span></h2>
+            <div class="small fw-bold print-subtitle-text" style="font-size: 0.72rem;">STUDENT EXPENSE PLANNER SESSION LOG &amp; AUDIT</div>
+          </div>
+        </div>
+        <div class="text-end">
+          <div class="badge bg-primary text-white" style="font-size: 0.75rem;">SESSION AUDIT</div>
+        </div>
+      </div>
+      <div class="row g-2 mb-2 p-2 print-sub-box rounded-3">
+        <div class="col-4">
+          <span class="small text-muted d-block" style="font-size: 0.7rem;">ALLOWANCE BUDGET</span>
+          <strong class="fs-6 print-target-val" id="printExpBudget">$1,200.00</strong>
+        </div>
+        <div class="col-4">
+          <span class="small text-muted d-block" style="font-size: 0.7rem;">TOTAL PLANNED SPENT</span>
+          <strong class="fs-6 text-danger" id="printExpSpent">-$218.50</strong>
+        </div>
+        <div class="col-4 text-end">
+          <span class="small text-muted d-block" style="font-size: 0.7rem;">REMAINING BALANCE</span>
+          <strong class="fs-6 text-success" id="printExpRemaining">$981.50</strong>
+        </div>
+      </div>
+      <table class="table table-bordered table-sm mb-2" style="font-size: 8pt;">
+        <thead class="table-light">
+          <tr>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th class="text-end">Amount</th>
+          </tr>
+        </thead>
+        <tbody id="printExpTableBody">
+          <!-- Rendered via JS -->
+        </tbody>
+      </table>
+      <div class="d-flex justify-content-between align-items-center pt-2 border-top small text-muted" style="font-size: 7.5pt;">
+        <div>BudgetBasics Single Page Application • Techwiz 7</div>
+        <div>Verified Session Balance: Healthy</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 2000;">
+    <div id="appToast" class="toast align-items-center text-bg-dark border-0 rounded-3 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          <strong id="toastTitle" class="d-block mb-1 text-warning">Notice</strong>
+          <span id="toastBody">Action performed successfully.</span>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="btn-back-to-top" id="btnBackToTop" title="Back to top" aria-label="Back to top">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- =========================================================================
+       Upgraded Unified AI Voice & Chat Assistant (Bottom-Right Floating Widget)
+       ========================================================================= -->
+  <!-- Floating Trigger Launcher Button (Transforms into Speaking/Listening view on voice command) -->
+  <button class="floating-chatbot-launcher no-print" id="floatingChatLauncher" onclick="toggleFloatingChatbot()" aria-label="Open BudgetBee AI Financial Assistant" title="Chat with BudgetBee AI">
+    <div class="launcher-voice-pulse" id="launcherVoicePulse"></div>
+    <span class="online-dot" id="launcherOnlineDot"></span>
+    <i class="bi bi-chat-dots-fill" id="chatLauncherIcon"></i>
+    <!-- Speaking / Voice Equalizer Bars -->
+    <div class="launcher-voice-bars" id="launcherVoiceBars" style="display: none;" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <span class="launcher-pill-hint d-none d-md-inline" id="launcherPillHint">Ask BudgetBee 🐝</span>
+  </button>
+
+  <!-- Floating Chatbot Slide-up Window -->
+  <div class="floating-chatbot-window no-print shadow-lg" id="floatingChatWindow" role="dialog" aria-modal="false" aria-label="BudgetBee AI Financial Assistant">
+    <!-- Window Header -->
+    <div class="chatbot-header">
+      <div class="d-flex align-items-center gap-2">
+        <img src="assets/images/bee-mascot.svg" alt="BudgetBee Assistant" class="avatar-bot" style="width: 36px; height: 36px;">
+        <div>
+          <h6 class="fw-bold mb-0 text-white fs-6">BudgetBee AI</h6>
+          <span class="small text-success d-flex align-items-center gap-1" style="font-size: 0.72rem;" id="botStatusText">
+            <span class="spinner-grow spinner-grow-sm text-success" style="width: 6px; height: 6px;"></span> Active &amp; Voice Enabled
+          </span>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-1.5">
+        <!-- All-Time / Continuous Listening Mode Toggle -->
+        <button class="btn btn-sm btn-outline-light border-0 py-1 px-2" id="btnToggleAllTimeListening" title="Continuous Listening (All-Time Listening): Automatically re-arms mic after speaking" style="font-size: 0.72rem;">
+          <i class="bi bi-arrow-repeat text-warning" id="iconAllTimeListening"></i>
+          <span class="d-none d-sm-inline ms-1 small" id="textAllTimeListening">Auto-Mic: ON</span>
+        </button>
+        <!-- Speech (TTS) Output Toggle -->
+        <button class="btn btn-sm btn-primary-gradient py-1 px-2" id="btnToggleTtsFloating" title="Voice Output: ON (Click to mute)" style="font-size: 0.72rem;">
+          <i class="bi bi-volume-up-fill" id="ttsIconFloating"></i>
+        </button>
+        <!-- Close / Minimize Chatbot Button -->
+        <button class="btn btn-sm btn-outline-light border-0 py-1 px-2" onclick="toggleFloatingChatbot(false)" title="Minimize chat">
+          <i class="bi bi-dash-lg fs-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Voice & Topic Prompts Strip -->
+    <div class="chatbot-quick-strip px-3 py-1.5 bg-body-tertiary border-bottom d-flex align-items-center gap-1.5 overflow-x-auto text-nowrap" id="chatbotQuickStrip" style="font-size: 0.72rem;">
+      <span class="fw-bold text-muted me-1"><i class="bi bi-lightning-charge-fill text-warning"></i> Quick:</span>
+      <button class="btn btn-xs btn-outline-secondary rounded-pill py-0 px-2 quick-chip" data-query="How can I manage my budgets?">How to manage budget?</button>
+      <button class="btn btn-xs btn-outline-secondary rounded-pill py-0 px-2 quick-chip" data-query="How can I manage my expenses?">Manage expenses</button>
+      <button class="btn btn-xs btn-outline-secondary rounded-pill py-0 px-2 quick-chip" data-query="Calculate budget of 1200">Calculate 1200</button>
+      <button class="btn btn-xs btn-outline-secondary rounded-pill py-0 px-2 quick-chip" data-query="What is 50-30-20 rule?">50-30-20</button>
+      <button class="btn btn-xs btn-outline-secondary rounded-pill py-0 px-2 quick-chip" data-query="Print budget blueprint">Print blueprint</button>
+    </div>
+
+    <!-- Messages Area -->
+    <div class="chatbot-messages" id="chatbotMessagesFloating">
+      <!-- Dynamic chat bubbles loaded by assets/js/chatbot.js -->
+    </div>
+
+    <!-- Input Bar with Voice Mic & Send -->
+    <div class="chatbot-input-bar">
+      <button class="btn-voice" id="btnVoiceMicFloating" title="Click to ask with your voice (Microphone)">
+        <i class="bi bi-mic-fill"></i>
+      </button>
+      <input type="text" id="chatInputFloating" class="form-control form-control-sm form-control-custom" placeholder="Ask e.g. How can I manage my budgets?">
+      <button class="btn btn-primary-gradient btn-sm px-3" id="btnSendChatFloating">
+        <i class="bi bi-send-fill"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       17. Sinuous Snake Scroll Tracing Arrow Line (Interactive Scroll Companion)
+       With Animated BudgetBee Mascot Flying Ahead & Snake Following!
+       ========================================================================= -->
+  <div id="scrollSnakeTracer" class="scroll-snake-tracer no-print" aria-hidden="true" title="Scroll Progress Snake Tracer">
+    <svg id="scrollSnakeSvg" class="scroll-snake-svg" width="48" height="100%">
+      <defs>
+        <linearGradient id="snakeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#FF5B22" />
+          <stop offset="50%" stop-color="#FFA41B" />
+          <stop offset="100%" stop-color="#10B981" />
+        </linearGradient>
+        <mask id="snakeRevealMask" maskUnits="userSpaceOnUse">
+          <path id="snakeMaskPath" d="" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" />
+        </mask>
+      </defs>
+
+      <!-- Faint guide track (dotted background wave) -->
+      <path id="snakeTrackPath" class="snake-track-path" d="" />
+
+      <!-- Active traced dotted line revealed with scroll progress -->
+      <path id="snakeActivePath" class="snake-active-path" d="" mask="url(#snakeRevealMask)" />
+
+      <!-- Start Pad Landmark at Top (y=0) -->
+      <g id="snakeStartPad" class="snake-start-pad" transform="translate(24, 0)">
+        <circle cx="0" cy="0" r="10" fill="#10B981" opacity="0.3" />
+        <circle cx="0" cy="0" r="5" fill="#10B981" />
+        <path d="M-4,-2 C-8,-6 -2,-10 0,-12 C2,-10 8,-6 4,-2 Z" fill="#34D399" />
+      </g>
+
+      <!-- Finish Goal Landmark at Bottom -->
+      <g id="snakeFinishGoal" class="snake-finish-goal" transform="translate(24, 100)">
+        <circle cx="0" cy="0" r="12" fill="rgba(255, 164, 27, 0.35)" />
+        <circle cx="0" cy="0" r="7.5" fill="#FFA41B" />
+        <text x="0" y="3.5" font-size="8.5" font-weight="bold" fill="#FFFFFF" text-anchor="middle">$</text>
+      </g>
+
+      <!-- Animated BudgetBee Mascot Flying Along Sine Wave Ahead of Snake (Clean, No Blinking) -->
+      <g id="snakeBeeMascot" class="snake-bee-mascot" transform="translate(24, 0) rotate(0)">
+        <ellipse class="snake-bee-wing-l" cx="-5.5" cy="-6" rx="5" ry="3" fill="#FFFFFF" opacity="0.9" />
+        <ellipse class="snake-bee-wing-r" cx="5.5" cy="-6" rx="5" ry="3" fill="#FFFFFF" opacity="0.9" />
+        <ellipse cx="0" cy="0" rx="7" ry="8.5" fill="#FFA41B" />
+        <path d="M-6,-2 h12 M-6.5,1 h13 M-5.5,4 h11" stroke="#1E293B" stroke-width="1.8" stroke-linecap="round" />
+        <circle cx="0" cy="-7.5" r="3.8" fill="#1E293B" />
+        <path d="M-1.5,-10 C-3.5,-13 -6,-12.5 -7,-12 M1.5,-10 C3.5,-13 6,-12.5 7,-12" stroke="#FFA41B" stroke-width="1.2" stroke-linecap="round" />
+        <circle cx="-1.2" cy="-7.8" r="1" fill="#FFFFFF" />
+        <circle cx="1.2" cy="-7.8" r="1" fill="#FFFFFF" />
+      </g>
+
+      <!-- Sleek Arrow Head that snakes down chasing the Bee (Crisp, No Blinking Aura) -->
+      <g id="snakeArrowHead" class="snake-arrow-head" transform="translate(24, 0) rotate(0)">
+        <circle cx="0" cy="0" r="7" class="snake-arrow-core" />
+        <polygon points="0,8 7,-6 0,-2 -7,-6" class="snake-arrow-poly" />
+      </g>
+    </svg>
+
+    <!-- Floating Live Scroll Percentage Badge -->
+    <div id="snakeScrollBubble" class="snake-scroll-bubble">0%</div>
+  </div>
+
+  <!-- Bootstrap 5.3 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Application Logic Modules -->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/calculator.js"></script>
+  <script src="assets/js/quiz.js"></script>
+  <script src="assets/js/expense-planner.js"></script>
+  <script src="assets/js/chatbot.js"></script>
+  <script src="assets/js/invoice.js"></script>
+  <script src="assets/js/scroll-snake.js"></script>
+</body>
+</html>

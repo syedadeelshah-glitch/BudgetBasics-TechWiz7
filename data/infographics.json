@@ -1,0 +1,76 @@
+[
+  {
+    "id": "info-1",
+    "title": "The Golden 50-30-20 Student Split",
+    "category": "budgeting",
+    "badge": "Core Framework",
+    "caption": "How to structure an allowance or starter salary into Needs (50%), Wants (30%), and Savings (20%).",
+    "altText": "Donut graphic dividing 50 percent for essentials, 30 percent for discretionary entertainment, and 20 percent for rainy day savings.",
+    "keyTakeaways": [
+      "50% covers shelter, groceries, transit, and course texts",
+      "30% preserves happiness and social life without guilt",
+      "20% guarantees financial security and emergency preparedness"
+    ],
+    "svgType": "pie-split"
+  },
+  {
+    "id": "info-2",
+    "title": "Needs vs. Wants Decision Tree",
+    "category": "habits",
+    "badge": "Mindset Tool",
+    "caption": "A 4-step flowchart to pause and evaluate impulse purchases before swiping your card.",
+    "altText": "Flowchart diagram asking: Can I live without it? Do I already own something similar? Will I still care in 30 days?",
+    "keyTakeaways": [
+      "Step 1: Is this essential for safety, health, or education?",
+      "Step 2: Can I postpone this by 48 hours?",
+      "Step 3: If bought, will it cause stress before month-end?",
+      "Step 4: Only buy if planned in the 30% wants bucket"
+    ],
+    "svgType": "decision-tree"
+  },
+  {
+    "id": "info-3",
+    "title": "The Student Monthly Budget Flow",
+    "category": "budgeting",
+    "badge": "Cashflow Guide",
+    "caption": "Visual path of student cashflow from allowance deposit to bills, daily essentials, and savings vault.",
+    "altText": "Cash flow diagram tracing allowance income to fixed bills, variable envelopes, and automated piggy-bank savings.",
+    "keyTakeaways": [
+      "Direct deposit allowance on Day 1",
+      "Automate 15-20% straight into separate savings account",
+      "Pay fixed hostel rent and utility commitments",
+      "Divide remainder into weekly variable cash envelopes"
+    ],
+    "svgType": "budget-flow"
+  },
+  {
+    "id": "info-4",
+    "title": "The 30-Day College Money Saving Challenge",
+    "category": "saving",
+    "badge": "Action Plan",
+    "caption": "30 actionable daily micro-challenges to save over $200 in a single month on campus.",
+    "altText": "Grid calendar showing 30 daily frugal micro-actions like bringing a water bottle, cancelling unused trials, cooking with roommates.",
+    "keyTakeaways": [
+      "Week 1: Audit digital subscriptions and eliminate ghost apps",
+      "Week 2: Meal-prep 4 days and host dorm movie nights",
+      "Week 3: Swap books with peers and use campus student discounts",
+      "Week 4: Zero-spend weekend challenge"
+    ],
+    "svgType": "challenge-grid"
+  },
+  {
+    "id": "info-5",
+    "title": "The Latte Factor Micro-Spend Reality",
+    "category": "habits",
+    "badge": "Spending Trap",
+    "caption": "Visualizing how a daily $4.50 specialty drink adds up to over $1,600 per school year.",
+    "altText": "Bar chart comparing 1 cup of gourmet coffee over days, months, and 4 college years totaling $6,400.",
+    "keyTakeaways": [
+      "1 Day: $4.50 (seems negligible)",
+      "1 Month: $135.00 (covers half a month of groceries)",
+      "1 Year: $1,620.00 (covers a high-end laptop or summer trip)",
+      "4 College Years: $6,480.00 (life-changing seed fund)"
+    ],
+    "svgType": "latte-factor"
+  }
+]
