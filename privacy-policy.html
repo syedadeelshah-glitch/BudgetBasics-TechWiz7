@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Privacy Policy — BudgetBasics | NextGen BudgetBee</title>
+  <meta name="description" content="Official Student Privacy Policy and Client-Side Data Protection Charter for BudgetBasics (NextGen BudgetBee) under Aptech Techwiz 7.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-icon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Core Theme CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+  <style>
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+    }
+    .doc-nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .doc-paper {
+      background: var(--surface);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    }
+    @media print {
+      .doc-nav, .no-print {
+        display: none !important;
+      }
+      body {
+        background: #FFFFFF !important;
+        color: #0F172A !important;
+      }
+      .doc-paper {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+      }
+    }
+  </style>
+
+  <script>
+    // Theme initialization
+    (function() {
+      const savedTheme = localStorage.getItem('budget_basics_theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="doc-nav py-3 no-print">
+    <div class="container-lg d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+        <img src="assets/images/logo-icon.svg" alt="BudgetBasics Logo" width="34" height="34">
+        <span class="fs-5 fw-bold text-primary">Budget<span class="text-warning">Basics</span></span>
+        <span class="badge bg-primary-subtle text-primary border border-primary-subtle d-none d-sm-inline-block">Legal Gazette</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2">
+        <a href="index.html" class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+          <i class="bi bi-arrow-left me-1"></i> Return to Main App
+        </a>
+        <a href="terms-and-conditions.html" class="btn btn-sm btn-outline-primary rounded-pill px-3">
+          <i class="bi bi-file-earmark-text me-1"></i> Terms &amp; Conditions
+        </a>
+        <button class="btn btn-sm btn-primary-gradient rounded-pill px-3 text-white" onclick="window.print();">
+          <i class="bi bi-printer-fill me-1"></i> Print Document
+        </button>
+        <button class="btn btn-sm btn-outline-secondary rounded-circle p-2" id="docThemeToggle" title="Toggle Theme" onclick="toggleDocTheme();" aria-label="Toggle Dark/Light Mode">
+          <i class="bi bi-moon-stars-fill" id="docThemeIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Document Container -->
+  <main class="container-lg py-4 py-lg-5">
+    <div class="doc-paper p-4 p-md-5">
+
+      <!-- Official Letterhead Header -->
+      <div class="legal-doc-header-banner p-3 p-md-4 mb-4">
+        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span class="badge bg-success-subtle text-success border border-success-subtle legal-doc-meta-badge">
+                <i class="bi bi-shield-lock-fill me-1"></i> Student Privacy Charter
+              </span>
+              <span class="badge bg-primary-subtle text-primary border border-primary-subtle legal-doc-meta-badge">
+                Techwiz 7 • Category 1
+              </span>
+            </div>
+            <h1 class="h3 fw-bold mb-1 text-primary">OFFICIAL STUDENT DATA PRIVACY CHARTER</h1>
+            <p class="text-secondary small mb-0">Governance, Client-Side Sandbox Security &amp; Audio Processing Policy</p>
+          </div>
+          <div class="text-end text-sm-start d-flex flex-column align-items-sm-end">
+            <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle small mb-1">Doc Ref: BB-DOC-POL-2026-V2</span>
+            <span class="small text-muted"><i class="bi bi-calendar-check me-1"></i> Effective: <strong>September 28, 2026</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Document Metadata Bar -->
+      <div class="legal-doc-toolbar mb-4 d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <div class="d-flex gap-2 flex-wrap small">
+          <span class="badge bg-body border text-secondary"><i class="bi bi-shield-check text-success me-1"></i> 100% Client-Side Sandbox</span>
+          <span class="badge bg-body border text-secondary"><i class="bi bi-database-x text-danger me-1"></i> Zero Database Storage</span>
+          <span class="badge bg-body border text-secondary"><i class="bi bi-mic-mute text-warning me-1"></i> No Audio Retention</span>
+          <span class="badge bg-body border text-secondary"><i class="bi bi-award text-primary me-1"></i> Team Tech Hunters</span>
+        </div>
+        <div class="small text-muted">
+          <span>Authoring Center: <strong>Aptech Rahim Yar Khan</strong></span>
+        </div>
+      </div>
+
+      <!-- Preamble Section -->
+      <div class="mb-4">
+        <h5 class="fw-bold mb-2">Preamble &amp; Academic Scope</h5>
+        <p class="text-secondary">
+          BudgetBasics (NextGen BudgetBee) is an interactive Single Page Application developed exclusively for educational purposes under the global IT competition <strong>Aptech Techwiz 7</strong> (Category 1: Web Innovation Unleashed). Our mission is to empower college, university, and secondary school students with sound financial planning skills while demonstrating the highest standards of digital privacy, ethical AI integration, and zero data-harvesting architecture.
+        </p>
+        <p class="text-secondary mb-0">
+          This document formally ratifies our commitment to privacy. As a student or educator utilizing BudgetBasics, you are guaranteed absolute confidentiality, non-tracking execution, and complete sovereign ownership of your budgeting figures.
+        </p>
+      </div>
+
+      <hr class="my-4 border-secondary opacity-25">
+
+      <!-- Formal Articles Grid -->
+      <div class="d-flex flex-column gap-4">
+
+        <!-- Article I -->
+        <article class="legal-article-card" id="article-1">
+          <div class="legal-article-header">
+            <span class="legal-article-num">I</span>
+            <h2 class="legal-article-title">Client-Side Sandbox Architecture &amp; Zero Network Transmission</h2>
+          </div>
+          <p class="text-secondary mb-2">
+            BudgetBasics operates as a strictly client-side Single Page Application (SPA). All computational operations—including 50-30-20 mathematical allocations, compound savings projections, weekly spending limits, expense ledgers, and printable PDF blueprint generation—occur entirely inside the browser's JavaScript V8/SpiderMonkey runtime engine on your personal device.
+          </p>
+          <p class="text-secondary mb-0">
+            No telemetry data, financial figures, stipend amounts, or student names entered into the application are transmitted across network wires to external backend web servers, cloud databases, or third-party marketing brokers.
+          </p>
+          <div class="legal-takeaway-box">
+            <i class="bi bi-check-circle-fill text-success me-1"></i>
+            <strong>Student Safety Guarantee:</strong> If you disconnect your internet connection while using BudgetBasics, every calculator, flowchart, and budget blueprint generator continues to operate seamlessly offline.
+          </div>
+        </article>
+
+        <!-- Article II -->
+        <article class="legal-article-card" id="article-2">
+          <div class="legal-article-header">
+            <span class="legal-article-num">II</span>
+            <h2 class="legal-article-title">Complete Absence of Financial Credential Collection</h2>
+          </div>
+          <p class="text-secondary mb-2">
+            BudgetBasics is fundamentally an educational simulation and planning platform. The platform explicitly prohibits, avoids, and refuses the collection of sensitive Personally Identifiable Financial Information (PIFI).
+          </p>
+          <ul class="text-secondary small mb-2">
+            <li>We do <strong>NOT</strong> request or accept bank account numbers, debit/credit card numbers, CVVs, or online banking PINs.</li>
+            <li>We do <strong>NOT</strong> require OAuth connections to commercial banking institutions, wallets, or payment gateways.</li>
+            <li>We do <strong>NOT</strong> solicit government identification numbers (such as SSN, National Identity Card, or Passport numbers).</li>
+          </ul>
+          <p class="text-secondary mb-0">
+            All numerical values entered by learners are treated strictly as hypothetical educational numbers for financial modeling purposes only.
+          </p>
+          <div class="legal-takeaway-box">
+            <i class="bi bi-shield-fill-check text-success me-1"></i>
+            <strong>No Banking Risk:</strong> BudgetBasics will never ask for account credentials. It is 100% risk-free for students.
+          </div>
+        </article>
+
+        <!-- Article III -->
+        <article class="legal-article-card" id="article-3">
+          <div class="legal-article-header">
+            <span class="legal-article-num">III</span>
+            <h2 class="legal-article-title">Voice AI &amp; Web Speech API Audio Privacy</h2>
+          </div>
+          <p class="text-secondary mb-2">
+            Our NextGen BudgetBee Voice Assistant leverages the standardized W3C Web Speech API (comprising <code>webkitSpeechRecognition</code> and the <code>speechSynthesis</code> subsystem). Microphone capture is subject to strict operational privacy bounds:
+          </p>
+          <p class="text-secondary mb-2">
+            <strong>1. Explicit User Activation:</strong> The microphone is engaged solely when you explicitly click the voice microphone trigger or toggle the "All-Time Listening" control within the floating assistant widget.
+          </p>
+          <p class="text-secondary mb-2">
+            <strong>2. Ephemeral Audio Processing:</strong> Voice audio is converted to text either directly on-device or securely through your browser vendor's native speech recognition pipeline. Team Tech Hunters does not own, run, or transmit audio to any speech server.
+          </p>
+          <p class="text-secondary mb-0">
+            <strong>3. Zero Voice Recordings:</strong> No audio recordings, voice prints, or acoustic biometric data are ever captured, logged, stored on disk, or repurposed for machine learning training.
+          </p>
+          <div class="legal-takeaway-box warning">
+            <i class="bi bi-mic-fill text-warning me-1"></i>
+            <strong>Microphone Control:</strong> You can mute or disable microphone access at any time via your browser's site permissions menu with zero disruption to manual typing controls.
+          </div>
+        </article>
+
+        <!-- Article IV -->
+        <article class="legal-article-card" id="article-4">
+          <div class="legal-article-header">
+            <span class="legal-article-num">IV</span>
+            <h2 class="legal-article-title">Local Storage Persistence &amp; Student Data Eradication</h2>
+          </div>
+          <p class="text-secondary mb-2">
+            BudgetBasics strictly rejects tracking cookies and persistent marketing beacons. We utilize standard browser <code>localStorage</code> solely to preserve quality-of-life preferences between browser sessions:
+          </p>
+          <ul class="text-secondary small mb-2">
+            <li><strong>Theme Preference:</strong> Storing your active Light or Dark Mode setting (<code>data-theme</code>).</li>
+            <li><strong>Currency Preference:</strong> Preserving your selected global currency symbol ($, Rs., €, £, ₹, C$, A$).</li>
+            <li><strong>Onboarding Tour Completion:</strong> Preventing repetitive startup tour popovers once you have completed your initial walkthrough.</li>
+            <li><strong>Session Expense Planner Logs:</strong> Storing temporary student budget items so you do not lose progress upon an accidental page refresh.</li>
+          </ul>
+          <p class="text-secondary mb-0">
+            <strong>Data Eradication:</strong> You maintain absolute sovereignty over this data. You can instantly purge all stored records at any moment by using the "Clear Site Data" feature in your browser's Developer Tools or settings.
+          </p>
+          <div class="legal-takeaway-box">
+            <i class="bi bi-trash3-fill text-primary me-1"></i>
+            <strong>Student Data Control:</strong> Your data belongs to you alone. Wiping your browser cache permanently removes all saved calculations with zero residual traces.
+          </div>
+        </article>
+
+        <!-- Article V -->
+        <article class="legal-article-card" id="article-5">
+          <div class="legal-article-header">
+            <span class="legal-article-num">V</span>
+            <h2 class="legal-article-title">Third-Party Open-Source CDNs &amp; Non-Tracking Assets</h2>
+          </div>
+          <p class="text-secondary mb-2">
+            To ensure rapid performance, accessibility, and high visual fidelity across global internet connections, BudgetBasics references static, verified open-source libraries:
+          </p>
+          <ul class="text-secondary small mb-2">
+            <li><strong>Bootstrap 5.3 &amp; Bootstrap Icons:</strong> Distributed via jsDelivr CDN for UI layout and accessible iconography.</li>
+            <li><strong>Chart.js 4.4:</strong> Distributed via Cloudflare CDN for rendering client-side canvas donut charts.</li>
+            <li><strong>Google Fonts:</strong> Serving the Plus Jakarta Sans typeface.</li>
+          </ul>
+          <p class="text-secondary mb-0">
+            These Content Delivery Networks serve static JavaScript and CSS code only. No student entries, budget variables, or speech commands are ever shared with or accessible to these asset providers.
+          </p>
+        </article>
+
+        <!-- Article VI -->
+        <article class="legal-article-card" id="article-6">
+          <div class="legal-article-header">
+            <span class="legal-article-num">VI</span>
+            <h2 class="legal-article-title">Student Rights, Ethical AI &amp; Fair Educational Practice</h2>
+          </div>
+          <p class="text-secondary mb-2">
+            BudgetBasics adheres strictly to ethical computing principles. In accordance with student consumer protections:
+          </p>
+          <ul class="text-secondary small mb-2">
+            <li><strong>No Behavioral Advertising:</strong> BudgetBasics is 100% ad-free. We do not monetize student attention or serve commercial sponsorships.</li>
+            <li><strong>No Automated Credit Scoring:</strong> BudgetBee provides educational math and explanations; it does not grade, rank, or evaluate your personal creditworthiness.</li>
+            <li><strong>Unrestricted Educational Access:</strong> All calculators, infographics, quizzes, and blueprint generators are universally accessible free of charge.</li>
+          </ul>
+        </article>
+
+        <!-- Article VII -->
+        <article class="legal-article-card" id="article-7">
+          <div class="legal-article-header">
+            <span class="legal-article-num">VII</span>
+            <h2 class="legal-article-title">Verification, Governance &amp; Contact Information</h2>
+          </div>
+          <p class="text-secondary mb-2">
+            This policy is actively maintained and governed by Team Tech Hunters in alignment with competition criteria established for Aptech Techwiz 7. For privacy questions, accessibility suggestions, or technical evaluations, please contact:
+          </p>
+          <div class="p-3 bg-body border rounded-3 text-secondary small mb-0">
+            <p class="mb-1"><strong>Authoring Body:</strong> Team Tech Hunters (NextGen BudgetBee)</p>
+            <p class="mb-1"><strong>Lead Developer:</strong> Adeel Shah</p>
+            <p class="mb-1"><strong>Educational Center:</strong> Aptech Computer Education, Rahim Yar Khan Center, Punjab, Pakistan</p>
+            <p class="mb-1"><strong>Official Inquiries:</strong> <a href="mailto:info@aglsm.com" class="text-primary text-decoration-none">info@aglsm.com</a></p>
+            <p class="mb-0"><strong>Student Portal:</strong> <a href="https://aptech-studentconnect.com/" target="_blank" rel="noopener" class="text-primary text-decoration-none">https://aptech-studentconnect.com/</a></p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Formal Verification & Signatory Block -->
+      <div class="mt-5 pt-4 border-top">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
+          <div>
+            <div class="legal-signature-line"></div>
+            <p class="fw-bold mb-0 text-primary">Adeel Shah</p>
+            <p class="small text-muted mb-0">Lead Developer &amp; Project Architect • Team Tech Hunters</p>
+            <p class="small text-muted">Aptech Rahim Yar Khan Center, Pakistan</p>
+          </div>
+
+          <div class="legal-doc-seal">
+            <i class="bi bi-patch-check-fill fs-5 mb-1"></i>
+            <span>Techwiz 7 Verified</span>
+          </div>
+
+          <div>
+            <div class="legal-signature-line"></div>
+            <p class="fw-bold mb-0 text-primary">Academic Oversight Board</p>
+            <p class="small text-muted mb-0">Aptech Computer Education Center, RYK</p>
+            <p class="small text-muted">Ratified: September 2026 • Status: Active</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Return & Print Toolbar -->
+      <div class="mt-5 text-center no-print d-flex justify-content-center gap-3 flex-wrap">
+        <a href="index.html" class="btn btn-outline-secondary rounded-pill px-4">
+          <i class="bi bi-house-door-fill me-1"></i> Return to Main App
+        </a>
+        <a href="terms-and-conditions.html" class="btn btn-outline-primary rounded-pill px-4">
+          <i class="bi bi-file-earmark-ruled me-1"></i> View Terms &amp; Conditions
+        </a>
+        <button class="btn btn-primary-gradient rounded-pill px-4 text-white" onclick="window.print();">
+          <i class="bi bi-printer me-1"></i> Print This Policy
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Document Theme Switcher Script -->
+  <script>
+    function toggleDocTheme() {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const target = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', target);
+      localStorage.setItem('budget_basics_theme', target);
+      updateDocThemeIcon(target);
+    }
+
+    function updateDocThemeIcon(theme) {
+      const icon = document.getElementById('docThemeIcon');
+      if (icon) {
+        icon.className = theme === 'dark' ? 'bi bi-sun-fill text-warning' : 'bi bi-moon-stars-fill text-secondary';
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      updateDocThemeIcon(current);
+
+      // Auto-trigger print if requested via query param
+      if (window.location.search.includes('print=1')) {
+        setTimeout(() => window.print(), 400);
+      }
+    });
+  </script>
+</body>
+</html>

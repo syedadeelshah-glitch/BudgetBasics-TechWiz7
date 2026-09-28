@@ -1,0 +1,583 @@
+# 1. OPENING / INTRODUCTION
+
+**Assalam-o-Alaikum and a very good morning/afternoon to the respected judges and everyone present here.**
+
+My name is **Adeel Shah**, and I am here on behalf of our team **Tech Hunters** from **Aptech Rahim Yar Khan Center**.
+
+Today, we are very excited to present our project for **Aptech Techwiz 7**, under the category **Web Innovation Unleashed**.
+
+Our project is called:
+
+**“BudgetBasics — NextGen BudgetBee.”**
+
+BudgetBasics is an educational, interactive Single Page Application designed specifically for college, university, and school students.
+
+The core mission of our project is very simple yet powerful:
+
+**We want to help students understand their money, control daily spending leaks, build lifelong saving habits, and make confident financial decisions.**
+
+Many students receive monthly allowances, scholarships, internship stipends, or part-time wages. But without practical financial education, small daily expenses quickly spiral out of control.
+
+BudgetBasics solves this problem by turning complex financial concepts into an intuitive, visual, and gamified experience that runs 100% in the browser with zero backend dependencies, complete client-side privacy, and hands-free Voice AI automation.
+
+---
+
+# 2. PROBLEM STATEMENT
+
+Let me explain the real problem students face every single day.
+
+Students often operate with limited, fixed monthly funds. 
+
+A student might receive money from their parents at the start of the month, or get a small scholarship stipend.
+
+In the first week, everything feels fine. But small, unnoticed daily expenses begin to accumulate:
+
+* Daily cafeteria coffee and snacks
+* Food delivery orders during late-night study sessions
+* Commute and ride-sharing fares
+* Academic photocopies and textbooks
+* Unused digital subscriptions and gaming skins
+* Weekend social outings and impulse purchases
+
+By the third or fourth week of the month, the student finds their wallet empty and asks themselves:
+
+**“Where did all my money go?”**
+
+This happens because students are rarely taught practical budgeting frameworks. They lack a simple system to categorize their spending, differentiate between true needs and impulse wants, and maintain a safety cushion for emergencies.
+
+We did not want to build a boring accounting spreadsheet or a complicated banking portal.
+
+Instead, we designed BudgetBasics to be:
+
+**Simple, visual, interactive, gamified, and genuinely educational.**
+
+---
+
+# 3. OUR SOLUTION — BUDGETBASICS NEXTGEN BUDGETBEE
+
+Our solution is **BudgetBasics**.
+
+BudgetBasics is an educational, responsive Single Page Application built to guide students step by step toward financial independence.
+
+It provides:
+
+* Foundational budgeting fundamentals with real student case studies
+* An interactive Knowledge Check Quiz with instant scoring and feedback
+* A 4-Step Mental Pause Decision Filter for Needs versus Wants
+* The interactive 50-30-20 Rule Calculator with a live Chart.js Donut chart
+* A Savings Goals and Timeline Simulator with animated progress tracking
+* A Student Expense Planner with live balance health status alerts
+* Common Student Money Traps with an interactive self-audit checklist
+* An Infographics Lightbox Gallery featuring 5 original visual guides
+* An institutional-grade Printable Budget Blueprint and Invoice Generator
+* NextGen BudgetBee — an integrated Voice AI Assistant with Speech-to-Text and Speech Synthesis
+* A custom Sinuous Snake Scroll Tracing Engine that gamifies page reading
+* A multi-currency engine supporting 7 international currencies
+* Complete dual-theme support with seamless Light and Dark mode transitions
+
+BudgetBasics is purely an educational platform. It does not connect to real bank accounts, does not store sensitive financial credentials, and processes everything privately on the user's device.
+
+---
+
+# 4. COMPLETE CODEBASE & FILE-BY-FILE ARCHITECTURE
+
+Before we demonstrate the user experience, let me explain how our codebase is structured from start to end.
+
+Our application is built using clean, human-readable, vanilla web standards for maximum speed, accessibility, and reliability:
+
+### 1. `index.html`
+This is the central Single Page Application document spanning over 2,200 lines of semantic HTML5. It organizes all 8 learning modules, accessible ARIA attributes, modals for the Guided Tour, Knowledge Check Quiz, Search Index, Privacy Policy, Terms & Conditions, Sitemap, and the floating BudgetBee Voice AI assistant widget.
+
+### 2. `assets/css/style.css`
+Our master design system spanning over 5,400 lines of structured CSS. It defines semantic CSS custom properties for dual Light and Dark themes, typography rules using Plus Jakarta Sans, glassmorphic navigation bars, interactive card states, glowing badges, floating assistant styling, and isolated `@media print` stylesheets that format reports cleanly on a single page.
+
+### 3. `assets/css/responsive.css`
+Dedicated responsive media queries ensuring a flawless user experience across smartphones (320px–576px), tablets (768px–992px), laptops (1200px), and ultra-wide desktop monitors. It handles responsive flex stacking, mobile hamburger navigation, touch-friendly tap targets, and responsive tables.
+
+### 4. `assets/js/app.js`
+The primary application orchestrator. It initializes our 7-step guided onboarding tour, global currency state switching across 7 international currencies, the `Ctrl + K` instant search modal, dynamic animated number counters, notification toasts, and the infographic modal renderer.
+
+### 5. `assets/js/calculator.js`
+The mathematical engine for Module 3. It computes the 50% Needs, 30% Wants, and 20% Savings allocation in real time, renders and dynamically animates the Chart.js Donut chart, calculates safe weekly spending limits, and formats printable 50-30-20 summary reports.
+
+### 6. `assets/js/chatbot.js`
+Our flagship AI assistant, BudgetBee (~1,700 lines of clean ES6+ JavaScript). It integrates the browser's native Web Speech API for speech-to-text recognition and text-to-speech voice playback, contains a natural language number parsing engine that translates spoken phrases like *"twenty thousand"* or *"50k"* into numbers, and automates UI controls like scrolling, filling forms, and generating printable invoices.
+
+### 7. `assets/js/expense-planner.js`
+Drives Module 5. It manages daily student expense logging, categories, remaining allowance balance deductions, live budget health indicators (Healthy, Caution, Deficit), session storage, and printable expense audit sheets.
+
+### 8. `assets/js/invoice.js`
+Drives Module 8. It constructs certified, printable student budget blueprints formatted like official tuition or banking statements, complete with verification QR code stamps and authorized signature lines.
+
+### 9. `assets/js/quiz.js`
+Powers the interactive Module 1 Knowledge Check Quiz, complete with scoring algorithms, explanation popups, and dynamic achievement badge awards.
+
+### 10. `assets/js/scroll-snake.js`
+Our proprietary mathematical scrollbar tracker. It calculates a dynamic sine-wave SVG path along the viewport height, animating an illuminated tracer, a live percentage progress bubble, and our mascot tracking document progress.
+
+### 11. `data/` Directory
+Contains structured JSON data feeds including `budget-tips.json`, `chatbot-faq.json`, `infographics.json`, and `sample-data.json`.
+
+### 12. `assets/images/` Directory
+Houses 9 custom, scalable SVG vector graphics including `info-50-30-20.svg`, `info-budget-flow.svg`, `info-challenge.svg`, `info-latte-factor.svg`, and `info-needs-wants.svg`—all mathematically contained so no text or shapes overflow their borders.
+
+---
+
+# 5. FIRST-TIME STARTUP EXPERIENCE — THE 7-STEP GUIDED ONBOARDING TOUR
+
+When a student opens BudgetBasics for the very first time, the application immediately initiates our **Interactive 7-Step Guided Onboarding Tour**!
+
+The background dims with a gentle backdrop overlay, and a focused popover card introduces the student to each part of the platform:
+
+### Step 1 — Welcome to BudgetBasics
+The popover highlights our top navigation bar. It welcomes the student, introduces our branding, and highlights our multi-currency engine and theme toggles.
+
+### Step 2 — Module 1: Budgeting Basics
+The tour smoothly glides the camera down to Module 1. It introduces students to Income, Fixed Commitments, Variable Spending, and our interactive Knowledge Check Quiz.
+
+### Step 3 — Module 3: 50-30-20 Calculator
+The tour spotlights our real-time budgeting calculator, explaining how students can input their allowance and see their money divided into Needs, Wants, and Savings with a live Chart.js Donut chart.
+
+### Step 4 — Module 4: Savings Goals Simulator
+Next, the tour guides the student to goal setting—showing how to establish clear milestone targets for laptops, textbooks, or starter emergency funds.
+
+### Step 5 — Module 5: Student Expense Planner
+Here, the tour highlights the interactive expense ledger where daily student expenses are tracked against live budget health thresholds.
+
+### Step 6 — Module 7: Infographics Gallery
+The tour points students to our visual library of downloadable cheatsheets, including the 30-Day Money Challenge and the Latte Factor compound spending diagram.
+
+### Step 7 — NextGen BudgetBee Voice AI Studio
+The final step introduces BudgetBee, our integrated voice copilot, showing students that they can speak aloud to control the entire app hands-free.
+
+Clicking **"Get Started"** smoothly closes the tour and saves a flag in browser storage so returning visitors are not interrupted, while still allowing anyone to restart the tour anytime from the Help menu.
+
+---
+
+# 6. UI VISUAL INNOVATIONS & CUSTOM SCROLLBAR TRACKER
+
+Now let us look at the visual craftsmanship of BudgetBasics.
+
+Along the right margin of the screen, you will notice one of our standout UI innovations: the **Sinuous Snake Scroll Tracing Engine**.
+
+Standard browser scrollbars often blink, fade away, or look generic. In BudgetBasics, our custom scroll tracker is always visible, interactive, and gamified.
+
+As the student scrolls through the page:
+* A mathematical sine-wave SVG path dynamically traces the viewport.
+* An illuminated orange neon tracer fills the dotted track.
+* A rotating arrow marker follows the exact curve.
+* A floating progress bubble displays the exact percentage of the document read.
+* At the top and bottom, customized launch pads and our BudgetBee mascot guide the student through their learning pathway.
+
+This gives students a rewarding sense of progress and accomplishment as they move through the educational modules.
+
+---
+
+# 7. DUAL-THEME ARCHITECTURE — LIGHT VS. DARK MODE
+
+Next, let us look at our dual-theme architecture.
+
+At the top right of the navigation bar, we have our **Theme Toggle** button.
+
+With a single click:
+* The website instantly transitions between Light Mode and Dark Mode.
+* In Light Mode, we use clean slate whites (`#FFFFFF`), subtle border dividers, and high-contrast navy typography.
+* In Dark Mode, the canvas transforms into an immersive deep-space midnight palette (`#0A1120` and `#152030`), with borders automatically switching to slate navy (`#24344B`) and text to high-legibility off-white (`#F8FAFC`).
+* The Sinuous Snake scrollbar line glows with an illuminated neon pathway against dark track borders.
+* The Chart.js Donut chart and UI cards automatically recalibrate their colors for optimal readability.
+
+The user's theme choice is immediately saved to `localStorage`, so their preference is preserved whenever they return.
+
+---
+
+# 8. WEBSITE NAVIGATION & GLOBAL CONTROLS
+
+Now let us explore the top **Glassmorphic Navigation Bar**.
+
+Our sticky navbar features a frosted glass backdrop filter that keeps navigation accessible as the student scrolls.
+
+In the navbar, we have:
+
+### 1. Global Multi-Currency Switcher
+With a single click, a student can switch between:
+* **USD ($)** — US Dollar
+* **PKR (Rs.)** — Pakistani Rupee
+* **EUR (€)** — Euro
+* **GBP (£)** — British Pound
+* **INR (₹)** — Indian Rupee
+* **CAD (C$)** — Canadian Dollar
+* **AUD (A$)** — Australian Dollar
+
+When a currency is selected, the entire application—every calculator, table, preset, and invoice—instantly re-renders with the chosen currency symbol without requiring a page reload.
+
+### 2. Quick Search Modal (`Ctrl + K`)
+Pressing `Ctrl + K` or clicking the search icon opens an instant search index. A student can type *"goals"*, *"latte"*, or *"invoice"*, and jump directly to that module with a single click.
+
+### 3. Clear Module Links
+Organized dropdowns and links take the student directly to Learn modules, Calculators, Infographics, and Team information.
+
+---
+
+# 9. HERO SECTION & TRUST STRIP
+
+Now we arrive at the main **Hero Section**.
+
+Our headline states:
+
+**“Take Control of Your Money, Build a Better Future.”**
+
+This captures our philosophy: budgeting is not about depriving yourself of life; it is about knowing where your money comes from, where it goes, and using it with purpose.
+
+We provide two clear calls to action:
+* **“Explore Budgeting Basics”** — taking beginners directly into foundational lessons.
+* **“Launch 50-30-20 Calculator”** — allowing students to immediately calculate their monthly budget.
+
+Directly below the hero is our **Trust Strip**, which reassures students with four guarantees:
+1. **100% Client-Side** — All calculations happen locally in the browser.
+2. **Zero Tracking** — No cookies or sensitive data harvesting.
+3. **No Bank Login Required** — Completely safe educational modeling.
+4. **Free Forever** — Open access for all learners.
+
+---
+
+# 10. MODULE 1 — BUDGETING BASICS & INTERACTIVE KNOWLEDGE QUIZ
+
+Now let us examine our first major learning module:
+
+**Module 1: Budgeting Basics and Fundamentals.**
+
+This module breaks down the core financial triad through three interactive cards:
+
+### 1. Income (Stipends & Jobs)
+Money coming in from allowances, scholarships, campus jobs, or internships.
+
+### 2. Fixed Expenses (Rent & Utilities)
+Predictable commitments that must be paid on time, like hostel rent, semester transit passes, and mobile connectivity.
+
+### 3. Variable Expenses (Dining & Leisure)
+Day-to-day spending that fluctuates, such as campus meals, groceries, and entertainment.
+
+### 4. Emergency Cushion
+A starter buffer fund set aside for unexpected costs, such as urgent medical copays or device repairs.
+
+### Interactive Knowledge Check Quiz
+In this module, notice the button: **“Take Knowledge Quiz”**.
+
+When clicked, an interactive modal appears with multiple-choice student finance scenarios. 
+
+When a student selects an answer:
+* The system evaluates the response immediately.
+* It highlights correct answers in green and incorrect ones in red.
+* It provides an educational explanation explaining the rationale.
+* At the end of the quiz, it computes the student's score and awards an achievement badge, reinforcing learning through immediate feedback.
+
+---
+
+# 11. MODULE 2 — NEEDS VS WANTS DECISION PROTOCOL
+
+Next is **Module 2: Needs vs. Wants Decision Protocol**.
+
+This module introduces our **4-Step Mental Pause Decision Filter**, accompanied by an SVG flowchart (`info-needs-wants.svg`):
+
+* **Step 1:** *Is it vital for survival, rent, or exams?* If yes, it is a True Need—pay it immediately.
+* **Step 2:** *Do I already own a usable substitute?* If yes, avoid duplicate purchases.
+* **Step 3:** *Can I wait 48 hours before purchasing?* This introduces the 48-hour cooling-off pause.
+* **Step 4:** *If still wanted after 48 hours?* Buy it guilt-free from the 30% Wants bucket!
+
+Below the flowchart, two dedicated cards clearly contrast:
+* **🟢 True Needs (Prioritize):** Rent, groceries, utility internet, transit cards, and required course books.
+* **🔴 Discretionary Wants (Pause):** Gaming skins, extra sneakers, takeaway coffee, and unused subscriptions.
+
+This mental pause stops impulse buying before it happens.
+
+---
+
+# 12. MODULE 3 — THE 50-30-20 RULE CALCULATOR & CHART.JS DONUT
+
+Now we come to one of our flagship tools:
+
+**Module 3: The 50-30-20 Rule Calculator.**
+
+The 50-30-20 framework is the most widely recommended rule for student budgeting:
+* **50% for Needs:** Essential living commitments.
+* **30% for Wants:** Discretionary lifestyle spending.
+* **20% for Savings:** Emergency cushions and future investments.
+
+### Live Demonstration
+Let us test this with a realistic student allowance. 
+
+Suppose my monthly allowance is **$1,200**.
+
+I can enter **1200** into the input field or click one of our quick presets ($500, $1,200, $2,500).
+
+The system instantly calculates:
+* **50% Needs = $600.00**
+* **30% Wants = $360.00**
+* **20% Savings = $240.00**
+
+In the center, our interactive **Chart.js Donut chart** animates into place with proportional slices! 
+
+Below the chart, the calculator divides the 30% Wants bucket by 4 weeks, calculating a **Weekly Spending Cap of $90.00**, so the student knows their safe weekly limit.
+
+And with the **“Print 50-30-20 Report”** button, students can generate a certified, single-page summary report ready to share with parents or mentors.
+
+---
+
+# 13. MODULE 4 — SAVINGS GOALS SIMULATOR & TIMELINE
+
+Next is **Module 4: Savings Goals Simulator**.
+
+Setting a vague goal rarely works; students need a specific target and timeline.
+
+In this simulator, students can select presets like:
+* **Starter Emergency Fund ($500)**
+* **Laptop Replacement ($1,000)**
+* **Semester Textbooks ($300)**
+* Or enter any custom target.
+
+Students adjust the **Monthly Contribution slider**. 
+
+For example, for a **$1,000 Laptop Goal** with a **$100 monthly contribution**:
+* The simulator calculates that the student will reach their goal in **10 months**.
+* It displays an animated milestone progress bar.
+* It renders a projected monthly roadmap showing milestone markers.
+* The **“Print Goal Roadmap”** button produces an official physical goal certificate to pin on a dorm study wall.
+
+---
+
+# 14. MODULE 5 — STUDENT EXPENSE PLANNER & REAL-TIME LEDGER
+
+In **Module 5: Student Expense Planner**, theoretical budgeting meets daily campus reality.
+
+Students input their monthly allowance and log individual expenses with:
+* Date
+* Category (Food, Transport, Academic, Entertainment, Housing, Utilities)
+* Description
+* Amount
+
+### Live Ledger Table & Health Status
+When an expense is added:
+* It appears in the interactive ledger table with edit and delete options.
+* The system deducts the expense from the monthly allowance in real time.
+* A dynamic **Budget Health Banner** updates automatically:
+  * **Green (Healthy):** When spending is under 75% of allowance.
+  * **Amber (Caution):** When spending crosses 75%.
+  * **Red (Deficit Warning):** When expenses exceed total allowance.
+
+Students can click **“Print Audit”** to export an official itemized spending statement.
+
+---
+
+# 15. MODULE 6 — COMMON STUDENT MONEY MISTAKES & SELF-AUDIT
+
+Next is **Module 6: Common Student Money Mistakes**.
+
+We break down the five biggest traps students encounter:
+1. **Impulse Buying:** Solved by our 48-Hour Waiting Rule.
+2. **Ghost Subscriptions:** Forgotten free trials that quietly auto-renew each month.
+3. **The Latte Factor:** Harmless small purchases compound into massive financial leaks.
+4. **No Spending Plan:** Spending blind until the balance reaches zero.
+5. **Missing Emergency Cushion:** Forcing students into high-interest debt when unexpected expenses arise.
+
+Each mistake includes an interactive self-audit checklist. Students check off their habits to receive an instant financial health diagnosis and practical corrective actions.
+
+---
+
+# 16. MODULE 7 — INFOGRAPHICS & VISUAL LEARNING GALLERY
+
+In **Module 7: Infographics and Visual Learning Gallery**, we provide visual cheat-sheets.
+
+Students can filter infographics by category: All, Frameworks, Challenges, and Habits.
+
+Clicking any card opens a high-resolution lightbox modal displaying our custom SVG vector graphics:
+1. **50-30-20 Framework (`info-50-30-20.svg`):** Proportional distribution chart.
+2. **Student Monthly Budget Flow (`info-budget-flow.svg`):** Cashflow routing from allowance arrival to savings vault.
+3. **Needs vs. Wants Decision Tree (`info-needs-wants.svg`):** The 4-step decision flowchart.
+4. **30-Day Smart Money Challenge (`info-challenge.svg`):** Four weekly milestones saving $200+.
+5. **The Latte Factor (`info-latte-factor.svg`):** Visualizing how a $4.50 daily coffee compounds into $6,480 across four college years.
+
+All graphics are fully responsive and fit within their visual containers without any clipping.
+
+---
+
+# 17. MODULE 8 — PRINTABLE BUDGET BLUEPRINT & INVOICE GENERATOR
+
+Now we come to **Module 8: Printable Budget Blueprint & Invoice Generator**.
+
+This tool generates a formal, institutional-grade financial blueprint.
+
+Students enter:
+* Student Name
+* Student ID Number
+* Academic Term (e.g., Fall 2026 / Semester 3)
+* Total Monthly Allowance
+
+The system generates an official itemized statement featuring:
+* Institutional header and student profile
+* Needs, Wants, and Savings line items
+* Net balance calculations
+* An official verification QR code stamp
+* Certified student and advisor signature lines
+
+This document is ready to be printed or saved as a PDF for university scholarship verification, hostel approvals, or personal record-keeping.
+
+---
+
+# 18. LEGAL & TRANSPARENCY MODALS
+
+In the footer of our website, we prioritize transparency and privacy:
+* **Privacy Policy Modal:** Details our zero-data-retention guarantee, confirming that no banking data or personal logs ever leave the student's device.
+* **Terms & Conditions Modal:** Outlines educational guidelines, clarifying that BudgetBasics provides educational models rather than commercial banking advice.
+* **Interactive Sitemap Modal:** Provides an indexed, searchable directory linking to every module and tool on the page.
+
+---
+
+# 19. NEXTGEN BUDGETBEE VOICE AI ASSISTANT — ARCHITECTURE & LIVE VOICE DEMOS
+
+Now, respected judges, let us experience the most innovative feature of our project:
+
+**NextGen BudgetBee — Our Integrated Voice AI Assistant!**
+
+BudgetBee is accessible via the consolidated floating widget in the bottom-right corner of the screen.
+
+It features:
+1. **Native Web Speech API Integration:** Speech-to-Text recognition and Text-to-Speech synthesis.
+2. **All-Time Listening Mode:** Continuously listens for voice commands without requiring repeated clicks.
+3. **Live Audio Pulse Visualizer:** Glowing rings indicate when the microphone is actively listening.
+4. **Natural Language Number Parsing:** Understands numbers as digits (50000), comma formats (50,000), shorthand (50k), and spoken English words like *"twenty thousand"* or *"fifty thousand"*.
+5. **Real-Time UI Automation:** Capable of scrolling to sections, populating inputs, running calculations, and triggering print dialogs.
+
+Let us demonstrate four live voice interactions!
+
+---
+
+### Voice Test 1 — Real-Time Budget Calculation ("Calculate budget of 20,000")
+
+I will activate the microphone and speak:
+
+> **“Calculate budget of twenty thousand”**
+
+*(Demonstrating live)*
+
+Notice what happens in real time:
+1. BudgetBee transcribes *"Calculate budget of twenty thousand"*.
+2. The natural language parser translates *"twenty thousand"* into the number **20000**.
+3. The page automatically scrolls to **Module 3: 50-30-20 Calculator**.
+4. The allowance input updates to **20,000**.
+5. The calculation executes immediately, updating the Donut chart and breakdown cards:
+   * **Needs (50%): 10,000**
+   * **Wants (30%): 6,000**
+   * **Savings (20%): 4,000**
+6. BudgetBee speaks the complete breakdown aloud through the speakers!
+
+---
+
+### Voice Test 2 — Voice-Driven Section Navigation ("Go to Savings Goals")
+
+Now, let us test spatial navigation by voice:
+
+> **“Go to Savings Goals”**
+
+*(Demonstrating live)*
+
+Notice:
+1. BudgetBee responds: *"Navigating to Module 4: Savings Goals Simulator!"*
+2. The browser glides down to `#savings-goals` and highlights the container.
+3. You can say *"Go to Basics"*, *"Go to Needs versus Wants"*, *"Go to Expense Planner"*, or *"Go to About section"*, and BudgetBee navigates instantly.
+
+---
+
+### Voice Test 3 — Natural Language Invoice Generation & Instant Printing ("Generate and print invoice for 50000")
+
+Now let us test our advanced automation command:
+
+> **“Generate and print invoice for fifty thousand”**
+
+*(Demonstrating live)*
+
+Watch what happens:
+1. BudgetBee transcribes *"Generate and print invoice for fifty thousand"*.
+2. It parses the number **50000**.
+3. It navigates directly to **Module 8: Budget Invoice**.
+4. It sets the student blueprint allowance to **50,000**.
+5. It recalculates the itemized line items.
+6. It automatically triggers `window.print()`, opening the browser's native Print Preview dialog on screen!
+
+The print preview displays a formatted budget blueprint for 50,000, complete with signature lines and verification stamp, ready to save as a PDF.
+
+---
+
+### Voice Test 4 — Dynamic Currency Switching ("Switch currency to PKR")
+
+Finally, let us command BudgetBee to switch currencies:
+
+> **“Switch currency to PKR”**
+
+*(Demonstrating live)*
+
+Instantly:
+* BudgetBee responds: *"Switched active currency to Pakistani Rupee (PKR - Rs.)!"*
+* All calculators, expense tables, preset pills, and printable statements across the entire website update to **Rs.**!
+
+BudgetBee also supports multi-turn conversations: if a student simply says *"Print invoice"*, BudgetBee politely asks for their name and amount before generating the document.
+
+---
+
+# 20. COMPREHENSIVE DARK MODE SHOWCASE & UNIVERSAL PRINT ARCHITECTURE
+
+Now, let us view the entire application in **Dark Mode**.
+
+I can ask BudgetBee: *"Toggle dark mode"*, or click the moon icon in the navbar.
+
+*(Toggling Dark Mode)*
+
+Observe how the design system responds:
+* The background transforms into deep midnight slate (`#0A1120` and `#152030`).
+* The navbar adopts an ultra-modern dark glassmorphic appearance.
+* The Sinuous Snake scrollbar line glows with an illuminated orange neon pathway against dark track borders.
+* The Chart.js Donut chart dynamically adjusts its borders and labels for dark contrast.
+* The SVG illustrations in Module 2 and Module 7 maintain crisp readability.
+* The BudgetBee floating AI launcher and chat window adopt deep slate surfaces with glowing accents.
+
+### Universal High-Contrast Print Architecture
+Now notice what happens when we print in Dark Mode:
+
+*(Opening Print Preview via Ctrl + P or Print button)*
+
+In many websites, printing while in dark mode wastes black ink and produces illegible dark blocks. 
+
+In BudgetBasics, our `@media print` rules isolate the print media: whether the user is viewing the site in Light Mode or Dark Mode, the printable statements always render on clean, high-contrast white paper with crisp black text, ensuring zero ink waste and institutional readiness.
+
+---
+
+# 21. TECHNICAL SUMMARY, PERFORMANCE & ACCESSIBILITY
+
+Let me summarize the technical foundation of BudgetBasics:
+
+1. **Zero Backend Required:** 100% client-side execution means instant loading speeds, zero server maintenance costs, and total offline capability.
+2. **Complete Privacy:** No databases, no external trackers, no student financial data collected.
+3. **Full Responsiveness:** Fluid layouts that adapt across mobile phones, tablets, laptops, and 4K displays.
+4. **Web Accessibility:** High color contrast ratios, descriptive ARIA attributes, semantic HTML elements, and full keyboard navigation.
+5. **Modern Native APIs:** Seamless use of the Web Speech API (SpeechRecognition and SpeechSynthesis), Chart.js, and CSS Custom Properties.
+
+---
+
+# 22. CLOSING STATEMENT & THANK YOU
+
+**Respected judges and audience, this concludes our presentation of:**
+
+**BudgetBasics — NextGen BudgetBee.**
+
+Our goal was not just to create another financial calculator. We wanted to build a friendly, visual, and intelligent financial companion that empowers students to take control of their financial futures.
+
+Our message to students everywhere is:
+
+**“Understand your money today, so you can build a better tomorrow.”**
+
+We are **Team Tech Hunters** from **Aptech Rahim Yar Khan Center**, and my name is **Adeel Shah**.
+
+Thank you very much for your time, attention, and consideration.
+
+We are now ready for your questions and live demonstration requests.
+
+**Thank you!**

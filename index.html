@@ -1742,7 +1742,7 @@
     <div class="container-xl position-relative" style="z-index: 2;">
       <div class="row g-4 g-lg-5">
         <!-- Col 1: Brand & Mission -->
-        <div class="col-lg-4">
+        <div class="col-lg-3">
           <div class="footer-brand-wrap d-flex align-items-center gap-2 mb-3">
             <img src="assets/images/logo-icon.svg" alt="BudgetBasics Icon Mark" class="brand-logo-icon">
             <div class="brand-text-wrap d-flex flex-column">
@@ -1762,7 +1762,7 @@
         </div>
 
         <!-- Col 2: Modules Nav with Hover Chevron -->
-        <div class="col-6 col-lg-2">
+        <div class="col-6 col-md-3 col-lg-2">
           <h4 class="footer-heading"><span class="footer-heading-dot"></span> Modules</h4>
           <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
             <li><a href="#budgeting-basics" class="footer-nav-link"><i class="bi bi-chevron-right footer-link-arrow"></i> <span>Budgeting Basics</span></a></li>
@@ -1775,7 +1775,7 @@
         </div>
 
         <!-- Col 3: Tools & Interactive -->
-        <div class="col-6 col-lg-2">
+        <div class="col-6 col-md-3 col-lg-2">
           <h4 class="footer-heading"><span class="footer-heading-dot"></span> Tools &amp; PDF</h4>
           <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
             <li><a href="javascript:void(0)" onclick="toggleFloatingChatbot(true);" class="footer-nav-link"><i class="bi bi-robot footer-link-arrow text-warning"></i> <span>BudgetBee AI Chat</span></a></li>
@@ -1787,10 +1787,23 @@
           </ul>
         </div>
 
-        <!-- Col 4: Techwiz 7 Showcase & Interactive Subscribe -->
-        <div class="col-lg-4">
+        <!-- Col 4: Legal & Policies (Dedicated Column) -->
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4 class="footer-heading"><span class="footer-heading-dot"></span> Legal &amp; Policies</h4>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal" class="footer-nav-link"><i class="bi bi-shield-lock-fill footer-link-arrow text-success"></i> <span>Privacy Policy</span></a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#termsModal" class="footer-nav-link"><i class="bi bi-file-earmark-ruled-fill footer-link-arrow text-primary"></i> <span>Terms of Service</span></a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#disclaimerModal" class="footer-nav-link"><i class="bi bi-info-circle-fill footer-link-arrow text-warning"></i> <span>Educational Notice</span></a></li>
+            <li><a href="privacy-policy.html" target="_blank" class="footer-nav-link"><i class="bi bi-file-earmark-pdf-fill footer-link-arrow text-danger"></i> <span>Privacy Doc (PDF)</span></a></li>
+            <li><a href="terms-and-conditions.html" target="_blank" class="footer-nav-link"><i class="bi bi-file-earmark-text-fill footer-link-arrow text-info"></i> <span>Terms Doc (PDF)</span></a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#sitemapModal" class="footer-nav-link"><i class="bi bi-diagram-3-fill footer-link-arrow text-warning"></i> <span>Site Navigation</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Techwiz 7 Showcase & Interactive Subscribe -->
+        <div class="col-12 col-md-6 col-lg-3">
           <h4 class="footer-heading"><span class="footer-heading-dot"></span> Techwiz 7 Showcase</h4>
-          <p class="small text-muted mb-2">Category 1: Web Innovation Unleashed • Duration: 72 Hours • Single Page Application Architecture.</p>
+          <p class="small text-muted mb-2">Category 1: Web Innovation Unleashed • Single Page Application Architecture.</p>
           
           <!-- Student Budget Tips Subscribe Box -->
           <div class="footer-subscribe-box p-3 rounded-3 mb-3">
@@ -1805,7 +1818,7 @@
             <button class="btn btn-sm btn-footer-sitemap rounded-pill" data-bs-toggle="modal" data-bs-target="#sitemapModal">
               <i class="bi bi-diagram-3-fill me-1 text-warning"></i> View Site Map Flow
             </button>
-            <span class="badge footer-team-badge small py-1.5 px-2.5">Team: Tech Hunters • NextGen BudgetBee</span>
+            <span class="badge footer-team-badge small py-1.5 px-2.5">Team: Tech Hunters</span>
           </div>
         </div>
       </div>
@@ -1814,10 +1827,11 @@
         <div class="small">
           Copyright &copy; 2026 Aptech. All Rights Reserved. • Team: <strong>Tech Hunters (Aptech Rahim Yar Khan Center, Punjab, Pakistan)</strong> • Project: <strong>BudgetBasics (NextGen BudgetBee)</strong>
         </div>
-        <div class="small d-flex gap-3 footer-legal-links">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms &amp; Conditions</a>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#disclaimerModal">Educational Disclaimer</a>
+        <div class="small d-flex gap-3 footer-legal-links flex-wrap">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal"><i class="bi bi-shield-check text-success me-1"></i> Privacy Policy</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal"><i class="bi bi-file-earmark-text text-primary me-1"></i> Terms &amp; Conditions</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#disclaimerModal"><i class="bi bi-info-circle text-warning me-1"></i> Educational Disclaimer</a>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#sitemapModal"><i class="bi bi-diagram-3 text-info me-1"></i> Site Map</a>
           <a href="#page-top"><i class="bi bi-arrow-up-circle me-1"></i> Back to Top</a>
         </div>
       </div>
@@ -1923,163 +1937,397 @@
 
 
   <!-- 4. Educational Disclaimer Modal -->
-  <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+  <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-labelledby="disclaimerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content rounded-4 border-0 shadow-lg">
-        <div class="modal-header border-bottom p-4">
-          <h5 class="modal-title fw-bold"><i class="bi bi-shield-exclamation text-warning me-2"></i>Educational Disclaimer</h5>
+        <div class="modal-header border-bottom p-3 p-md-4">
+          <div class="d-flex align-items-center gap-2">
+            <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle px-2.5 py-1.5"><i class="bi bi-shield-exclamation me-1"></i> Academic Scope</span>
+            <h5 class="modal-title fw-bold mb-0 text-primary ms-1" id="disclaimerModalLabel">Educational Simulation Notice</h5>
+          </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-4">
-          <p>BudgetBasics is an educational website built for students, college learners, and beginners in personal finance under the <strong>Aptech Techwiz 7</strong> competition guidelines.</p>
-          <p class="mb-0 text-secondary small">It provides educational estimates, visual frameworks, and budget simulations. It does not provide licensed banking, credit processing, or certified investment advice.</p>
+          <!-- Switcher Toolbar -->
+          <div class="legal-doc-toolbar mb-3 d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Legal Document Switcher">
+              <button type="button" class="btn btn-outline-secondary fw-semibold" onclick="switchLegalModal('disclaimerModal', 'privacyModal');"><i class="bi bi-shield-lock me-1"></i> Privacy Policy</button>
+              <button type="button" class="btn btn-outline-secondary fw-semibold" onclick="switchLegalModal('disclaimerModal', 'termsModal');"><i class="bi bi-file-earmark-ruled me-1"></i> Terms &amp; Conditions</button>
+              <button type="button" class="btn btn-warning active fw-semibold"><i class="bi bi-info-circle-fill me-1"></i> Disclaimer</button>
+            </div>
+            <span class="small text-muted">Ref: <strong>BB-DISCL-2026-V1</strong></span>
+          </div>
+
+          <div class="p-3 bg-light rounded-3 mb-3 border">
+            <h6 class="fw-bold mb-1 text-primary"><i class="bi bi-mortarboard-fill me-1"></i> Aptech Techwiz 7 — Category 1: Web Innovation Unleashed</h6>
+            <p class="small text-secondary mb-0">BudgetBasics is an interactive digital literacy platform developed exclusively for educational simulations and financial awareness.</p>
+          </div>
+
+          <p class="text-secondary small mb-2">BudgetBasics provides mathematical estimations, 50-30-20 visual frameworks, savings timelines, and budget blueprint generators. It does <strong>NOT</strong> provide licensed banking operations, depository services, loan underwriting, or certified tax/investment advice.</p>
+          <p class="text-secondary small mb-0">All budget calculations are simulations intended solely for student financial habit-building. Learners must consult certified financial advisors before undertaking substantial real-world contractual or financial commitments.</p>
+        </div>
+        <div class="modal-footer border-top p-3 bg-surface d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <div class="small text-muted">
+            Developed by <strong>Team Tech Hunters (Aptech Rahim Yar Khan)</strong>
+          </div>
+          <button type="button" class="btn btn-primary-gradient px-4 rounded-pill" data-bs-dismiss="modal">Acknowledge</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- 5. Privacy Policy Modal -->
-  <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+  <!-- 5. Privacy Policy Modal (Official Document Viewer) -->
+  <div class="modal fade legal-doc-modal" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
       <div class="modal-content rounded-4 border-0 shadow-lg">
-        <div class="modal-header border-bottom p-4">
-          <div class="d-flex align-items-center gap-2">
-            <span class="badge bg-success-subtle text-success border border-success-subtle px-2.5 py-1.5"><i class="bi bi-shield-lock-fill me-1"></i> Student Data Protection</span>
-            <h5 class="modal-title fw-bold mb-0" id="privacyModalLabel">Privacy Policy</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body p-4">
-          <div class="p-3 bg-light rounded-3 mb-4 border">
-            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
-              <span class="small text-muted"><i class="bi bi-calendar3 me-1"></i> Effective Date: <strong>September 2026</strong></span>
-              <span class="badge bg-primary-subtle text-primary border border-primary-subtle">100% Client-Side Sandbox</span>
+        
+        <!-- Official Document Letterhead Header -->
+        <div class="modal-header border-bottom p-3 p-md-4 bg-surface">
+          <div class="d-flex align-items-center justify-content-between w-100 flex-wrap gap-2">
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge bg-success-subtle text-success border border-success-subtle px-2.5 py-1.5 legal-doc-meta-badge">
+                <i class="bi bi-shield-lock-fill me-1"></i> Student Data Protection
+              </span>
+              <span class="badge bg-primary-subtle text-primary border border-primary-subtle legal-doc-meta-badge">
+                Techwiz 7 • Category 1
+              </span>
+              <h5 class="modal-title fw-bold mb-0 text-primary ms-1" id="privacyModalLabel">OFFICIAL STUDENT DATA PRIVACY CHARTER</h5>
             </div>
-            <p class="small text-secondary mb-0 mt-2">
-              BudgetBasics ("NextGen BudgetBee") is committed to protecting student privacy. This privacy policy outlines how our single-page application handles your budgeting inputs, device speech interactions, and local preferences.
-            </p>
+            <div class="d-flex align-items-center gap-2">
+              <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3" onclick="printLegalDocument('privacy');" title="Print Official Document">
+                <i class="bi bi-printer-fill me-1"></i> Print Doc
+              </button>
+              <a href="privacy-policy.html" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3" title="Open Full Standalone Page">
+                <i class="bi bi-box-arrow-up-right me-1"></i> Standalone
+              </a>
+              <button type="button" class="btn-close ms-1" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-body p-4 p-md-5">
+          <!-- Document Switcher Toolbar -->
+          <div class="legal-doc-toolbar mb-4 d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Legal Document Switcher">
+              <button type="button" class="btn btn-primary active fw-semibold"><i class="bi bi-shield-lock-fill me-1"></i> Privacy Policy</button>
+              <button type="button" class="btn btn-outline-secondary fw-semibold" onclick="switchLegalModal('privacyModal', 'termsModal');"><i class="bi bi-file-earmark-ruled me-1"></i> Terms &amp; Conditions</button>
+              <button type="button" class="btn btn-outline-secondary fw-semibold" onclick="switchLegalModal('privacyModal', 'disclaimerModal');"><i class="bi bi-info-circle me-1"></i> Disclaimer</button>
+            </div>
+            <div class="small text-muted d-flex gap-2 align-items-center">
+              <span>Doc Ref: <strong>BB-DOC-POL-2026-V2</strong></span>
+              <span>•</span>
+              <span>Effective: <strong>Sept 28, 2026</strong></span>
+            </div>
           </div>
 
-          <div class="d-flex flex-column gap-3 small text-secondary">
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-cpu text-primary me-2"></i>1. Client-Side Data Architecture</h6>
-              <p class="mb-0">
+          <!-- Document Header Banner -->
+          <div class="legal-doc-header-banner p-3 p-md-4 mb-4">
+            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+              <div>
+                <span class="badge bg-success-subtle text-success border border-success-subtle small mb-1"><i class="bi bi-check-circle-fill me-1"></i> 100% Client-Side Sandbox Certified</span>
+                <h5 class="fw-bold mb-1">Student Privacy &amp; Data Governance Framework</h5>
+                <p class="small text-secondary mb-0">
+                  BudgetBasics ("NextGen BudgetBee") guarantees total privacy for all learners. All financial variables, voice commands, and budget blueprints operate locally inside your browser engine.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Structured Articles -->
+          <div class="d-flex flex-column gap-3">
+            
+            <!-- Article I -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">I</span>
+                <h6 class="legal-article-title">Client-Side Sandbox Architecture &amp; Zero Network Transmission</h6>
+              </div>
+              <p class="small text-secondary mb-2">
                 BudgetBasics operates strictly as a client-side Single Page Application (SPA). All mathematical calculations (50-30-20 splits, expense logs, savings milestone forecasts, and custom budget blueprints) are executed locally inside your web browser engine. Your budget entries are never transmitted across the network to external backend databases or commercial servers.
               </p>
+              <div class="legal-takeaway-box">
+                <i class="bi bi-check-circle-fill text-success me-1"></i>
+                <strong>Student Guarantee:</strong> Disconnecting your internet connection does not break any calculator or blueprint generator—everything functions offline.
+              </div>
             </div>
 
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-eye-slash-fill text-danger me-2"></i>2. Zero Financial Credential Collection</h6>
-              <p class="mb-0">
+            <!-- Article II -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">II</span>
+                <h6 class="legal-article-title">Zero Financial Credential Collection</h6>
+              </div>
+              <p class="small text-secondary mb-2">
                 We never prompt for, store, or process sensitive Personally Identifiable Information (PII) or financial credentials. This includes bank logins, credit card numbers, PINs, social security numbers, or real banking tokens. Any financial figures you enter are purely hypothetical student simulations.
               </p>
+              <div class="legal-takeaway-box">
+                <i class="bi bi-shield-fill-check text-success me-1"></i>
+                <strong>No Risk:</strong> BudgetBasics will never ask for account passwords or banking logins.
+              </div>
             </div>
 
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-mic-fill text-warning me-2"></i>3. Voice AI &amp; Speech Recognition Privacy</h6>
-              <p class="mb-0">
+            <!-- Article III -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">III</span>
+                <h6 class="legal-article-title">Voice AI &amp; Web Speech API Audio Privacy</h6>
+              </div>
+              <p class="small text-secondary mb-2">
                 The integrated BudgetBee Voice Assistant utilizes standard W3C Web Speech APIs (<code>webkitSpeechRecognition</code> and <code>speechSynthesis</code>). Microphone access is activated solely when you tap the microphone button or enable voice listening mode. Audio feeds are converted to text locally or per your browser vendor's secure speech subsystem. We do not record, transmit, or retain raw audio recordings.
               </p>
+              <div class="legal-takeaway-box warning">
+                <i class="bi bi-mic-fill text-warning me-1"></i>
+                <strong>Audio Privacy:</strong> Microphone access can be revoked anytime via browser permissions with zero loss of keyboard chat functionality.
+              </div>
             </div>
 
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-hdd-network-fill text-info me-2"></i>4. Local Storage &amp; Cookie Usage</h6>
-              <p class="mb-0">
-                BudgetBasics does not use tracking cookies. We utilize browser <code>localStorage</code> solely for convenience: preserving your Dark/Light theme mode, preferred currency symbol ($, Rs., €, £), and your saved student budget blueprints. You may wipe all local storage data at any time via your browser's "Clear Site Data" utility or by clearing the stored budget plans in Module 9.
+            <!-- Article IV -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">IV</span>
+                <h6 class="legal-article-title">Local Storage &amp; Data Eradication Rights</h6>
+              </div>
+              <p class="small text-secondary mb-2">
+                BudgetBasics does not use tracking cookies. We utilize browser <code>localStorage</code> solely for convenience: preserving your Dark/Light theme mode, preferred currency symbol ($, Rs., €, £), and your saved student budget blueprints. You may wipe all local storage data at any time via your browser's "Clear Site Data" utility or by clearing the stored budget plans in Module 8.
               </p>
             </div>
 
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-shield-check text-success me-2"></i>5. Third-Party CDNs &amp; Assets</h6>
-              <p class="mb-0">
+            <!-- Article V -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">V</span>
+                <h6 class="legal-article-title">Third-Party Open-Source CDNs &amp; Assets</h6>
+              </div>
+              <p class="small text-secondary mb-0">
                 To guarantee high performance and accessibility, static styling resources and vector icons are served via trusted open-source CDNs (Bootstrap and Chart.js). These CDNs serve static code libraries and do not track individual learner profiles or display behavioral advertisements.
               </p>
             </div>
 
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-envelope-check-fill text-primary me-2"></i>6. Contact &amp; Privacy Queries</h6>
-              <p class="mb-0">
+            <!-- Article VI -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">VI</span>
+                <h6 class="legal-article-title">Governance &amp; Contact Information</h6>
+              </div>
+              <p class="small text-secondary mb-0">
                 For questions regarding student data protection or technical architecture under Aptech Techwiz 7, contact Team Tech Hunters via the official Contact Us module or at <strong>info@aglsm.com</strong>.
               </p>
             </div>
+
+          </div>
+
+          <!-- Formal Verification & Signatory Block -->
+          <div class="mt-4 pt-3 border-top">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+              <div>
+                <div class="legal-signature-line"></div>
+                <p class="fw-bold mb-0 text-primary small">Adeel Shah</p>
+                <p class="small text-muted mb-0">Lead Developer • Team Tech Hunters</p>
+                <p class="small text-muted mb-0">Aptech Rahim Yar Khan Center, Pakistan</p>
+              </div>
+
+              <div class="legal-doc-seal">
+                <i class="bi bi-patch-check-fill fs-5 mb-1"></i>
+                <span>Techwiz 7 Verified</span>
+              </div>
+
+              <div>
+                <div class="legal-signature-line"></div>
+                <p class="fw-bold mb-0 text-primary small">Academic Oversight</p>
+                <p class="small text-muted mb-0">Aptech Computer Education Center, RYK</p>
+                <p class="small text-muted mb-0">Status: Active &amp; Ratified (2026)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer border-top p-3 bg-surface d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <div class="small text-muted">
+            <i class="bi bi-shield-check text-success me-1"></i> Certified Educational Document • Aptech Techwiz 7
+          </div>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-3" onclick="printLegalDocument('privacy');"><i class="bi bi-printer me-1"></i> Print Policy</button>
+            <button type="button" class="btn btn-primary-gradient px-4 rounded-pill" data-bs-dismiss="modal">I Understand</button>
           </div>
         </div>
-        <div class="modal-footer border-top p-3 bg-light">
-          <button type="button" class="btn btn-primary-gradient px-4 rounded-pill" data-bs-dismiss="modal">I Understand</button>
-        </div>
+
       </div>
     </div>
   </div>
 
-  <!-- 5.1 Terms and Conditions Modal -->
-  <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+  <!-- 5.1 Terms and Conditions Modal (Official Document Viewer) -->
+  <div class="modal fade legal-doc-modal" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
       <div class="modal-content rounded-4 border-0 shadow-lg">
-        <div class="modal-header border-bottom p-4">
-          <div class="d-flex align-items-center gap-2">
-            <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2.5 py-1.5"><i class="bi bi-file-earmark-ruled-fill me-1"></i> Educational Terms</span>
-            <h5 class="modal-title fw-bold mb-0" id="termsModalLabel">Terms and Conditions</h5>
-          </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body p-4">
-          <div class="p-3 bg-light rounded-3 mb-4 border">
-            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
-              <span class="small text-muted"><i class="bi bi-award-fill text-warning me-1"></i> Aptech Techwiz 7 • Category 1</span>
-              <span class="badge bg-secondary">Last Modified: September 2026</span>
+
+        <!-- Official Document Letterhead Header -->
+        <div class="modal-header border-bottom p-3 p-md-4 bg-surface">
+          <div class="d-flex align-items-center justify-content-between w-100 flex-wrap gap-2">
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-2.5 py-1.5 legal-doc-meta-badge">
+                <i class="bi bi-file-earmark-ruled-fill me-1"></i> Educational Terms of Service
+              </span>
+              <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle legal-doc-meta-badge">
+                Aptech Techwiz 7
+              </span>
+              <h5 class="modal-title fw-bold mb-0 text-primary ms-1" id="termsModalLabel">STUDENT TERMS OF SERVICE &amp; CODE OF USE</h5>
             </div>
-            <p class="small text-secondary mb-0 mt-2">
-              Welcome to BudgetBasics ("NextGen BudgetBee"). By accessing or utilizing this website, calculators, infographics, or voice AI assistant, you acknowledge and agree to abide by the terms outlined below.
-            </p>
+            <div class="d-flex align-items-center gap-2">
+              <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill px-3" onclick="printLegalDocument('terms');" title="Print Official Document">
+                <i class="bi bi-printer-fill me-1"></i> Print Doc
+              </button>
+              <a href="terms-and-conditions.html" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3" title="Open Full Standalone Page">
+                <i class="bi bi-box-arrow-up-right me-1"></i> Standalone
+              </a>
+              <button type="button" class="btn-close ms-1" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-body p-4 p-md-5">
+          <!-- Document Switcher Toolbar -->
+          <div class="legal-doc-toolbar mb-4 d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Legal Document Switcher">
+              <button type="button" class="btn btn-outline-secondary fw-semibold" onclick="switchLegalModal('termsModal', 'privacyModal');"><i class="bi bi-shield-lock me-1"></i> Privacy Policy</button>
+              <button type="button" class="btn btn-primary active fw-semibold"><i class="bi bi-file-earmark-ruled-fill me-1"></i> Terms &amp; Conditions</button>
+              <button type="button" class="btn btn-outline-secondary fw-semibold" onclick="switchLegalModal('termsModal', 'disclaimerModal');"><i class="bi bi-info-circle me-1"></i> Disclaimer</button>
+            </div>
+            <div class="small text-muted d-flex gap-2 align-items-center">
+              <span>Doc Ref: <strong>BB-DOC-TOS-2026-V2</strong></span>
+              <span>•</span>
+              <span>Effective: <strong>Sept 28, 2026</strong></span>
+            </div>
           </div>
 
-          <div class="d-flex flex-column gap-3 small text-secondary">
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-mortarboard-fill text-primary me-2"></i>1. Educational &amp; Academic Scope</h6>
-              <p class="mb-0">
+          <!-- Document Header Banner -->
+          <div class="legal-doc-header-banner p-3 p-md-4 mb-4">
+            <div class="d-flex justify-content-between align-items-start flex-wrap gap-2">
+              <div>
+                <span class="badge bg-primary-subtle text-primary border border-primary-subtle small mb-1"><i class="bi bi-mortarboard-fill me-1"></i> Student Educational Charter</span>
+                <h5 class="fw-bold mb-1">Terms of Service &amp; Code of Educational Conduct</h5>
+                <p class="small text-secondary mb-0">
+                  Welcome to BudgetBasics ("NextGen BudgetBee"). By accessing or utilizing this website, calculators, infographics, or voice AI assistant, you acknowledge and agree to abide by the terms outlined below.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Structured Articles -->
+          <div class="d-flex flex-column gap-3">
+
+            <!-- Article I -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">I</span>
+                <h6 class="legal-article-title">Educational &amp; Academic Scope</h6>
+              </div>
+              <p class="small text-secondary mb-2">
                 BudgetBasics is an interactive digital literacy platform engineered under the <strong>Aptech Techwiz 7 Global IT Competition</strong> (Web Innovation Unleashed). It is designed to teach high school and undergraduate students foundational budgeting concepts, including the 50-30-20 framework, the 48-hour impulse delay protocol, and recurring subscription management.
               </p>
+              <div class="legal-takeaway-box">
+                <i class="bi bi-check-circle-fill text-success me-1"></i>
+                <strong>Educational Purpose:</strong> BudgetBasics is designed to build financial habits. It operates as an open-access student learning tool.
+              </div>
             </div>
 
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-exclamation-octagon-fill text-warning me-2"></i>2. Simulation Only — Not Financial or Tax Advice</h6>
-              <p class="mb-0">
+            <!-- Article II -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">II</span>
+                <h6 class="legal-article-title">Simulation Only — Not Financial or Tax Advice</h6>
+              </div>
+              <p class="small text-secondary mb-2">
                 All numerical calculations, timeline projections, donut graphs, and printable PDF statements generated by BudgetBasics are hypothetical simulations intended solely for educational practice. They do NOT constitute certified financial planning, accredited wealth management, tax consultancy, or banking services. Users must consult licensed financial advisors before making substantial real-world financial or contractual decisions.
               </p>
+              <div class="legal-takeaway-box warning">
+                <i class="bi bi-exclamation-triangle-fill text-warning me-1"></i>
+                <strong>Non-Advisory Notice:</strong> The calculations are educational guidelines, not licensed financial or investment advice.
+              </div>
             </div>
 
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-person-check-fill text-success me-2"></i>3. Acceptable Use &amp; Learner Conduct</h6>
-              <p class="mb-0">
+            <!-- Article III -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">III</span>
+                <h6 class="legal-article-title">Acceptable Use &amp; Learner Conduct</h6>
+              </div>
+              <p class="small text-secondary mb-0">
                 You agree to use this platform in good faith for personal learning, classroom demonstration, or student budget preparation. You agree not to execute automated scraping scripts, inject malicious code into forms, or attempt unauthorized tampering with application assets.
               </p>
             </div>
 
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-file-earmark-pdf-fill text-danger me-2"></i>4. User-Generated Budget Plans &amp; PDF Exports</h6>
-              <p class="mb-0">
-                Users are solely responsible for the authenticity and accuracy of any student names, academic terms, and expense entries inputted into Module 9 ("Student Monthly Budget Plan"). Generated PDF blueprints are uncertified student planning worksheets and carry no legal liability for loan or scholarship approval.
+            <!-- Article IV -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">IV</span>
+                <h6 class="legal-article-title">User-Generated Budget Plans &amp; PDF Exports</h6>
+              </div>
+              <p class="small text-secondary mb-0">
+                Users are solely responsible for the authenticity and accuracy of any student names, academic terms, and expense entries inputted into Module 8 ("Printable Budget Blueprint &amp; Invoice Generator"). Generated PDF blueprints are uncertified student planning worksheets and carry no legal liability for loan or scholarship approval.
               </p>
             </div>
 
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-c-circle-fill text-info me-2"></i>5. Intellectual Property &amp; Attribution</h6>
-              <p class="mb-0">
+            <!-- Article V -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">V</span>
+                <h6 class="legal-article-title">Intellectual Property &amp; Attribution</h6>
+              </div>
+              <p class="small text-secondary mb-0">
                 The BudgetBasics brand, NextGen BudgetBee character illustrations, sinuous tracer navigation, and UI blueprints were conceptualized and developed by <strong>Team Tech Hunters (Aptech Rahim Yar Khan Center, Punjab, Pakistan)</strong>. Open-source libraries (Bootstrap 5, Chart.js, Bootstrap Icons) are acknowledged under their respective open-source licenses.
               </p>
             </div>
 
-            <div>
-              <h6 class="fw-bold text-dark mb-1"><i class="bi bi-shield-x text-secondary me-2"></i>6. Limitation of Liability</h6>
-              <p class="mb-0">
-                Under no circumstances shall Team Tech Hunters, Aptech Computer Education, or competition evaluators be held liable for any direct, indirect, incidental, or consequential damages resulting from user reliance on calculator estimates, speech assistant recommendations, or simulated figures.
+            <!-- Article VI -->
+            <div class="legal-article-card">
+              <div class="legal-article-header">
+                <span class="legal-article-num">VI</span>
+                <h6 class="legal-article-title">Limitation of Liability</h6>
+              </div>
+              <p class="small text-secondary mb-0">
+                Under no circumstances shall Team Tech Hunters, individual student developers, Aptech Computer Education, or competition evaluators be held liable for any direct, indirect, incidental, or consequential damages resulting from user reliance on calculator estimates, speech assistant recommendations, or simulated figures.
               </p>
             </div>
+
+          </div>
+
+          <!-- Formal Verification & Signatory Block -->
+          <div class="mt-4 pt-3 border-top">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+              <div>
+                <div class="legal-signature-line"></div>
+                <p class="fw-bold mb-0 text-primary small">Adeel Shah</p>
+                <p class="small text-muted mb-0">Lead Developer • Team Tech Hunters</p>
+                <p class="small text-muted mb-0">Aptech Rahim Yar Khan Center, Pakistan</p>
+              </div>
+
+              <div class="legal-doc-seal">
+                <i class="bi bi-patch-check-fill fs-5 mb-1"></i>
+                <span>Techwiz 7 Verified</span>
+              </div>
+
+              <div>
+                <div class="legal-signature-line"></div>
+                <p class="fw-bold mb-0 text-primary small">Academic Oversight</p>
+                <p class="small text-muted mb-0">Aptech Computer Education Center, RYK</p>
+                <p class="small text-muted mb-0">Ratified: September 2026 • Status: Active</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="modal-footer border-top p-3 bg-surface d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <div class="small text-muted">
+            <i class="bi bi-file-earmark-check text-primary me-1"></i> Certified Educational Terms • Aptech Techwiz 7
+          </div>
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-3" onclick="printLegalDocument('terms');"><i class="bi bi-printer me-1"></i> Print Terms</button>
+            <button type="button" class="btn btn-primary-gradient px-4 rounded-pill" data-bs-dismiss="modal">Accept &amp; Close</button>
           </div>
         </div>
-        <div class="modal-footer border-top p-3 bg-light">
-          <button type="button" class="btn btn-primary-gradient px-4 rounded-pill" data-bs-dismiss="modal">Accept &amp; Close</button>
-        </div>
+
       </div>
     </div>
   </div>

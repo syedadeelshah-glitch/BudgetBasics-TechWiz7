@@ -1537,4 +1537,31 @@ function initScrollReveal() {
   targets.forEach(el => observer.observe(el));
 }
 
+/* =========================================================================
+   17. Legal Documents Modal Switcher & Print Integration
+   ========================================================================= */
+window.switchLegalModal = function(fromModalId, toModalId) {
+  const fromEl = document.getElementById(fromModalId);
+  const toEl = document.getElementById(toModalId);
+  if (!toEl) return;
 
+  if (fromEl) {
+    const fromInst = bootstrap.Modal.getInstance(fromEl);
+    if (fromInst) {
+      fromInst.hide();
+    }
+  }
+
+  setTimeout(() => {
+    const toInst = bootstrap.Modal.getOrCreateInstance(toEl);
+    toInst.show();
+  }, 250);
+};
+
+window.printLegalDocument = function(docType) {
+  const file = docType === 'terms' ? 'terms-and-conditions.html?print=1' : 'privacy-policy.html?print=1';
+  const printWindow = window.open(file, '_blank');
+  if (printWindow) {
+    printWindow.focus();
+  }
+};
